@@ -31,7 +31,6 @@
   });
 
 /*Flip Card*/
-$(document).ready(function () {
 function flip(event) {
     var element = event.currentTarget;
     if (element.className === "card") {
@@ -42,8 +41,7 @@ function flip(event) {
         element.style.transform = "rotateY(180deg)";
       }
     }
-  }
-});
+  };
 
   /*Progress Check*/
   $("#progressCheck1").change(function () {
