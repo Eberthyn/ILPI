@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+body, header, footer{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+
+/** Menu Superior **/
+.navbar{
+    background-color: #443F57;
+}
+.navbar-nav{
+    margin-right: 5%;
+}
+.navbar .logo{
+    margin-left: 8%;
+    margin-right: 3%;
+}
+.navbar-nav li{
+    margin: 40px;
+}
+.navbar-nav li a{
+    color: white;
+}
+
+
+/** Corpo texto **/
+/*Conteúdo*/
+.conteudo{
+    padding: 0% 14% 0% 9.5% !important;
+    margin: 0% !important;
+}
+.row{
+    margin: 0px !important;
+}
+.estilo{
+   margin-left: 9.5% !important;
+   background-color: #443F57;
+}
+.col-md-10{
+    padding: 0px !important;
+    max-width: 100%;
+}
+.blocoTexto{
+    background-color: #ff6f61;
+    color: white;
+}
+.blocoTexto li{
+    list-style: none;
+}
+.blocoTexto .pinfo{
+    margin-top: 10px !important;
+    margin-left: 40px;  
+}
+.informativo{
+    background-color: #F5F5F5;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px 40px 50px 50px;
+    position: relative;
+}
+.imginfo{
+    position: absolute;
+    top: -20px;
+}
+.imgshare{
+    position: absolute;
+    margin-left: 85%;
+    margin-top: -5%;
+}
+.text-center{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.text-center p{
+    color: #ff6f61;
+    font-weight: bold;
+}
+hr{
+    border: 1px #ff6f61;
+    background-color:#ff6f61;
+    height: 5px;
+    width: 110px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* Formatação de Fontes*/
+
+h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+h2{
+    font-size: 38px;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+h3{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+p{
+    margin-bottom: 30px;
+}
+.pinfo{
+    font-size: 24px; 
+    font-weight: 600;
+}
+/*Listas e Ícone*/
+ul li{
+    list-style: none;
+}
+.icon{
+    margin-right: 15px;
+    display: inline-flex;
+    vertical-align: middle;
+}
+/*Botão Modal*/
+.btn{
+    background-color: #9d9d9d;
+    border: none;
+    color: white;
+    white-space: normal;
+    margin-bottom: 40px;
+}
+.btn:hover{
+    background-color: #e2e2e2;
+    color: black;
+}
+.modal-body img {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0 0;
+}
+
+
+/* Barra de Navegação*/
+.navegacao{
+    background-color: #443F57;
+    margin: 0px !important;
+}
+#proxima a, #anterior a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+#proxima,  #anterior{
+    color: white; 
+    padding-top: 3%;
+}
+
+.menuLateral{
+    background-color: #F5F5F5;
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 1;
+}
+
+/*Check Box*/
+.form-check-label{
+    font-weight: bold;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#check1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#check2{
+    margin-bottom: 40px;
+}
+
+
+.card{
+    border: 0px;
+    position: relative;
+}
+.card-header{
+    border-width: 5px;
+    border-color: #3D3D3D;
+}
+.card-header p{
+    color: #3D3D3D;
+    margin: auto;
+}
+.card-body ul li{
+    list-style: none;
+}
+
+
+.menuLateral ul li{
+    list-style: circle;
+}
+
+/*Flip Card*/
+#quiz{
+    height: 400px;
+    width: 300px;
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 25px;
+    background-color: #ff6f61;
+    
+}
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.front{
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.back{
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+#resposta{
+    border: 0px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+#pergunta{
+    margin-top: 0%;
+    border: 0px;
+}
+
+/*Rodapé*/
+footer{
+    height: 186px;
+    padding-top: 1%;
+}
+.apoio{
+    margin-left: 8%;
+    margin-right: 5%;
+}
+.realizacao{
+    margin-right: 5%;
+}
+.realizacao img{
+    margin-right: 20px;
+}
+
+
+.cardImg{
+    position: relative;
+}
+
+
+/*SideBar*/
+
+.hidden {
+  display:none;
+}
+
+.containerMenu {
+  width: 100%;
+}
+
+.step {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.v-stepper {
+  position: relative;
+  /* visibility: visible; */
+}
+
+/* regular step */
+.step .circle {
+  background-color: white;
+  border: 2px solid #443F57;
+  border-radius: 30px;
+  width: 30px;    /* +6 for border */
+  height: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.step .line {
+  top: 34px;
+  left: 14px;
+  /*   height: 120px; */
+  height: 100%;
+  position: absolute;
+  border-left: 3px solid #443F57;
+}
+
+.step.completed .circle {
+  visibility: visible;
+  background-color: #443F57;
+  border-color: #443F57;
+  color: #FFF;
+}
+
+.step.completed .line {
+  border-left: 3px solid #443F57;
+}
+
+.step.active .circle {
+visibility: visible;
+  border-color: #443F57;
+}
+
+.step.empty .circle {
+    visibility: hidden;
+}
+
+.items {
+  margin-top: 20px;
+  position: relative;
+}
+
+.subItem {
+  margin-left: -41px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.containerItem {
+  width: 15px;
+}
+
+.item {
+  background-color: #FFF;
+  border: 2px solid #443F57;
+  border-radius: 22px;
+  width: 12px;
+  height: 12px;
+}
+
+.visited {
+  background-color: #443F57;
+  border: 2px solid #443F57;
+  border-radius: 22px;
+  width: 12px;
+  height: 12px;
+}
+
+.subItem p {
+  margin-top: 16px;
+  margin-left: 30px!important;
+}
+
+.step.empty .line {
+/*   visibility: hidden; */
+/*   height: 150%; */
+  top: 0;
+  height: 150%;
+}
+
+/* ajustar o height de acordo com o numero de itens */
+.step:last-child .line {
+  top: 34px;
+  left: 15px;
+  height: 65%;
+}
+
+.contentMenu {
+  margin-left: 20px;
+  display: inline-block;
+  padding-top: 6px;
+}
+
+.contentMenu .title a {
+  font-family: Arial;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #3D3D3D;
+}
+
+.contentMenu .subItems {
+  font-family: Arial;
+  font-size: 16px;
+  color: #3D3D3D;
+}
