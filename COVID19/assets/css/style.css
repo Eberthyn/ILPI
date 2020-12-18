@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 body, header, footer{
     font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /** Menu Superior **/
@@ -14,6 +14,7 @@ body, header, footer{
 .navbar .logo{
     margin-left: 8%;
     margin-right: 3%;
+    max-width: 30%;
 }
 .navbar-nav li{
     margin: 40px;
@@ -43,6 +44,13 @@ body, header, footer{
 .blocoTexto{
     background-color: #ff6f61;
     color: white;
+    padding-top: 30px;
+}
+#bloco1{
+    padding: 25px 100px 10px 0px !important;
+}
+#bloco3{
+    padding: 50px 50px 50px 0px !important;
 }
 .blocoTexto li{
     list-style: none;
@@ -56,8 +64,11 @@ body, header, footer{
     color: black;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 50px 40px 50px 50px;
+    padding: 40px 40px 10px 50px;
     position: relative;
+}
+#acordeao{
+    padding-bottom: 45px;
 }
 .imginfo{
     position: absolute;
@@ -79,7 +90,7 @@ body, header, footer{
 hr{
     border: 1px #ff6f61;
     background-color:#ff6f61;
-    height: 5px;
+    height: 3px;
     width: 110px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -87,13 +98,13 @@ hr{
 /* Formatação de Fontes*/
 
 h1{
-    font-size: 48px;
+    font-size: 42px;
     font-weight: bold;
     margin-bottom: 30px;
     margin-top: 50px;
 }
 h2{
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
     color: #ff6f61;
     margin-bottom: 30px;
@@ -109,8 +120,11 @@ p{
     margin-bottom: 30px;
 }
 .pinfo{
-    font-size: 24px; 
+    font-size: 20px; 
     font-weight: 600;
+}
+.card-title{
+    font-size: 15px;
 }
 /*Listas e Ícone*/
 ul li{
@@ -118,6 +132,12 @@ ul li{
 }
 .icon{
     margin-right: 15px;
+    display: inline-flex;
+    vertical-align: middle;
+}
+.caretDown{
+    font-size: 16px;
+    margin-left: 5px;
     display: inline-flex;
     vertical-align: middle;
 }
@@ -159,9 +179,7 @@ ul li{
     background-color: #F5F5F5;
     max-height: 100%;
     max-width: 100%;
-    z-index: 1;
 }
-
 /*Check Box*/
 .form-check-label{
     font-weight: bold;
@@ -185,7 +203,7 @@ ul li{
     position: relative;
 }
 .card-header{
-    border-width: 5px;
+    border-width: 1px;
     border-color: #3D3D3D;
 }
 .card-header p{
@@ -257,6 +275,7 @@ footer{
 }
 .realizacao img{
     margin-right: 20px;
+    max-width: 35%;
 }
 
 
@@ -397,4 +416,24 @@ visibility: visible;
   font-family: Arial;
   font-size: 16px;
   color: #3D3D3D;
+}
+
+/* collapse menu lateral
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1;
+    position: absolute;
+}
+#barraLateral{
+    display: none;
+}
+.barra{
+    z-index: 1;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+}
+.barraLateral:checked ~ .col-md-2 .menuLateral{
+    transform: translateX(800px);
 }

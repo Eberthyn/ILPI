@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 body, header{
     font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 /*Page Home*/
 .fundoCapa{
@@ -35,13 +35,13 @@ body, header{
 .navbar .logo{
     margin-left: 8%;
     margin-right: 3%;
+    max-width: 30%;
 }
 .navbar-nav{
     margin-right: 5%;
 }
 .navbar-nav li{
     margin: 40px;
-    font-size: 20px;
 }
 .navbar-nav li a{
     color: black;
@@ -49,10 +49,6 @@ body, header{
 
 
 /*Botão*/
-@font-face{
-    font-family: Poppins;
-    src: url(https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins&display=swap);
-}
 #botao{
     text-align: center;
     background-color: #f5f5f5;
@@ -96,4 +92,5 @@ footer{
 }
 .realizacao img{
     margin-right: 20px;
+    max-width: 35%;
 }

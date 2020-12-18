@@ -20,9 +20,11 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-
+            
+           
             <img src="assets/images/logoAula.png" class="img-fluid logo" alt="Logo" />
-            <img src="assets/images/logoAula2.png" class="img-fluid" alt="120 Anos" />
+            <img src="assets/images/logoAula2.png" class="img-fluid" style="max-width: 30%;" alt="120 Anos" />
+           
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
@@ -45,6 +47,11 @@
         <div class="col-md-2 menuLateral">
 
             <!-- completed -->
+           <!-- <input type="checkbox" id="barraLateral">
+            <label id="icone" for="check"><img src="assets/images/icone.png"/></label>
+
+            <div class="barra">
+                <nav id="barra">-->
 
             <div class="step" id="aula1">
                 <div class="v-stepper">
@@ -194,8 +201,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+          </div>
 
+      <!-- </nav>
+        </div>-->
 
         </div> <!-- Fim Menu Lateral -->
 
@@ -204,7 +213,7 @@
         <div class="col-md-10">
 
             <div class="conteudo">
-                <img id="inicioAula1" src="assets/images/imgaula1.png" alt="">
+                <img id="inicioAula1" style="margin-top: -2px;"src="assets/images/imgaula1.png" alt="Tarja Aula 1">
 
                 <h1>População idosa e a COVID-19</h1>
                 <p>No Brasil é considerada idosa a pessoa com sessenta anos ou mais e seu direitos são
@@ -251,7 +260,7 @@
             </div>
 
             <div class="row estilo">
-                <div class="blocoTexto col-md-10">
+                <div class="col-md-10 blocoTexto" id="bloco1">
                     <p class="pinfo">RECOMENDAÇÕES DA ONU PARA RESPOSTAS PRIORITÁRIAS</p>
                     <ul>
                         <li>
@@ -352,7 +361,7 @@
                             <div class="cardImg">
                                 <img class="imgshare" src="assets/images/share.png" alt="">
                                 <a href="https://www.bbc.com/portuguese/internacional-52025727" target="_blank">
-                                    <img class="img-fluid " src="assets/images/site1.png" alt="BBC Brasil" />
+                                    <img class="img-fluid" src="assets/images/site1.png" alt="BBC Brasil" />
                                 </a>
                             </div>
 
@@ -532,7 +541,7 @@
                     <div class="col-sm-4 centro">
                         <figure class="figure">
                             <div class="cardImg">
-                                <img style="position: absolute; margin-left: 77%; margin-top:-7%;"
+                                <img style="position: absolute; margin-left: 85%; margin-top:-10%;"
                                     src="assets/images/share.png" alt="">
                                 <img src="./assets/images/img1.png.png" class="img-fluid rounded" alt="">
                             </div>
@@ -720,7 +729,7 @@
                     </li>
                 </ul>
 
-                <div class="informativo">
+                <div class="informativo" id="acordeao">
                     <img class="imginfo" src="assets/images/info.png" alt="">
                     <p class="pinfo">COMO AUXILIAR OS IDOSOS A LAVAR AS MÃOS
                     </p>
@@ -748,8 +757,8 @@
                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
                                     href="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
                                     <p>
-                                        Quero ver a técnica usando preparação alcoólica a 70%<ion-icon size="small"
-                                            class="icon" name="caret-down-outline"></ion-icon>
+                                        Quero ver a técnica usando preparação alcoólica a 70%<ion-icon
+                                            class="caretDown" name="caret-down-outline"></ion-icon>
                                     </p>
 
                                 </a>
@@ -771,8 +780,8 @@
                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
                                     href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
                                     <p>
-                                        Quero ver a técnica usando Sabonete Líquido e Água<ion-icon size="small"
-                                            class="icon" name="caret-down-outline"></ion-icon>
+                                        Quero ver a técnica usando Sabonete Líquido e Água<ion-icon
+                                            class="caretDown" name="caret-down-outline"></ion-icon>
                                     </p>
 
                                 </a>
@@ -871,8 +880,8 @@
 
 
 
-                <div class="informativo">
-
+                <div class="informativo" id="acordeao">
+                    <img class="imginfo" src="assets/images/info.png" alt="">
                     <!--Accordion wrapper-->
                     <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
@@ -884,7 +893,7 @@
                                 <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
                                     aria-expanded="true" aria-controls="collapseOne1">
                                     <p>
-                                        USO DE MASCARA FACIAL PARA RESIDENTES<ion-icon size="small" class="icon"
+                                        USO DE MASCARA FACIAL PARA RESIDENTES<ion-icon class="caretDown"
                                             name="caret-down-outline"></ion-icon>
                                     </p>
                                 </a>
@@ -957,8 +966,8 @@
                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
                                     href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                                     <p>
-                                        USO DE MASCARA FACIAL PARA PROFISSIONAIS E CUIDADORES<ion-icon size="small"
-                                            class="icon" name="caret-down-outline"></ion-icon>
+                                        USO DE MASCARA FACIAL PARA PROFISSIONAIS E CUIDADORES<ion-icon
+                                            class="caretDown" name="caret-down-outline"></ion-icon>
                                     </p>
                                 </a>
                             </div>
@@ -1009,7 +1018,7 @@
                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
                                     href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
                                     <p>
-                                        VISITANTES<ion-icon size="small" class="icon" name="caret-down-outline">
+                                        VISITANTES<ion-icon class="caretDown" name="caret-down-outline">
                                         </ion-icon>
                                     </p>
 
@@ -1143,19 +1152,19 @@
             </div>
 
             <div class="row estilo">
-                <div class="blocoTexto col-sm-7">
-                    <p class="pinfo">MANUAL DA ANVISA: TENHA SEMPRE DISPONÍVEL</p>
-                    <p style="margin-left: 6%;">O manual da ANVISA Segurança do Paciente: limpeza e desinfecção de
+                <div class="blocoTexto col-sm-7" >
+                    <p class="pinfo" style="margin-left: 4.5%;">MANUAL DA ANVISA: TENHA SEMPRE DISPONÍVEL</p>
+                    <p style="margin-left: 4.5%;">O manual da ANVISA Segurança do Paciente: limpeza e desinfecção de
                         superfícies tem
                         outras
                         informações sobre procedimentos de limpeza e desinfecção.</p>
-                    <p style="margin-left: 6%;">Baixe o documento no site da
+                    <p style="margin-left: 4.5%;">Baixe o documento no site da
                         ANVISA e
                         tenha sempre disponível para consulta.</p>
                 </div>
-                <div class="blocoTexto col-sm-3 centro">
+                <div class="blocoTexto col-sm-3 centro"id="bloco3">
                     <div class="cardImg">
-                        <img src="./assets/images/img4.png" alt="Down Doc">
+                        <img class="img-fluid" src="./assets/images/img4.png" alt="Down Doc">
                         <img style="position: absolute; margin-left: -15%; margin-top: -10%;"
                             src="assets/images/share2.png" alt="">
                     </div>
