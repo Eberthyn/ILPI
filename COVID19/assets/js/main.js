@@ -31,7 +31,6 @@
   });
 
 /*Flip Card*/
-
 function flip(event) {
     var element = event.currentTarget;
     if (element.className === "card") {
