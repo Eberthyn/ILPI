@@ -1,4 +1,4 @@
-  $("#collapseAula1").show();
+  //$("#collapseAula1").hide();
   $("#collapseAula2").hide();
   $("#collapseAula3").hide();
   $("#collapseAula4").hide();//esconde a aula 4
@@ -29,19 +29,6 @@
     });
     $(".step:last-child .line").toggle();
   });
-
-/*Flip Card*/
-function flip(event) {
-    var element = event.currentTarget;
-    if (element.className === "card") {
-      if (element.style.transform == "rotateY(180deg)") {
-        element.style.transform = "rotateY(0deg)";
-      }
-      else {
-        element.style.transform = "rotateY(180deg)";
-      }
-    }
-  };
 
   /*Progress Check*/
   $("#progressCheck1").change(function () {
@@ -102,7 +89,38 @@ function flip(event) {
         $("#progressCheck1").prop("checked") == false;
       }
     });
+
+  /*Flip Card*/
+  function flip() {
+    $('.card').toggleClass('flipped');
+  };
+
+  /*Altera Icone do Acordeão
+  function tradeIcon(){
+    $('.fas').toggleClass('fa-caret-down fa-caret-up');
+  }*/
   
-
-
-
+  $(".carousel").carousel({
+    interval: false,
+    pause: true
+  });
+  
+  $( ".carousel .carousel-inner" ).swipe( {
+    swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
+      this.parent( ).carousel( 'next' );
+    },
+    swipeRight: function ( ) {
+      this.parent( ).carousel( 'prev' );
+    },
+    threshold: 0,
+    tap: function(event, target) {
+      // get the location: in my case the target is my link
+      window.location = $(this).find('.carousel-item.active a').attr('href');
+    },
+    excludedElements:"label, button, input, select, textarea, .noSwipe"
+  });
+  
+  $('.carousel .carousel-inner').on('dragstart', 'a', function () {
+    return false;
+  });  
+  
