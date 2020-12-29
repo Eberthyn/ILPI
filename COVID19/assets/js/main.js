@@ -30,6 +30,14 @@
     $(".step:last-child .line").toggle();
   });
 
+     /*Collapse Sidebar*/
+     $(".toggle-sidebar").click(function () {
+      $("#sidebar").toggleClass("esconder");
+      $("#content").toggleClass("col-md-12 col-md-10");
+      
+      return false;
+    });
+
   /*Progress Check*/
   $("#progressCheck1").change(function () {
     if (this.checked) {
@@ -92,7 +100,7 @@
 
   /*Flip Card*/
   function flip() {
-    $('.card').toggleClass('flipped');
+    $('#quiz').toggleClass('flipped');
   };
 
   /*Altera Icone do Acordeão
@@ -122,5 +130,12 @@
   
   $('.carousel .carousel-inner').on('dragstart', 'a', function () {
     return false;
-  });  
+ 
+
+ 
   
+});
+
+			
+
+	 

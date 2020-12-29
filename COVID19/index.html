@@ -23,7 +23,7 @@
 
 
             <img src="assets/images/logoAula.png" class="img-fluid logo" alt="Logo" />
-            <img src="assets/images/logoAula2.png" class="img-fluid" style="max-width: 30%;" alt="120 Anos" />
+            <img src="assets/images/logoAula2.png" class="img-fluid logo" alt="120 Anos" />
 
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -42,9 +42,10 @@
         </nav>
     </header>
 
-    <div class="row">
+    <div class="row" id="row-main">
         <!---->
-        <div class="col-md-2">
+        <div class="col-md-2" id="sidebar">
+
 
             <!-- completed -->
 
@@ -203,10 +204,14 @@
 
 
 
-        <div class="col-md-10">
+        <div class="col-md-10" id="content">
+
+            <div class="btn-group" role="group" aria-label="Controls">
+                <button type="button" class="btn btn-default toggle-sidebar" id="sidebarButton"><img src="assets/images/icone.png" alt=""></button>
+            </div>
 
             <div class="conteudo">
-                <img id="inicioAula1" style="margin-top: -1.4px;" src="assets/images/imgaula1.png" alt="Tarja Aula 1">
+                <img id="inicioAula1" style="margin-top: -27.5px;" src="assets/images/imgaula1.png" alt="Tarja Aula 1">
 
                 <h1>População idosa e a COVID-19</h1>
                 <p>No Brasil é considerada idosa a pessoa com sessenta anos ou mais e seu direitos são
@@ -552,7 +557,7 @@
 
                 <div class="text-center">
                     <hr>
-                    <p>FIQUE ATENTO AOS SINAIS E SINTOMAS DA COVID-19</p>
+                    <p>Fique atento aos sinais e sintomas da COVID-19</p>
                     <hr>
                 </div>
 
@@ -561,8 +566,6 @@
                 <div class="text-center">
                     <div class="cardImg">
                         <img class="img-fluid" src="./assets/images/img2.png" alt="Sintomas">
-                        <img style="position: absolute; margin-top: 17%; margin-left: -8%;"
-                            src="assets/images/share.png" alt="">
                     </div>
                 </div>
 
@@ -757,7 +760,7 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="headingFour4">
                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
-                                    href="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4" onclick="tradeIcon()">
+                                    href="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
                                     <p>
                                         Quero ver a técnica usando preparação alcoólica a 70%<i
                                             class="fas fa-caret-down" id="caretDown"></i>
@@ -780,7 +783,7 @@
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="headingFive5">
                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
-                                    href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5" onclick="tradeIcon()">
+                                    href="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
                                     <p>
                                         Quero ver a técnica usando Sabonete Líquido e Água<i class="fas fa-caret-down"
                                             id="caretDown"></i>
@@ -1169,7 +1172,7 @@
                 </div>
                 <div class="blocoTexto col-sm-3 centro" id="bloco3">
                     <div class="cardImg">
-                        <img class="img-fluid" src="./assets/images/img4.png" alt="Down Doc">
+                        <img class="img-fluid" style="max-width: 80%;" src="./assets/images/img4.png" alt="Down Doc">
                         <img style="position: absolute; margin-left: -15%; margin-top: -10%;"
                             src="assets/images/share2.png" alt="">
                     </div>
