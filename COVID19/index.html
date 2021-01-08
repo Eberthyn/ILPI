@@ -19,7 +19,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
 
             <img src="assets/images/logoAula.png" class="img-fluid logo" alt="Logo" />
@@ -45,11 +45,11 @@
     <div class="row" id="row-main">
         <!---->
         <div class="col-md-2" id="sidebar">
-
+            <span  class="toggle-sidebar" id="sidebarButton"><img style="max-width: 50%;" src="assets/images/icone.png" alt=""></span>
 
             <!-- completed -->
 
-            <div class="stepContainer">
+            <div  id="accordion" class="stepContainer">
                 <div class="step" id="aula1">
                     <div class="v-stepper">
                         <div class="circle">
@@ -58,9 +58,10 @@
                         <div class="line"></div>
                     </div>
 
-                    <div class="contentMenu">
-                        <div class="title">
+                    <div class="contentMenu open">
+                        <div class="link title">
                             <a class="aula1" style="cursor: pointer;">Aula 1</a>
+                            <i class="fas fa-caret-down"></i>
                         </div>
 
                         <div class="items" id="collapseAula1">
@@ -104,8 +105,9 @@
                     </div>
 
                     <div class="contentMenu">
-                        <div class="title">
+                        <div class="link title">
                             <a class="aula2" style="cursor: pointer;">Aula 2</a>
+                            <i class="fas fa-caret-down"></i>
                         </div>
 
                         <div class="items" id="collapseAula2">
@@ -147,8 +149,9 @@
                     </div>
 
                     <div class="contentMenu">
-                        <div class="title">
+                        <div class="link title">
                             <a class="aula3" style="cursor: pointer;">Aula 3</a>
+                            <i class="fas fa-caret-down"></i>
                         </div>
 
                         <div class="items hide" id="collapseAula3">
@@ -178,8 +181,9 @@
                     </div>
 
                     <div class="contentMenu">
-                        <div class="title">
+                        <div class="link title">
                             <a class="aula4" style="cursor: pointer;">Aula 4</a>
+                            <i class="fas fa-caret-down"></i>
                         </div>
 
                         <div class="items" id="collapseAula4">
@@ -206,12 +210,12 @@
 
         <div class="col-md-10" id="content">
 
-            <div class="btn-group" role="group" aria-label="Controls">
-                <button type="button" class="btn btn-default toggle-sidebar" id="sidebarButton"><img src="assets/images/icone.png" alt=""></button>
-            </div>
+            
+            <span  class="toggle-sidebar" id="sidebarButton2"><img style="max-width: 50%;" src="assets/images/icone.png" alt=""></span>
+          
 
             <div class="conteudo">
-                <img id="inicioAula1" style="margin-top: -27.5px;" src="assets/images/imgaula1.png" alt="Tarja Aula 1">
+                <img id="inicioAula1" src="assets/images/imgaula1.png" alt="Tarja Aula 1">
 
                 <h1>População idosa e a COVID-19</h1>
                 <p>No Brasil é considerada idosa a pessoa com sessenta anos ou mais e seu direitos são
@@ -1017,7 +1021,7 @@
                         <!-- Accordion card -->
 
                         <!-- Accordion card -->
-                        <div class="card" id="teste">
+                        <div class="card">
 
                             <!-- Card header -->
                             <div class="card-header" role="tab" id="headingThree3">
@@ -1431,8 +1435,10 @@
                     ILPI.</p>
                 <p>Vamos relembrar os pontos principais?</p>
 
-
+            </div>
                 <!--INSERIR QUESTIONÁRIO-->
+                <div row id="questionario">
+
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -1463,18 +1469,15 @@
 
                                         </div>
                                     </div>
-
                                     <div class="back" id="back1">
-                                        <p class="text-center"></p><button onclick="flip()">FEEDBACK</button></p>
-                            
-
+                                        <p class="text-center"></p><button onclick="unflip()">FEEDBACK</button></p>
                                     </div>
                                 </div>
                             
                         </div>
                         <div class="carousel-item">
                             <div class="container">
-                                <div class="card" id="quiz">
+                                <div class="card" id="quiz2">
 
                                     <div class="front" id="front2">
 
@@ -1482,13 +1485,13 @@
                                             <p class="text-center" style="background-color: white;">Pergunta</p>
 
                                             <ul class="list-group">
-                                                <li><button id="resposta1" onclick="flip()">
+                                                <li><button id="resposta1" onclick="flip2()">
                                                     Alternativa 1
                                                 </button></li>
-                                                <li><button id="resposta2" onclick="flip()">
+                                                <li><button id="resposta2" onclick="flip2()">
                                                     Alternativa 2
                                                 </button></li>
-                                                 <li><button id="resposta3" onclick="flip()">
+                                                 <li><button id="resposta3" onclick="flip2()">
                                                   Alternativa 3
                                                 </button></li>
                                             </ul>
@@ -1497,8 +1500,7 @@
                                     </div>
 
                                     <div class="back" id="back2">
-                                        <p class="text-center">FEEDBACK</p>
-                                        <button onclick="flip()">Back</button>
+                                        <button onclick="unflip2()">FEEDBACK</button>
 
                                     </div>
                                 </div>
@@ -1506,7 +1508,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="container">
-                                <div class="card" id="quiz">
+                                <div class="card" id="quiz3">
 
                                     <div class="front" id="front3">
 
@@ -1514,30 +1516,22 @@
                                             <p class="text-center" style="background-color: white;">Pergunta</p>
 
                                             <ul class="list-group">
-                                                <li><button id="resposta1" onclick="flip()">
+                                                <li><button id="resposta1" onclick="flip3()">
                                                     Alternativa 1
                                                 </button></li>
-                                                <li><button id="resposta2" onclick="flip()">
+                                                <li><button id="resposta2" onclick="flip3()">
                                                     Alternativa 2
                                                 </button></li>
-                                                 <li><button id="resposta3" onclick="flip()">
-                                                  Alternativa 3
-                                                </button></li>
+                                                 <button id="resposta3" onclick="flip3()">
+                                                  <li>Alternativa 3</li>
+                                                </button>
                                             </ul>
 
                                         </div>
                                     </div>
 
                                     <div class="back" id="back3">
-                                        <button class="text-center" onclick="flip()">FEEDBACK</button>
-                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                            data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only" onclick="flip()">Anterior</span></a>
-                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                                            data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Próximo</span>
+                                        <button class="text-center" onclick="unflip3()">FEEDBACK</button>
                                         </a>
                                     </div>
                                 </div>
@@ -1545,14 +1539,16 @@
                         </div>
                     </div>
                 </div>
+                </div>
 
+                <div class="conteudo">
                 <!-- Material checked -->
                 <div class="form-check text-center" id="check4">
                     <input type="checkbox" class="form-check-input" id="progressCheck4">
                     <label class="form-check-label" for="progressCheck4">CHECK! Você está pronto para a próxima aula, sobre as recomendações para comunicação e contato da pessoa idosa com a família e a comunidade.</label>
                 </div>
-
             </div>
+            
 
             <div class="row navegacao">
                 <div class="col-md-6 border-right text-left" id="anterior">

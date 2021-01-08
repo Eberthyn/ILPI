@@ -3,10 +3,14 @@ body, header, footer{
     font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
 }
-
+body{
+    padding-top: 107px;
+}
 /** Menu Superior **/
 .navbar{
     background-color: #443F57;
+    height: 110px;
+    
 }
 .navbar-nav{
    margin-right: 5%;
@@ -29,10 +33,13 @@ body, header, footer{
 .conteudo{
     padding: 0% 14% 0% 9.5% !important;
     margin: 0% !important;
-    
 }
 .row{
     margin: 0px !important;
+}
+#questionario{
+    margin-left: 9.5% !important;
+    margin-right: 9.5% !important;
 }
 #row-main{
     overflow-x: hidden;
@@ -42,9 +49,10 @@ body, header, footer{
    background-color: #443F57;
 }
 .col-md-2{
-    padding: 20px;
+    transition: all 0.5s;
     padding-left: 0px !important;
     background-color: #F5F5F5;
+    position: relative;
 }
 .col-md-10{
     padding: 0px !important;
@@ -147,6 +155,7 @@ p{
     margin-top: 0px !important;
     font-size:max(15px, 1.3vw);
 }
+
 /*Listas e Ícone*/
 ul li{
     list-style: none;
@@ -174,24 +183,6 @@ ul li{
     display: inline-flex;
     vertical-align: bottom;
     margin-bottom: -2px;
-}
-
-/*Botão Modal*/
-.btn{
-    background-color: #9d9d9d;
-    border: none;
-    color: white;
-    white-space: normal;
-    margin-bottom: 40px;
-}
-.btn:hover{
-    background-color: #e2e2e2;
-    color: black;
-}
-.modal-body img {
-    display: block;
-    max-width: 100%;
-    margin: 10px 0 0;
 }
 
 
@@ -246,14 +237,10 @@ ul li{
 }
 
 
-.menuLateral ul li{
-    list-style: circle;
-}
-
 /*Flip Card*/
-#quiz{
+#quiz, #quiz2, #quiz3{
     height: 400px;
-    width: 300px;
+    width: 280px;
     position: relative;
     transition: all 0.4s linear;
     transform-style: preserve-3d;
@@ -287,6 +274,7 @@ ul li{
     box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
     height: 50px;
     width: 100%;
+
 }
 .card.flipped {
     -webkit-transform: rotateY(180deg);
@@ -295,18 +283,6 @@ ul li{
     transform: rotateY(180deg);
 }
 /*Carousel*/
-#questionario{
-    border-radius: 50px;
-    width: 365px;
-    height: 511px;
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px;
-
-}
 .carousel-item{
     text-align: left;
 }
@@ -328,7 +304,7 @@ ul li{
 /*Rodapé*/
 footer{
     padding: 1% 0% 1% 0%;
-    height: 150px;
+    height: 110px;
 }
 .realizacao{
     margin-left: 5%;
@@ -353,19 +329,36 @@ footer{
 /*SideBar*/
 #sidebarButton{
     position: fixed;
-    margin-top: -12.5px;
-    margin-right: -2px;
     background-color: #f5f5f5;
-    border: none;
+    border-radius: 0 0 25px 0;
+    padding: 0px !important;
+    margin-top: 3px;
+    margin-left: 16.667%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 35px;
+    width: 35px;
+}
+/* Botão fixo no conteúdo apos recolher*/
+#sidebarButton2{
+    position: fixed;
+    background-color: #f5f5f5;
+    border-radius: 0 0 25px 0;
+    padding: 0px !important;
+    margin-top: 3px;
+    margin-left: -2px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 35px;
+    width: 35px;
 }
 .hidden {
   display:none;
 }
-
-.containerMenu {
-  width: 100%;
-}
-
 .step {
   padding: 10px;
   display: flex;
@@ -381,10 +374,11 @@ footer{
 /* regular step */
 
 .stepContainer{
-    max-width: 16.6667%;
-    max-height: 100%;
+    padding-top: 25px;
+    width: 16.667%;
     background-color: #F5F5F5;
     position: fixed;
+    z-index: 1;
 }
 .step .circle {
   background-color: white;
@@ -431,7 +425,6 @@ visibility: visible;
   position: relative;
   max-width: 100%;
 }
-
 .subItem {
   margin-left: -41px;
   display: flex;
@@ -499,8 +492,18 @@ visibility: visible;
   font-size: 16px;
   color: #3D3D3D;
 }
+.contentMenu.open i{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
 
-
+/* Recolher sidebar */
+#sidebar{
+    z-index: 1;
+    width: 100%;
+}
 .esconder {
     /* hide it for small displays*/
     display: none;
@@ -512,4 +515,4 @@ visibility: visible;
       /* same width as sidebar */
       margin-left: -16.6667%;
     }
-  }
+}

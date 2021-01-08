@@ -3,6 +3,12 @@ body, header{
     font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
 }
+.navbar{
+    background-color: white;
+}
+body .container-fluid{
+    padding-top: 7.7%;
+}
 /*Page Home*/
 .fundoCapa{
     background-color: #ff6f61;

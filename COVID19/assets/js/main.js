@@ -1,36 +1,20 @@
-  //$("#collapseAula1").hide();
-  $("#collapseAula2").hide();
-  $("#collapseAula3").hide();
-  $("#collapseAula4").hide();//esconde a aula 4
-  $(".step:last-child .line").hide();//esconde a linha da aula 4
+$(window).on('resize', function() {
+  var win = $(this);
+  if (win.width() < 980) {
 
-  $(".aula1").click(function () {
+    $('#sidebar').addClass('esconder');
+    $("#content").addClass("col-md-12");
+    $("#content").removeClass("col-md-10");
 
-    $("#collapseAula1").toggle(80, "linear", function () {
-      // Animation complete.
-    });
-  });
+  } else {
+    $('#sidebar').removeClass('esconder');
+    $("#content").removeClass("col-md-12");
+    $("#content").addClass("col-md-10");
+  }
+});
 
-  $(".aula2").click(function () {
-    $("#collapseAula2").toggle(80, "linear", function () {
-      // Animation complete.
-    });
-  });
 
-  $(".aula3").click(function () {
-    $("#collapseAula3").toggle(80, "linear", function () {
-      // Animation complete.
-    });
-  });
-
-  $(".aula4").click(function () {
-    $("#collapseAula4").toggle(80, "linear", function () {
-      // Animation complete.
-    });
-    $(".step:last-child .line").toggle();
-  });
-
-     /*Collapse Sidebar*/
+/*Collapse Sidebar*/
      $(".toggle-sidebar").click(function () {
       $("#sidebar").toggleClass("esconder");
       $("#content").toggleClass("col-md-12 col-md-10");
@@ -79,7 +63,7 @@
       $("#aula1").removeClass("completed");
     }
   });
-
+ 
  /*Salva progresso no local storage*/
   function saveProgress(){
     var progresso = $("#progressCheck1");
@@ -100,14 +84,78 @@
 
   /*Flip Card*/
   function flip() {
-    $('#quiz').toggleClass('flipped');
+    $('#quiz').addClass('flipped');
   };
 
-  /*Altera Icone do Acordeão
-  function tradeIcon(){
-    $('.fas').toggleClass('fa-caret-down fa-caret-up');
-  }*/
+  function unflip() {
+    $('#quiz').removeClass('flipped');
+  };
+
+
+  function flip2() {
+    $('#quiz2').addClass('flipped');
+  };
+
+  function unflip2() {
+    $('#quiz2').removeClass('flipped');
+  };
+
+
+  function flip3() {
+    $('#quiz3').addClass('flipped');
+  };
+
+  function unflip3() {
+    $('#quiz3').removeClass('flipped');
+  };
+
+
+  /*Altera Icone do Acordeão*/
   
+  //$("#collapseAula1").hide();
+  $("#collapseAula2").hide();
+  $("#collapseAula3").hide();
+  $("#collapseAula4").hide();//esconde a aula 4
+  $(".step:last-child .line").hide();//esconde a linha da aula 4
+
+
+  $(function() {
+    var Accordion = function(el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+  
+      var links = this.el.find('.link');
+  
+      links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown);
+    }
+  
+    Accordion.prototype.dropdown = function(e) {
+      var $el = e.data.el;
+      $this = $(this),
+      $next = $this.next();
+  
+      $next.slideToggle();
+      $this.parent().toggleClass('open');
+      
+      if (!e.data.multiple) {
+        $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+      };
+      
+      
+      if ($(".step:last-child .contentMenu").hasClass("open")) {
+        $(".step:last-child .line").show();
+      } else {
+        $(".step:last-child .line").hide();
+      }
+    }
+  
+    var accordion = new Accordion($('#accordion'), false);
+    $(".step:last-child .line").hide();
+
+  });
+
+  
+  /* Navegação flip card com touch*/
   $(".carousel").carousel({
     interval: false,
     pause: true
@@ -131,9 +179,6 @@
   $('.carousel .carousel-inner').on('dragstart', 'a', function () {
     return false;
  
-
- 
-  
 });
 
 			
