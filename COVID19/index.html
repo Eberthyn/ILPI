@@ -45,11 +45,12 @@
     <div class="row" id="row-main">
         <!---->
         <div class="col-md-2" id="sidebar">
-            <span  class="toggle-sidebar" id="sidebarButton"><img style="max-width: 50%;" src="assets/images/icone.png" alt=""></span>
+            <span class="toggle-sidebar" id="sidebarButton"><img style="max-width: 50%;" src="assets/images/icone.png"
+                    alt=""></span>
 
             <!-- completed -->
 
-            <div  id="accordion" class="stepContainer">
+            <div id="accordion" class="stepContainer">
                 <div class="step" id="aula1">
                     <div class="v-stepper">
                         <div class="circle">
@@ -64,7 +65,7 @@
                             <i class="fas fa-caret-down"></i>
                         </div>
 
-                        <div class="items" id="collapseAula1">
+                        <div class="items collapse show" id="collapseAula1">
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item" id="topico0"></div>
@@ -110,33 +111,40 @@
                             <i class="fas fa-caret-down"></i>
                         </div>
 
-                        <div class="items" id="collapseAula2">
+                        <div class="items collapse hide" id="collapseAula2">
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item visited"></div>
+                                    <div class="item"></div>
                                 </div>
-                                <p>Sub aula 2.1</p>
-                            </div>
-
-                            <div class="subItem">
-                                <div class="containerItem">
-                                    <div class="item visited"></div>
-                                </div>
-                                <p>Sub aula 2.2</p>
+                                <p><a href="./aula2.html #check5">Cuidados integrais</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item"></div>
                                 </div>
-                                <p>Sub aula 2.3</p>
+                                <p><a href="./aula2.html #check7">Cuidados em áreas comuns</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item"></div>
                                 </div>
-                                <p>Sub aula 2.4</p>
+                                <p><a href="./aula2.html #check8">Manutenção dos cuidados frequentes</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p><a href="./aula2.html #check9">Fragilidade e Violência</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p><a href="./aula2.html #check10">Conclusão da aula</a></p>
                             </div>
                         </div>
                     </div>
@@ -154,7 +162,7 @@
                             <i class="fas fa-caret-down"></i>
                         </div>
 
-                        <div class="items hide" id="collapseAula3">
+                        <div class="items collapse hide" id="collapseAula3">
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item"></div>
@@ -186,7 +194,7 @@
                             <i class="fas fa-caret-down"></i>
                         </div>
 
-                        <div class="items" id="collapseAula4">
+                        <div class="items collapse hide" id="collapseAula4">
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item"></div>
@@ -210,9 +218,10 @@
 
         <div class="col-md-10" id="content">
 
-            
-            <span  class="toggle-sidebar" id="sidebarButton2"><img style="max-width: 50%;" src="assets/images/icone.png" alt=""></span>
-          
+
+            <span class="toggle-sidebar" id="sidebarButton2"><img style="max-width: 50%;" src="assets/images/icone.png"
+                    alt=""></span>
+
 
             <div class="conteudo">
                 <img id="inicioAula1" src="assets/images/imgaula1.png" alt="Tarja Aula 1">
@@ -1436,8 +1445,8 @@
                 <p>Vamos relembrar os pontos principais?</p>
 
             </div>
-                <!--INSERIR QUESTIONÁRIO-->
-                <div row id="questionario">
+            <!--INSERIR QUESTIONÁRIO-->
+            <div row id="questionario">
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -1447,33 +1456,33 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                          
-                                <div class="card" id="quiz">
 
-                                    <div class="front" id="front1">
+                            <div class="card" id="quiz">
 
-                                        <div class="card-body">
-                                            <p class="text-center" style="background-color: white;">Pergunta</p>
+                                <div class="front" id="front1">
 
-                                            <ul class="list-group">
-                                                <li><button id="resposta1" onclick="flip()">
+                                    <div class="card-body">
+                                        <p class="text-center" style="background-color: white;">Pergunta</p>
+
+                                        <ul class="list-group">
+                                            <li><button id="resposta1" onclick="flip()">
                                                     Alternativa 1
                                                 </button></li>
-                                                <li><button id="resposta2" onclick="flip()">
+                                            <li><button id="resposta2" onclick="flip()">
                                                     Alternativa 2
                                                 </button></li>
-                                                 <li><button id="resposta3" onclick="flip()">
-                                                  Alternativa 3
+                                            <li><button id="resposta3" onclick="flip()">
+                                                    Alternativa 3
                                                 </button></li>
-                                            </ul>
+                                        </ul>
 
-                                        </div>
-                                    </div>
-                                    <div class="back" id="back1">
-                                        <p class="text-center"></p><button onclick="unflip()">FEEDBACK</button></p>
                                     </div>
                                 </div>
-                            
+                                <div class="back" id="back1">
+                                    <p class="text-center"></p><button onclick="unflip()">FEEDBACK</button></p>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="carousel-item">
                             <div class="container">
@@ -1486,14 +1495,14 @@
 
                                             <ul class="list-group">
                                                 <li><button id="resposta1" onclick="flip2()">
-                                                    Alternativa 1
-                                                </button></li>
+                                                        Alternativa 1
+                                                    </button></li>
                                                 <li><button id="resposta2" onclick="flip2()">
-                                                    Alternativa 2
-                                                </button></li>
-                                                 <li><button id="resposta3" onclick="flip2()">
-                                                  Alternativa 3
-                                                </button></li>
+                                                        Alternativa 2
+                                                    </button></li>
+                                                <li><button id="resposta3" onclick="flip2()">
+                                                        Alternativa 3
+                                                    </button></li>
                                             </ul>
 
                                         </div>
@@ -1517,13 +1526,13 @@
 
                                             <ul class="list-group">
                                                 <li><button id="resposta1" onclick="flip3()">
-                                                    Alternativa 1
-                                                </button></li>
+                                                        Alternativa 1
+                                                    </button></li>
                                                 <li><button id="resposta2" onclick="flip3()">
-                                                    Alternativa 2
-                                                </button></li>
-                                                 <button id="resposta3" onclick="flip3()">
-                                                  <li>Alternativa 3</li>
+                                                        Alternativa 2
+                                                    </button></li>
+                                                <button id="resposta3" onclick="flip3()">
+                                                    <li>Alternativa 3</li>
                                                 </button>
                                             </ul>
 
@@ -1539,16 +1548,18 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
 
-                <div class="conteudo">
+            <div class="conteudo">
                 <!-- Material checked -->
                 <div class="form-check text-center" id="check4">
                     <input type="checkbox" class="form-check-input" id="progressCheck4">
-                    <label class="form-check-label" for="progressCheck4">CHECK! Você está pronto para a próxima aula, sobre as recomendações para comunicação e contato da pessoa idosa com a família e a comunidade.</label>
+                    <label class="form-check-label" for="progressCheck4">CHECK! Você está pronto para a próxima aula,
+                        sobre as recomendações para comunicação e contato da pessoa idosa com a família e a
+                        comunidade.</label>
                 </div>
             </div>
-            
+
 
             <div class="row navegacao">
                 <div class="col-md-6 border-right text-left" id="anterior">

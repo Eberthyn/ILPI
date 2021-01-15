@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>ILPI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+
+
+            <img src="assets/images/logoAula.png" class="img-fluid logo" alt="Logo" />
+            <img src="assets/images/logoAula2.png" class="img-fluid logo" alt="120 Anos" />
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#materialComplementar">Material Complementar</a></li>
+                    <li><a href="#bibliografia">Bibliografia</a></li>
+                    <li><a href="#creditos">Créditos</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="row" id="row-main">
+        <!---->
+        <div class="col-md-2" id="sidebar">
+            <span  class="toggle-sidebar" id="sidebarButton"><img style="max-width: 50%;" src="assets/images/icone.png" alt=""></span>
+
+            <!-- completed -->
+
+            <div  id="accordion" class="stepContainer">
+                <div class="step" id="aula1">
+                    <div class="v-stepper">
+                        <div class="circle">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="contentMenu">
+                        <div class="link title">
+                            <a class="aula1" style="cursor: pointer;">Aula 1</a>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+
+                        <div class="items collapse hide" id="collapseAula1">
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="topico0"></div>
+                                </div>
+                                <p><a href="#inicioAula1">População Idosa e a Covid</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="topico1"></div>
+                                </div>
+                                <p><a href="#check1">Instituições de Longa Permanência para Idosos no contexto da
+                                        Covid-19</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="topico2"></div>
+                                </div>
+                                <p><a href="#check2">Medidas de prevenção e controle da disseminação</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="topico3"></div>
+                                </div>
+                                <p><a href="#check3">Conclusão da aula</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- active -->
+                <div class="step active">
+                    <div class="v-stepper">
+                        <div class="circle"><i class="fas fa-check"></i></div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="contentMenu">
+                        <div class="link title">
+                            <a class="aula2" style="cursor: pointer;">Aula 2</a>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+
+                        <div class="items collapse hide" id="collapseAula2">
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item visited"></div>
+                                </div>
+                                <p>Sub aula 2.1</p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item visited"></div>
+                                </div>
+                                <p>Sub aula 2.2</p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p>Sub aula 2.3</p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p>Sub aula 2.4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="v-stepper">
+                        <div class="circle"><i class="fas fa-check"></i></div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="contentMenu open">
+                        <div class="link title">
+                            <a class="aula3" style="cursor: pointer;">Aula 3</a>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+
+                        <div class="items collapse show" id="collapseAula3">
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p>Minha aula 3.1</p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p>Minha aula 3.2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- regular -->
+                <div class="step">
+                    <div class="v-stepper">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="contentMenu">
+                        <div class="link title">
+                            <a class="aula4" style="cursor: pointer;">Aula 4</a>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+
+                        <div class="items collapse hide" id="collapseAula4">
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p>Minha aula 4.1</p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p>Minha aula 4.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Fim Menu Lateral -->
+
+
+
+        <div class="col-md-10" id="content">
+
+            <div class="row navegacao">
+                <div class="col-md-6 border-right text-left" id="anterior">
+                    <a href="aula2.html">
+                        <i class="fas fa-chevron-left"
+                            style="margin-right: 15px; margin-top: 5px;"></i><strong>Aula Anterior</strong>
+
+                    </a>
+                    <p class="pinfo">Comunicação e contato com a família e a comunidade
+                    </p>
+                </div>
+                <div class="col-md-6 border-left text-right" id="proxima">
+                    <a href="./aula4.html">
+                        <strong>Próxima Aula</strong><i class="fas fa-chevron-right"
+                            style="margin-left: 15px; margin-top: 5px;"></i>
+                    </a>
+                    <p class="pinfo">Aula 4</p>
+                </div>
+            </div>
+            <!--Fim Barra de navegação-->
+        </div>
+        <!--Fim Coluna Conteúdo-->
+    </div><!-- Row Container-->
+
+    
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="./assets/js/carousel-swipe.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+<footer>
+    <div class="d-flex">
+        <div class="p-2 realizacao">
+            <p>Realização:</p>
+            <img class="img-fluid" src="assets/images/rodape1.png" alt="">
+        </div>
+        <div class="p-2 flex-grow-1 apoio">
+            <p>Apoio:</p>
+            <img class="img-fluid" src="assets/images/rodape2.png" alt="">
+            <img class="img-fluid" src="assets/images/rodape3.png" alt="">
+            <img class="img-fluid" src="assets/images/rodape4.png" alt="">
+            <img class="img-fluid" src="assets/images/rodape5.png" alt="">
+            <img class="img-fluid" src="assets/images/rodape6.png" alt="">
+        </div>
+    </div>
+</footer>
+
+</html>

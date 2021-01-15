@@ -22,7 +22,7 @@ $(window).on('resize', function() {
       return false;
     });
 
-  /*Progress Check*/
+  /*Progress Check AULA1*/
   $("#progressCheck1").change(function () {
     if (this.checked) {
       $("#topico0").addClass("visited");
@@ -113,10 +113,10 @@ $(window).on('resize', function() {
   /*Altera Icone do Acordeão*/
   
   //$("#collapseAula1").hide();
-  $("#collapseAula2").hide();
-  $("#collapseAula3").hide();
-  $("#collapseAula4").hide();//esconde a aula 4
-  $(".step:last-child .line").hide();//esconde a linha da aula 4
+  //$("#collapseAula2").hide();
+  //$("#collapseAula3").hide();
+  //$("#collapseAula4").hide();//esconde a aula 4
+  //$(".step:last-child .line").hide();//esconde a linha da aula 4
 
 
   $(function() {
@@ -150,7 +150,7 @@ $(window).on('resize', function() {
     }
   
     var accordion = new Accordion($('#accordion'), false);
-    $(".step:last-child .line").hide();
+    $(".step:last-child .line").show();
 
   });
 
