@@ -4,20 +4,21 @@ body, header, footer{
     font-size: 15px;
 }
 body{
-    padding-top: 107px;
+    padding-top: 113px;
 }
 /** Menu Superior **/
 .navbar{
     background-color: #443F57;
-    height: 110px;
-    
+    height: 115px;
 }
 .navbar-nav{
    margin-right: 5%;
 }
+#navbarNavDropdown{
+    background-color: #443f57;
+}
 .logo{
     margin: 1% 0% 1% 5%;
-    max-width: 10%;
 }
 .navbar-nav li{
    margin-right: 40px;
@@ -56,9 +57,6 @@ body{
 #questionario{
     margin-left: 9.5% !important;
     margin-right: 9.5% !important;
-}
-#row-main{
-    overflow-x: hidden;
 }
 #cartaz{
     margin-top: 50px !important;
@@ -339,17 +337,13 @@ footer{
 }
 .realizacao img{
     margin-right: 47px;
-    max-width: 50%;
 }
 .apoio{
     margin-left: 10%;
 }
 .apoio img{
     margin-right: 20px;
-    max-width: 10%;
 }
-
-
 .cardImg{
     position: relative;
 }
@@ -368,6 +362,12 @@ footer{
     display: flex;
     height: 35px;
     width: 35px;
+}
+#sidebarButton.open i{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 /* Botão fixo no conteúdo apos recolher*/
 #sidebarButton2{
@@ -407,6 +407,9 @@ footer{
     background-color: #F5F5F5;
     position: fixed;
     z-index: 1;
+    max-height: 400px;
+    overflow: auto;
+    display: block;
 }
 .step .circle {
   background-color: white;
@@ -439,10 +442,7 @@ footer{
   border-left: 3px solid #443F57;
 }
 
-.step.active .circle {
-visibility: visible;
-  border-color: #443F57;
-}
+
 
 .step.empty .circle {
     visibility: hidden;
@@ -497,8 +497,8 @@ visibility: visible;
 /* ajustar o height de acordo com o numero de itens */
 .step:last-child .line {
   top: 34px;
-  left: 15px;
-  height: 65%;
+  left: 14px;
+ height: 85%;
 }
 
 .contentMenu {
@@ -543,4 +543,5 @@ visibility: visible;
       /* same width as sidebar */
       margin-left: -16.6667%;
     }
+
 }

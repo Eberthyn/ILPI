@@ -18,9 +18,11 @@ $(window).on('resize', function() {
      $(".toggle-sidebar").click(function () {
       $("#sidebar").toggleClass("esconder");
       $("#content").toggleClass("col-md-12 col-md-10");
+      $("#sidebarButton").toggleClass("open");
       
       return false;
     });
+
 
   /*Progress Check AULA1*/
   $("#progressCheck1").change(function () {
@@ -63,6 +65,98 @@ $(window).on('resize', function() {
       $("#aula1").removeClass("completed");
     }
   });
+
+    /*Progress Check AULA2*/
+    $("#progressCheck5").change(function () {
+      if (this.checked) {
+        $("#topico4").addClass("visited");
+      } else {
+        $("#topico4").removeClass("visited");
+      }
+    });
+  
+    $("#progressCheck7").change(function () {
+      if (this.checked) {
+        $("#topico5").addClass("visited");
+      } else {
+        $("#topico5").removeClass("visited");
+      }
+    });
+  
+    $("#progressCheck8").change(function () {
+      if (this.checked) {
+        $("#topico6").addClass("visited");
+      } else {
+        $("#topico6").removeClass("visited");
+      }
+    });
+  
+    $("#progressCheck9").change(function () {
+      if (this.checked) {
+        $("#topico7").addClass("visited");
+      } else {
+        $("#topico7").removeClass("visited");
+      }
+    });
+
+    $("#progressCheck10").change(function () {
+      if (this.checked) {
+        $("#topico8").addClass("visited");
+      } else {
+        $("#topico8").removeClass("visited");
+      }
+    });
+  
+    /*Progresso Conclusão Aula2*/
+    $("#progressCheck10").change(function () {
+      if (this.checked) {
+        $("#aula2").addClass("completed");
+      } else {
+        $("#aula2").removeClass("completed");
+      }
+    });
+
+        /*Progress Check AULA4*/
+        $("#progressCheck11").change(function () {
+          if (this.checked) {
+            $("#topico9").addClass("visited");
+          } else {
+            $("#topico9").removeClass("visited");
+          }
+        });
+      
+        $("#progressCheck12").change(function () {
+          if (this.checked) {
+            $("#topico10").addClass("visited");
+          } else {
+            $("#topico10").removeClass("visited");
+          }
+        });
+      
+        $("#progressCheck13").change(function () {
+          if (this.checked) {
+            $("#topico11").addClass("visited");
+          } else {
+            $("#topico11").removeClass("visited");
+          }
+        });
+    
+        $("#progressCheck14").change(function () {
+          if (this.checked) {
+            $("#topico12").addClass("visited");
+          } else {
+            $("#topico12").removeClass("visited");
+          }
+        });
+      
+        /*Progresso Conclusão Aula4*/
+        $("#progressCheck14").change(function () {
+          if (this.checked) {
+            $("#aula4").addClass("completed");
+          } else {
+            $("#aula4").removeClass("completed");
+          }
+        });
  
  /*Salva progresso no local storage*/
   function saveProgress(){
@@ -116,7 +210,7 @@ $(window).on('resize', function() {
   //$("#collapseAula2").hide();
   //$("#collapseAula3").hide();
   //$("#collapseAula4").hide();//esconde a aula 4
-  //$(".step:last-child .line").hide();//esconde a linha da aula 4
+ // $(".step:last-child .line").hide();//esconde a linha da aula 4
 
 
   $(function() {
@@ -150,9 +244,13 @@ $(window).on('resize', function() {
     }
   
     var accordion = new Accordion($('#accordion'), false);
-    $(".step:last-child .line").show();
+    $(".step:last-child .line").hide();
 
   });
+
+//deixa a atual aberta...
+$(".contentMenu.open .submenu").show();
+$(".step:last-child .line").hide();
 
   
   /* Navegação flip card com touch*/

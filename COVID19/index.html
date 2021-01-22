@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ILPI</title>
+    <title>ILPI - Aula 1</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
-
-
+    <!-- Arquivos CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -18,18 +18,21 @@
 
 <body>
 
-    <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+   <!-- Menu Superior-->
+    <header> 
+   
+       <nav class="navbar fixed-top navbar-expand-lg navbar-light">
 
-
+            <!-- Logos -->
             <img src="assets/images/logoAula.png" class="img-fluid logo" alt="Logo" />
             <img src="assets/images/logoAula2.png" class="img-fluid logo" alt="120 Anos" />
-
-
+            
+            <!-- Botão Collapse-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li><a href="home.html">Home</a></li>
@@ -38,19 +41,25 @@
                     <li><a href="#creditos">Créditos</a></li>
                 </ul>
             </div>
-            </div>
-        </nav>
+
+        </nav> 
+
     </header>
+    <!-- Fim Menu Superior-->
 
+    <!-- Início Row-main-->
     <div class="row" id="row-main">
-        <!---->
+
+        <!-- Início Coluna do Menu Lateral-->
         <div class="col-md-2" id="sidebar">
-            <span class="toggle-sidebar" id="sidebarButton"><img style="max-width: 50%;" src="assets/images/icone.png"
-                    alt=""></span>
 
-            <!-- completed -->
+            <!-- Botão p/ Recolher Sidebar-->
+            <span class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
 
+            <!-- Step Menu -->
             <div id="accordion" class="stepContainer">
+
+                <!-- Step 1-->
                 <div class="step" id="aula1">
                     <div class="v-stepper">
                         <div class="circle">
@@ -97,9 +106,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- Fim Step 1-->
 
-                <!-- active -->
-                <div class="step active">
+                <!-- Step 2-->
+                <div class="step">
                     <div class="v-stepper">
                         <div class="circle"></div>
                         <div class="line"></div>
@@ -114,42 +124,44 @@
                         <div class="items collapse hide" id="collapseAula2">
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item"></div>
+                                    <div class="item" id="topico4"></div>
                                 </div>
                                 <p><a href="./aula2.html #check5">Cuidados integrais</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item"></div>
+                                    <div class="item" id="topico5"></div>
                                 </div>
                                 <p><a href="./aula2.html #check7">Cuidados em áreas comuns</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item"></div>
+                                    <div class="item" id="topico6"></div>
                                 </div>
                                 <p><a href="./aula2.html #check8">Manutenção dos cuidados frequentes</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item"></div>
+                                    <div class="item" id="topico7"></div>
                                 </div>
                                 <p><a href="./aula2.html #check9">Fragilidade e Violência</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item"></div>
+                                    <div class="item"  id="topico8"></div>
                                 </div>
                                 <p><a href="./aula2.html #check10">Conclusão da aula</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Fim Step 2-->
 
+                <!-- Step 3-->
                 <div class="step">
                     <div class="v-stepper">
                         <div class="circle"></div>
@@ -180,8 +192,9 @@
                     </div>
 
                 </div>
+                <!-- Fim Step 3-->
 
-                <!-- regular -->
+                <!-- Step 4 -->
                 <div class="step">
                     <div class="v-stepper">
                         <div class="circle"></div>
@@ -199,30 +212,49 @@
                                 <div class="containerItem">
                                     <div class="item"></div>
                                 </div>
-                                <p>Minha aula 4.1</p>
+                                <p><a href="aula4.html #check11">Atendimento ao residente com quadro suspeito ou com diagnóstico de COVID19</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item"></div>
                                 </div>
-                                <p>Minha aula 4.2</p>
+                                <p><a href="aula4.html #check12">Casos suspeitos ou confirmados</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p><a href="aula4.html #check13">Agravamento do quadro e necessidade de internação do idoso</a>
+                                </p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p><a href="aula4.html #check14">Conclusão da aula</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Fim Step 4-->
+
             </div>
-        </div> <!-- Fim Menu Lateral -->
+            <!-- Fim Step Menu -->
+
+        </div> <!-- Fim Coluna Menu Lateral -->
 
 
-
+        <!-- Início Coluna de Conteúdo -->
         <div class="col-md-10" id="content">
 
-
+            <!-- Botão Secundário p/ Recolher Sidebar -->
             <span class="toggle-sidebar" id="sidebarButton2"><img style="max-width: 50%;" src="assets/images/icone.png"
                     alt=""></span>
-
-
+            
+            <!-- Bloco 1-->
             <div class="conteudo">
                 <img id="inicioAula1" src="assets/images/imgaula1.png" alt="Tarja Aula 1">
 
@@ -269,7 +301,9 @@
                     contribuindo no
                     combate à pandemia como os profissionais de saúde e cuidadores de idosos.</p>
             </div>
+            <!-- Fim Bloco 1-->
 
+            <!-- Box 1-->
             <div class="row estilo">
                 <div class="col-md-10 blocoTexto" id="bloco1">
                     <p class="pinfo">RECOMENDAÇÕES DA ONU PARA RESPOSTAS PRIORITÁRIAS</p>
@@ -323,9 +357,12 @@
                     </ul>
                 </div>
             </div>
+            <!-- Fim Box 1-->
 
+            <!-- Bloco 2-->
             <div class="conteudo">
-                <!-- Material checked -->
+
+                <!-- Check de Progresso 1 -->
                 <div class="form-check text-center" id="check1">
                     <input type="checkbox" class="form-check-input" id="progressCheck1" onclick="saveProgress()">
                     <label class="form-check-label" for="progressCheck1">CHECK! CONCLUÍ ESSE TÓPICO COM
@@ -364,8 +401,10 @@
                     medidas de
                     doença e auto-isolamento (COMAS-HERRERA, 2020).</p>
 
-
+                <!-- Card Deck (Links Externos)-->
                 <div class="card-deck">
+
+                    <!-- Card 1-->
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Idosos abandonados são encontrados mortos em asilos na Espanha:
@@ -380,8 +419,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Fim Card 1-->
 
-
+                    <!-- Card 2-->
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Surto de coronavírus atinge 87% de residentes de
@@ -399,8 +439,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Fim Card 2-->
 
-
+                    <!-- Card 3-->
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Minas tem 87 surtos de Covid-19 em asilos de 53
@@ -416,9 +457,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    <!-- Fim card 3-->
 
+                </div> 
+                <!-- Fim Card Deck-->
 
+                <!-- Box Informativo 1-->
                 <div class="informativo">
                     <img class="imginfo" src="assets/images/info.png" alt="">
                     <p class="pinfo">SOBRE A COVID-19</p>
@@ -439,6 +483,7 @@
                         2020, já
                         havíamos ultrapassado os 50 milhões de casos confirmados da doença.</p>
                 </div>
+                <!-- Fim Box Informativo 1-->
 
                 <p>No Brasil, há grande diversidade quanto ao do tipo de instituição e seus recursos
                     disponíveis,
@@ -507,7 +552,7 @@
                     sejam
                     orientados sobre as medidas.</p>
 
-                <!-- Material checked -->
+                <!-- Check de Progresso 2 -->
                 <div class="form-check text-center" id="check2">
                     <input type="checkbox" class="form-check-input" id="progressCheck2">
                     <label class="form-check-label" for="progressCheck2">CHECK! CONCLUÍ ESSE TÓPICO
@@ -515,7 +560,9 @@
                         SUCESSO.</label>
                 </div>
 
+                <!-- Texto com imagem à direita-->
                 <div class="row">
+                    
                     <div class="col-sm-8">
                         <h1>Medidas de prevenção e controle da disseminação</h1>
                         <p>A população idosa que reside nas Instituições de Longa Permanência para
@@ -554,6 +601,7 @@
                             impedir
                             a propagação de outros vírus respiratórios.</p>
                     </div>
+
                     <div class="col-sm-4 centro">
                         <figure class="figure">
                             <div class="cardImg">
@@ -566,7 +614,9 @@
                             </figcaption>
                         </figure>
                     </div>
+                    
                 </div>
+               <!-- Fim texto com imagem à direita-->
 
                 <div class="text-center">
                     <hr>
@@ -590,6 +640,7 @@
                         05/2020</small>
                 </p>
 
+                <!-- Box Atenção 1-->
                 <div class="informativo">
                     <img class="imginfo" src="assets/images/warning.png" alt="">
                     <p class="pinfo">ATENÇÃO</p>
@@ -602,6 +653,7 @@
                         COVID-19.
                     </p>
                 </div>
+                <!-- Fim Box Atenção 1-->
 
                 <h2>Ações de prevenção e controle</h2>
                 <p>Para prevenção e controle da doença os profissionais das ILPI devem adotar as
@@ -609,7 +661,9 @@
                     medidas:
                 </p>
             </div>
+            <!-- Fim Bloco 2-->
 
+            <!-- Box 2-->
             <div class="row estilo">
                 <div class="col-md-5 blocoTexto">
                     <ul>
@@ -667,7 +721,9 @@
                     </ul>
                 </div>
             </div>
+            <!-- Fim Box 2-->
 
+            <!-- Bloco 3-->
             <div class="conteudo">
 
                 <h3>MONITORAMENTO DOS PACIENTES</h3>
@@ -747,6 +803,7 @@
                     </li>
                 </ul>
 
+                <!-- Box Informativo 2-->
                 <div class="informativo" id="acordeao">
                     <img class="imginfo" src="assets/images/info.png" alt="">
                     <p class="pinfo">COMO AUXILIAR OS IDOSOS A LAVAR AS MÃOS
@@ -765,9 +822,10 @@
                     <p>Veja as técnicas de fricção e higienização adequada das mãos:</p>
 
 
-                    <!--Accordion wrapper-->
+                    <!--Accordion-->
                     <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
-                        <!-- Accordion card -->
+                        
+                        <!-- Accordion card 1-->
                         <div class="card">
 
                             <!-- Card header -->
@@ -790,7 +848,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Accordion card -->
+
+                        <!-- Accordion card 2-->
                         <div class="card">
 
                             <!-- Card header -->
@@ -814,9 +873,10 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Fim Accordion-->
 
                 </div>
+                <!-- Fim Box Informativo 2-->
 
                 <h3>ETIQUETA DA TOSSE E HIGIENE RESPIRATÓRIA</h3>
                 <p>A tosse produz aerossóis e aumenta o risco de transmissão e contágio. É preciso
@@ -905,12 +965,15 @@
 
 
 
+                <!-- Box Informativo 3-->
                 <div class="informativo" id="acordeao">
+
                     <img class="imginfo" src="assets/images/info.png" alt="">
-                    <!--Accordion wrapper-->
+
+                    <!--Accordion 2-->
                     <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
-                        <!-- Accordion card -->
+                        <!-- Accordion card 1-->
                         <div class="card">
 
                             <!-- Card header -->
@@ -977,10 +1040,9 @@
                                 </div>
                             </div>
 
-                        </div>
-                        <!-- Accordion card -->
+                        </div>          
 
-                        <!-- Accordion card -->
+                        <!-- Accordion card 2-->
                         <div class="card">
 
                             <!-- Card header -->
@@ -1027,9 +1089,9 @@
                             </div>
 
                         </div>
-                        <!-- Accordion card -->
+                   
 
-                        <!-- Accordion card -->
+                        <!-- Accordion card 3-->
                         <div class="card">
 
                             <!-- Card header -->
@@ -1058,10 +1120,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Accordion card -->
+             
                     </div>
+                    <!-- Fim Accordion 2-->
+
                 </div>
-                <!-- Accordion wrapper -->
+                <!-- Fim Box Informativo 3-->
+               
 
                 <p>Caso o residente não possa tolerar o uso da máscara de tecido ou cirúrgica, ele
                     deve ser
@@ -1081,6 +1146,8 @@
                     há outros
                     residentes, enquanto durarem os sintomas.</p>
 
+
+                <!-- Box Glossário 1-->
                 <div class="informativo">
                     <img class="imginfo" src="assets/images/glossario.png" alt="">
                     <p class="pinfo">GLOSSÁRIO</p>
@@ -1095,6 +1162,7 @@
                         ventilação manual antes da intubação, coletas de secreções nasotraqueais.
                     </p>
                 </div>
+                <!-- Fim Box GLossário 1-->
 
                 <h3>LIMPEZA E DESINFECÇÃO DAS SUPERFÍCIES</h3>
                 <p>A tosse produz aerossóis e aumenta o risco de transmissão e contágio. É preciso
@@ -1171,7 +1239,9 @@
 
 
             </div>
+            <!-- Fim Bloco 3-->
 
+            <!-- Box 3-->
             <div class="row estilo">
                 <div class="blocoTexto col-sm-7">
                     <p class="pinfo" style="margin-left: 4.5%;">MANUAL DA ANVISA: TENHA SEMPRE DISPONÍVEL</p>
@@ -1192,7 +1262,9 @@
 
                 </div>
             </div>
+            <!-- Fim Box 3-->
 
+            <!-- Bloco 4-->
             <div class="conteudo">
                 <h3>VACINAÇÃO DA PESSOA IDOSA</h3>
                 <p>Vacinar é proteger, não só no contexto da pandemia de COVID-19. Algumas ações
@@ -1426,7 +1498,7 @@
                         rel="noopener noreferrer">(Protegendo o Profissional de
                         Saúde)</a></p>
 
-                <!-- Material checked -->
+                <!-- Check de Progresso 3 -->
                 <div class="form-check text-center" id="check3">
                     <input type="checkbox" class="form-check-input" id="progressCheck3">
                     <label class="form-check-label" for="progressCheck3">CHECK! CONCLUÍ ESSE TÓPICO
@@ -1445,7 +1517,9 @@
                 <p>Vamos relembrar os pontos principais?</p>
 
             </div>
-            <!--INSERIR QUESTIONÁRIO-->
+            <!-- Fim Bloco 4-->
+
+            <!-- Questionário -->
             <div row id="questionario">
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -1549,18 +1623,24 @@
                     </div>
                 </div>
             </div>
+            <!-- Fim Questionário-->
 
+            <!-- Bloco 5-->
             <div class="conteudo">
-                <!-- Material checked -->
+
+                <!-- Check de Progresso 4-->
                 <div class="form-check text-center" id="check4">
                     <input type="checkbox" class="form-check-input" id="progressCheck4">
                     <label class="form-check-label" for="progressCheck4">CHECK! Você está pronto para a próxima aula,
                         sobre as recomendações para comunicação e contato da pessoa idosa com a família e a
                         comunidade.</label>
                 </div>
+                <!-- Fim Check 4-->
+
             </div>
+            <!-- Fim Bloco 5-->
 
-
+            <!-- Barra de Navegação -->
             <div class="row navegacao">
                 <div class="col-md-6 border-right text-left" id="anterior">
                     <a href="home.html">
@@ -1581,19 +1661,23 @@
                 </div>
             </div>
             <!--Fim Barra de navegação-->
+
         </div>
         <!--Fim Coluna Conteúdo-->
-    </div><!-- Row Container-->
 
+    </div>
+    <!-- Fim Row-main-->
 
-
-
+    <!-- Arquivos JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="./assets/js/carousel-swipe.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
+
+<!-- Rodapé -->
 <footer>
     <div class="d-flex">
         <div class="p-2 realizacao">
@@ -1610,5 +1694,6 @@
         </div>
     </div>
 </footer>
+<!-- Fim Rodapé-->
 
 </html>
