@@ -310,37 +310,3 @@ $('.carousel .carousel-inner').on('dragstart', 'a', function () {
   return false;
 
 });
-
-
-
- //$("#collapseAula1").hide();
-  $("#collapseAula2").hide();
-  $("#collapseAula3").hide();
-  $("#collapseAula4").hide();//esconde a aula 4
-  $(".step:last-child .line").hide();//esconde a linha da aula 4
-
-  $(".aula1").click(function () {
-
-    $("#collapseAula1").toggle(80, "linear", function () {
-      // Animation complete.
-    });
-  });
-
-  $(".aula2").click(function () {
-    $("#collapseAula2").toggle(80, "linear", function () {
-      // Animation complete.
-    });
-  });
-
-  $(".aula3").click(function () {
-    $("#collapseAula3").toggle(80, "linear", function () {
-      // Animation complete.
-    });
-  });
-
-  $(".aula4").click(function () {
-    $("#collapseAula4").toggle(80, "linear", function () {
-      // Animation complete.
-    });
-    $(".step:last-child .line").toggle();
-  });
