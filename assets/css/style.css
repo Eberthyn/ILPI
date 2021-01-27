@@ -4,12 +4,11 @@ body, header, footer{
     font-size: 15px;
 }
 body{
-    padding-top: 113px;
+
 }
 /** Menu Superior **/
 .navbar{
     background-color: #443F57;
-    height: 115px;
 }
 .navbar-nav{
    margin-right: 5%;
@@ -274,31 +273,41 @@ ul li{
     border-radius: 25px;
     background-color: #ff6f61;
     
+    
 }
 .front, .back{
-    height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex: 1;
     align-items: center;
+    justify-content: center;
     position: absolute;
-}
-.front{
-    z-index: 2;
     backface-visibility: hidden;
 }
+
+.front{
+    
+    z-index: 2;
+}
 .back{
+    
     z-index: 1;
     transform: rotateY(180deg);
 }
-#resposta1, #resposta2, #resposta3{
+.resposta {
+    flex: 1;
+    display: flex;
     border: 0px;
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
     height: 50px;
-    width: 100%;
-
+    width: 240px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
 }
 .card.flipped {
     -webkit-transform: rotateY(180deg);
@@ -405,7 +414,7 @@ footer{
     background-color: #F5F5F5;
     position: fixed;
     z-index: 1;
-    max-height: 400px;
+   
     overflow: auto;
     display: block;
 }
