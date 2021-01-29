@@ -23,30 +23,34 @@ $(window).on('resize', function () {
   } else {
     $('#sidebar').removeClass('esconder');
     $("#content").removeClass("col-md-12");
-    $("#content").addClass("col-md-10");
+    $("#content").addClass("col-md-10"); 
   }
 });
 
 $(window).scroll(function () {
 
   if ($(window).scrollTop() + $(window).height() === $(document).height()) {
-    //console.log("esconde!");
-    $('.stepContainer').css("height", "400px");
+    console.log("esconde!");
+    $('.stepContainer').css("height", "395px");
 
   } else {
-    //console.log("normal");
-    $('.stepContainer').css("height", "100%");
-    $(".navbar").addClass("fixed-top")
-
+    console.log("normal");
+    $('.stepContainer').css("height", "85%");
+    $(".navbar").addClass("fixed-top");
   }
+
 
   if ($(window).scrollTop() === 0) {
     console.log("zero");
-    $(".navbar").removeClass("fixed-top")
+    $(".navbar").removeClass("fixed-top");
+    $("#sidebar").css("padding-top", "0%");
+    
+
   } else {
     console.log("nao zero");
     $(".navbar").addClass("fixed-top");
-    $(".stepContainer").css("padding-top", "8%")
+    $("#sidebar").css("padding-top", "7.7%");
+
   }
 
 
@@ -236,13 +240,6 @@ function unflip3() {
 
 /*Altera Icone do Acordeão*/
 
-//$("#collapseAula1").hide();
-//$("#collapseAula2").hide();
-//$("#collapseAula3").hide();
-//$("#collapseAula4").hide();//esconde a aula 4
-// $(".step:last-child .line").hide();//esconde a linha da aula 4
-
-
 $(function () {
   console.log('2');
   var Accordion = function (el, multiple) {
@@ -274,8 +271,13 @@ $(function () {
     }
   }
 
+
   var accordion = new Accordion($('#accordion'), false);
-  $(".step:last-child .line").hide();
+    if ($(".step:last-child .contentMenu").hasClass("open")) {
+      $(".step:last-child .line").show();
+    } else {
+      $(".step:last-child .line").hide();
+    }
 
 });
 
@@ -290,22 +292,7 @@ $(".carousel").carousel({
   pause: true
 });
 
-/*
-$(".carousel .carousel-inner").swipe({
-  swipeLeft: function (event, direction, distance, duration, fingerCount) {
-    this.parent().carousel('next');
-  },
-  swipeRight: function () {
-    this.parent().carousel('prev');
-  },
-  threshold: 0,
-  tap: function (event, target) {
-    // get the location: in my case the target is my link
-    window.location = $(this).find('.carousel-item.active a').attr('href');
-  },
-  excludedElements: "label, button, input, select, textarea, .noSwipe"
-});
-*/
+
 $('.carousel .carousel-inner').on('dragstart', 'a', function () {
   return false;
 

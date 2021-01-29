@@ -3,9 +3,6 @@ body, header, footer{
     font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
 }
-body{
-
-}
 /** Menu Superior **/
 .navbar{
     background-color: #443F57;
@@ -33,6 +30,9 @@ body{
 .conteudo{
     padding: 0% 14% 0% 9.5% !important;
     margin: 0% !important;
+}
+#inicioAula1{
+    margin-top: -1.3px;
 }
 .row{
     margin: 0px !important;
@@ -67,7 +67,7 @@ body{
    background-color: #443F57;
 }
 .col-md-2{
-    transition: all 0.5s;
+    transition: all 0s;
     padding-left: 0px !important;
     background-color: #F5F5F5;
     position: relative;
@@ -164,6 +164,11 @@ h3{
 }
 p{
     margin-bottom: 30px;
+    max-width: 90ch;
+   
+}
+p.textoLaranja{
+    max-width: 100% !important;
 }
 .pinfo{
     font-size: 16px; 
@@ -361,7 +366,6 @@ footer{
     background-color: #f5f5f5;
     border-radius: 0 0 5px 0;
     padding: 0px !important;
-    margin-top: 3px;
     margin-left: 16.667%;
     cursor: pointer;
     align-items: center;
@@ -369,6 +373,8 @@ footer{
     display: flex;
     height: 35px;
     width: 35px;
+    z-index: 2;
+
 }
 #sidebarButton.open i{
     -webkit-transform: rotate(180deg);
@@ -382,14 +388,14 @@ footer{
     background-color: #f5f5f5;
     border-radius: 0 0 5px 0;
     padding: 0px !important;
-    margin-top: 3px;
-    margin-left: -2px;
+    margin-left: 0%;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     display: flex;
     height: 35px;
     width: 35px;
+    z-index: 3;
 }
 .hidden {
   display:none;
@@ -409,12 +415,10 @@ footer{
 /* regular step */
 
 .stepContainer{
-    padding-top: 25px;
     width: 16.667%;
     background-color: #F5F5F5;
     position: fixed;
     z-index: 1;
-   
     overflow: auto;
     display: block;
 }
@@ -430,7 +434,7 @@ footer{
 }
 
 .step .line {
-  top: 34px;
+  top: 25px;
   left: 11.5px;
   /*   height: 120px; */
   height: 100%;
@@ -503,9 +507,9 @@ footer{
 
 /* ajustar o height de acordo com o numero de itens */
 .step:last-child .line {
-  top: 34px;
+  top: 25px;
   left: 11.5px;
- height: 85%;
+ height: 86%;
 }
 
 .contentMenu {
@@ -536,7 +540,7 @@ footer{
 
 /* Recolher sidebar */
 #sidebar{
-    z-index: 1;
+    z-index: 1000;
     width: 100%;
 }
 .esconder {
@@ -544,11 +548,22 @@ footer{
     display: none;
   }
   
-@media (min-width: 992px) {
+@media (min-width: 980px) {
    .esconder {
       display: block;
-      /* same width as sidebar */
+      /* Mesmo tamanho do Sidebar */
       margin-left: -16.6667%;
     }
+}
 
+/* Estilização da barra de rolagem*/
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: darkgrey;
 }
