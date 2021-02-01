@@ -5,17 +5,13 @@ body, header, footer{
 }
 .navbar{
     background-color: white;
-    height: 115px;
-}
-body .container-fluid{
-    padding-top:113px;
 }
 /*Page Home*/
 .fundoCapa{
     background-color: #ff6f61;
 }
 .capa{
-    background-image: url(../images/imgCapa.png);
+    background-image: url(../images/home/imgCapa.png);
     background-size: cover;
     display: flex;
     align-items: center;

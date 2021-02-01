@@ -38,7 +38,7 @@ body, header, footer{
     margin: 0px !important;
 }
 .capa{
-    background-image: url(../images/img1Aula2.png);
+    background-image: url(../images/aula2/img1.png);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -377,6 +377,12 @@ footer{
 
 }
 #sidebarButton.open i{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.card-header.open i{
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
