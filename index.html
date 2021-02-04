@@ -664,9 +664,10 @@
                 <!-- Fim Box Atenção 1-->
 
                 <p><small>Fonte: <a
-                            href="https://www20.anvisa.gov.br/segurancadopaciente/index.php/alertas/item/nota-tecnica-n-05-2020-gvims-ggtes-anvisa-orientacoes-para-a-prevencao-e-o-controle-de-infeccoes-pelo-novo-coronavirus-sars-cov-2-ilpi" target="_blank">
-                        Nota Técnica GVIMS/GGTES/ANVISA n.
-                        05/2020</a></small>
+                            href="https://www20.anvisa.gov.br/segurancadopaciente/index.php/alertas/item/nota-tecnica-n-05-2020-gvims-ggtes-anvisa-orientacoes-para-a-prevencao-e-o-controle-de-infeccoes-pelo-novo-coronavirus-sars-cov-2-ilpi"
+                            target="_blank">
+                            Nota Técnica GVIMS/GGTES/ANVISA n.
+                            05/2020</a></small>
                 </p>
 
                 <h2>Ações de prevenção e controle</h2>
@@ -855,8 +856,7 @@
                             </div>
 
                             <!-- Card body -->
-                            <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5"
-                                data-parent="#accordionEx">
+                            <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5">
                                 <div class="card-body">
                                     <img class="img-fluid" src="assets/images/aula1/img3.jpg" alt="">
                                 </div>
@@ -1537,7 +1537,6 @@
 
             <!-- Questionário -->
             <div row id="questionario">
-
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -1547,6 +1546,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
 
+                            <!-- Flip Card 1 -->
                             <div class="card" id="quiz">
 
                                 <div class="front" id="front1">
@@ -1565,10 +1565,13 @@
                                     <button onclick="unflip()">Voltar</button></p>
                                 </div>
                             </div>
+                            <!-- Fim do Flip Card 1 -->
 
                         </div>
                         <div class="carousel-item">
                             <div class="container">
+
+                                <!-- Flip Card 2 -->
                                 <div class="card" id="quiz2">
 
                                     <div class="front" id="front2">
@@ -1576,30 +1579,25 @@
                                         <div class="card-body">
                                             <p class="text-center" style="background-color: white;">Pergunta</p>
 
-                                            <ul class="list-group">
-                                                <li><button id="resposta1" onclick="flip2()">
-                                                        Alternativa 1
-                                                    </button></li>
-                                                <li><button id="resposta2" onclick="flip2()">
-                                                        Alternativa 2
-                                                    </button></li>
-                                                <li><button id="resposta3" onclick="flip2()">
-                                                        Alternativa 3
-                                                    </button></li>
-                                            </ul>
+                                            <div class="resposta" onclick="flip2()">Alternativa 1</div>
+                                            <div class="resposta" onclick="flip2()">Alternativa 2</div>
+                                            <div class="resposta" onclick="flip2()">Alternativa 3</div>
 
                                         </div>
                                     </div>
-
                                     <div class="back" id="back2">
-                                        <button onclick="unflip2()">FEEDBACK</button>
-
+                                        <p class="text-center">Texto do feedback</p>
+                                        <button onclick="unflip2()">Voltar</button></p>
                                     </div>
                                 </div>
+                                <!-- Fim do Flip Card 2 -->
+
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="container">
+
+                                <!-- Flip Card 3 -->
                                 <div class="card" id="quiz3">
 
                                     <div class="front" id="front3">
@@ -1607,26 +1605,19 @@
                                         <div class="card-body">
                                             <p class="text-center" style="background-color: white;">Pergunta</p>
 
-                                            <ul class="list-group">
-                                                <li><button id="resposta1" onclick="flip3()">
-                                                        Alternativa 1
-                                                    </button></li>
-                                                <li><button id="resposta2" onclick="flip3()">
-                                                        Alternativa 2
-                                                    </button></li>
-                                                <button id="resposta3" onclick="flip3()">
-                                                    <li>Alternativa 3</li>
-                                                </button>
-                                            </ul>
+                                            <div class="resposta" onclick="flip3()">Alternativa 1</div>
+                                            <div class="resposta" onclick="flip3()">Alternativa 2</div>
+                                            <div class="resposta" onclick="flip3()">Alternativa 3</div>
 
                                         </div>
                                     </div>
-
                                     <div class="back" id="back3">
-                                        <button class="text-center" onclick="unflip3()">FEEDBACK</button>
-                                        </a>
+                                        <p class="text-center">Texto do feedback</p>
+                                        <button onclick="unflip3()">Voltar</button></p>
                                     </div>
                                 </div>
+                                <!-- Fim do Flip Card 3 -->
+
                             </div>
                         </div>
                     </div>
@@ -1670,6 +1661,7 @@
                 </div>
             </div>
             <!--Fim Barra de navegação-->
+
             <!-- Rodapé -->
             <footer>
                 <div class="d-flex">
@@ -1703,7 +1695,4 @@
     <script src="assets/js/main.js"></script>
 
 </body>
-
-
-
 </html>

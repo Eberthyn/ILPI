@@ -31,7 +31,7 @@ $(window).scroll(function () {
 
   if ($(window).scrollTop() + $(window).height() === $(document).height()) {
     console.log("esconde!");
-    $('.stepContainer').css("height", "395px");
+    //$('.stepContainer').css("height", "395px");
 
   } else {
     console.log("normal");
@@ -109,7 +109,7 @@ $("#progressCheck4").change(function () {
 });
 
 /*Progress Check AULA2*/
-$("#progressCheck5").change(function () {
+$("#progressCheck6").change(function () {
   if (this.checked) {
     $("#topico4").addClass("visited");
   } else {
