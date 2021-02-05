@@ -152,9 +152,51 @@ $("#progressCheck10").change(function () {
 /*Progresso Conclusão Aula2*/
 $("#progressCheck10").change(function () {
   if (this.checked) {
-    $("#aula2").addClass("completed");
+    $("#aula3").addClass("completed");
   } else {
-    $("#aula2").removeClass("completed");
+    $("#aula3").removeClass("completed");
+  }
+});
+
+/*Progress Check AULA3*/
+$("#progressCheck15").change(function () {
+  if (this.checked) {
+    $("#topico13").addClass("visited");
+  } else {
+    $("#topico13").removeClass("visited");
+  }
+});
+
+$("#progressCheck16").change(function () {
+  if (this.checked) {
+    $("#topico14").addClass("visited");
+  } else {
+    $("#topico14").removeClass("visited");
+  }
+});
+
+$("#progressCheck17").change(function () {
+  if (this.checked) {
+    $("#topico15").addClass("visited");
+  } else {
+    $("#topico15").removeClass("visited");
+  }
+});
+
+$("#progressCheck18").change(function () {
+  if (this.checked) {
+    $("#topico16").addClass("visited");
+  } else {
+    $("#topico16").removeClass("visited");
+  }
+});
+
+/*Progresso Conclusão Aula3*/
+$("#progressCheck18").change(function () {
+  if (this.checked) {
+    $("#aula3").addClass("completed");
+  } else {
+    $("#aula3").removeClass("completed");
   }
 });
 

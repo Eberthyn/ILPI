@@ -31,14 +31,22 @@ body, header, footer{
     padding: 0% 14% 0% 9.5% !important;
     margin: 0% !important;
 }
-#inicioAula1{
+#inicioAula1, #inicioAula2, #inicioAula3, #inicioAula4{
     margin-top: -1.3px;
 }
 .row{
     margin: 0px !important;
 }
-.capa{
+#capaAula2{
     background-image: url(../images/aula2/img1.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#capaAula3{
+    background-image: url(../images/aula3/img1.png);
     background-size: cover;
     display: flex;
     align-items: center;

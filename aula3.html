@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 
 
-
+    <!-- Arquivos CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -18,10 +18,11 @@
 
 <body>
 
+    <!-- Menu Superior -->
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
 
-
+            <!-- Logos -->
             <img src="assets/images/logoAula.png" class="img-fluid logo" alt="Logo" />
             <img src="assets/images/logoAula2.png" class="img-fluid logo" alt="120 Anos" />
 
@@ -41,15 +42,20 @@
             </div>
         </nav>
     </header>
+    <!-- Fim do Menu Superior -->
 
     <div class="row" id="row-main">
-        <!---->
+
+        <!-- Início Coluna do Menu Lateral-->
         <div class="col-md-2" id="sidebar">
-            <span  class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
 
-            <!-- completed -->
+            <!-- Step Menu -->
+            <div id="accordion" class="stepContainer">
 
-            <div  id="accordion" class="stepContainer">
+                <!-- Botão p/ Recolher Sidebar-->
+                <span class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
+
+                <!-- Step 1-->
                 <div class="step" id="aula1">
                     <div class="v-stepper">
                         <div class="circle">
@@ -69,14 +75,15 @@
                                 <div class="containerItem">
                                     <div class="item" id="topico0"></div>
                                 </div>
-                                <p><a href="#inicioAula1">População Idosa e a Covid</a></p>
+                                <p><a href="./index.html#inicioAula1">População Idosa e a Covid-19</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item" id="topico1"></div>
                                 </div>
-                                <p><a href="#check1">Instituições de Longa Permanência para Idosos no contexto da
+                                <p><a href="./index.html#check1">Instituições de Longa Permanência para Idosos no
+                                        contexto da
                                         Covid-19</a></p>
                             </div>
 
@@ -84,23 +91,27 @@
                                 <div class="containerItem">
                                     <div class="item" id="topico2"></div>
                                 </div>
-                                <p><a href="#check2">Medidas de prevenção e controle da disseminação</a></p>
+                                <p><a href="./index.html#check2">Medidas de prevenção e controle da disseminação</a>
+                                </p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item" id="topico3"></div>
                                 </div>
-                                <p><a href="#check3">Conclusão da aula</a></p>
+                                <p><a href="./index.html#check3">Conclusão da aula</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Fim do Step 1-->
 
-                <!-- active -->
-                <div class="step active">
+                <!-- Step 2 -->
+                <div class="step" id="aula2">
                     <div class="v-stepper">
-                        <div class="circle"><i class="fas fa-check"></i></div>
+                        <div class="circle">
+                            <i class="fas fa-check"></i>
+                        </div>
                         <div class="line"></div>
                     </div>
 
@@ -113,38 +124,49 @@
                         <div class="items collapse hide" id="collapseAula2">
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item visited"></div>
+                                    <div class="item" id="topico4"></div>
                                 </div>
-                                <p>Sub aula 2.1</p>
+                                <p><a href="./aula2.html#check5">Cuidados integrais</a> </p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item visited"></div>
+                                    <div class="item" id="topico5"></div>
                                 </div>
-                                <p>Sub aula 2.2</p>
+                                <p><a href="./aula2.html#check7">Cuidados em áreas comuns</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item"></div>
+                                    <div class="item" id="topico6"></div>
                                 </div>
-                                <p>Sub aula 2.3</p>
+                                <p><a href="./aula2.html#check8">Manutenção dos cuidados frequentes</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item"></div>
+                                    <div class="item" id="topico7"></div>
                                 </div>
-                                <p>Sub aula 2.4</p>
+                                <p><a href="./aula2.html#check9">Fragilidade e Violência</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="topico8"></div>
+                                </div>
+                                <p><a href="./aula2.html#check10">Conclusão da aula</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Fim do Step 2 -->
 
-                <div class="step">
+                <!-- Step 3 -->
+                <div class="step" id="aula3">
                     <div class="v-stepper">
-                        <div class="circle"><i class="fas fa-check"></i></div>
+                        <div class="circle">
+                            <i class="fas fa-check"></i>
+                        </div>
                         <div class="line"></div>
                     </div>
 
@@ -157,23 +179,41 @@
                         <div class="items collapse show" id="collapseAula3">
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item"></div>
+                                    <div class="item" id="topico13"></div>
                                 </div>
-                                <p>Minha aula 3.1</p>
+                                <p><a href="#inicioAula3">Contatos sociais em tempos de isolamento</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
-                                    <div class="item"></div>
+                                    <div class="item" id="topico14"></div>
                                 </div>
-                                <p>Minha aula 3.2</p>
+                                <p><a href="#check16">Estratégias de comunicação para garantir o contato da pessoa idosa com a sua
+                                    família/comunidade</a></p>
                             </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="topico15"></div>
+                                </div>
+                                <p><a href="#check17">Estratégias para restabelecimento da visitação</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item" id="topico16"></div>
+                                </div>
+                                <p><a href="#check18">Conclusão da aula</a></p>
+                            </div>
+
+
                         </div>
                     </div>
-
                 </div>
+                <!-- Fim do Step 3 -->
 
-                <!-- regular -->
+
+                <!-- Step 4 -->
                 <div class="step">
                     <div class="v-stepper">
                         <div class="circle"></div>
@@ -191,30 +231,695 @@
                                 <div class="containerItem">
                                     <div class="item"></div>
                                 </div>
-                                <p>Minha aula 4.1</p>
+                                <p><a href="aula4.html#check11">Atendimento ao residente com quadro suspeito ou com
+                                        diagnóstico de Covid-19</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item"></div>
                                 </div>
-                                <p>Minha aula 4.2</p>
+                                <p><a href="aula4.html#check12">Casos suspeitos ou confirmados</a></p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p><a href="aula4.html#check13">Agravamento do quadro e necessidade de internação do
+                                        idoso</a>
+                                </p>
+                            </div>
+
+                            <div class="subItem">
+                                <div class="containerItem">
+                                    <div class="item"></div>
+                                </div>
+                                <p><a href="aula4.html#check14">Conclusão da aula</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Fim do Step 4 -->
+
             </div>
+            <!-- Fim do Step Menu -->
+
         </div> <!-- Fim Menu Lateral -->
 
 
-
+        <!-- Início da Coluna de Conteúdo -->
         <div class="col-md-10" id="content">
 
+            <!-- Bloco 1 -->
+            <div class="conteudo">
+
+                <img id="inicioAula3" src="assets/images/aula3/tarjaAula3.png" alt="Tarja Aula 3" >
+
+                <h1>Contatos sociais em tempos de isolamento</h1>
+
+                <p>A manutenção de uma rede social de suporte à pessoa idosa é uma estratégia para que elas se mantenham
+                    ativas e saudáveis. Por isso, visitas externas de familiares, amigos e grupos de apoio contribui em
+                    vários aspectos da saúde psicossocial e deve ser incentivada. Contudo, durante a pandemia, o
+                    isolamento social contraindica esse tipo de estratégia.
+                </p>
+
+                <p>Nessa aula, vamos falar sobre as estratégias de comunicação para garantir os contatos sociais da
+                    pessoa idosa, em situação de distanciamento social e as estratégias para retomada da visitação.
+                </p>
+
+                <p>Ao final da aula, você será capaz de:
+                </p>
+
+                <ul>
+                    <li class="icon" id="checkmark">
+                        <p>Elaborar estratégias que possibilitem a manutenção dos contatos sociais dos residentes.</p>
+                    </li>
+
+                    <li class="icon" id="checkmark">
+                        <p>Organizar a visitação segura de familiares às ILPIs, considerando-se a pandemia da Covid-19.
+                        </p>
+                    </li>
+                </ul>
+
+                <!-- Check de Progresso 1 -->
+                <div class="form-check text-center" id="check16">
+                    <input type="checkbox" class="form-check-input" id="progressCheck15" onclick="saveProgress()">
+                    <label class="form-check-label" for="progressCheck15">CHECK! CONCLUÍ ESSE TÓPICO COM
+                        SUCESSO.</label>
+                </div>
+                <!-- Fim do Check 1 -->
+
+                <h1>Estratégias de comunicação para garantir o contato da pessoa idosa com a sua família/comunidade</h1>
+
+                <p>No contexto da pandemia do novo Coronavírus (Covid-19), há dois riscos principais que devem ser
+                    mitigados para prevenir a transmissibilidade nos serviços de acolhimento para pessoas idosas e com
+                    deficiência: a aglomeração e o fluxo de entrada e saída de pessoas na unidade. Tais riscos podem
+                    comprometer a segurança e a proteção de pessoas acolhidas e trabalhadores.
+                </p>
+
+                <p>Mesmo com a adoção das medidas e procedimentos recomendados pelas autoridades sanitárias, o risco de
+                    transmissibilidade é ainda mais acentuado. O risco aumenta nos casos de pessoas idosas e com
+                    deficiência dependentes de cuidados, pois essas situações exigem maior contato físico por parte dos
+                    cuidadores.</p>
+
+                <div class="text-center">
+                    <hr>
+                    <p class="textoLaranja">Neste momento de pandemia, é necessário proteger os mais vulneráveis que
+                        fazem parte
+                        de um grupo de alto risco.
+                    </p>
+                    <hr>
+                </div>
+
+                <p>Por isso, durante a pandemia, a Sociedade Brasileira de Geriatria e Gerontologia recomenda a
+                    suspensão de visitas externas nas ILPIs, incluindo familiares e amigos (veja a nota da SBGG aqui).
+                </p>
+
+                <p>A informação sobre a suspensão das visitas deve ser informada aos familiares e amplamente divulgada
+                    pelos meios de comunicação disponíveis (redes sociais, telefones, e-mails, etc.).
+                </p>
+
+                <p>Para que os familiares e amigos também se sintam seguros em relação aos cuidados e à saúde de seus
+                    entes queridos, é incentivado o contato virtual, ou seja, utilizando-se a internet e recursos como
+                    chamadas de vídeo.
+                    Recomenda-se também que a ILPI informe todos os seus meios de comunicação, telefones, mídias
+                    sociais, entre outras. Incentivando o contato virtual dos residentes com seus familiares e amigos e
+                    o fluxo de informações necessárias.</p>
+
+            </div>
+            <!-- Fim do Bloco 1 -->
+
+            <!-- Box Laranja 1 -->
+            <div class="row estilo">
+
+                <div class="col-md-10 blocoTexto" id="bloco1">
+                    <p class="pinfo">Como usar o WhatsApp na comunicação com a família</p>
+
+                    <ul>
+                        <li class="icon" id="arrow">
+                            <p>Crie um grupo no WhatsApp e inclua os familiares dos residentes.
+                            </p>
+                        </li>
+
+                        <li class="icon" id="arrow">
+                            <p>Monte um fluxo de informações diárias sobre o funcionamento da ILPI.
+                            </p>
+                        </li>
+
+                        <li class="icon" id="arrow">
+                            <p>Informe familiares, individualmente, sobre a situação específica de algum residente,
+                                sempre
+                                que necessário.
+                            </p>
+                        </li>
+
+                        <li class="icon" id="arrow">
+                            <p>Deixe o canal aberto para que os familiares possam pedir informação ou enviar mensagens
+                                para
+                                a instituição ou para o residente.
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-md-10" id="capaAula3">
+                    <img src="assets/images/fundoImg.png" class="img-fluid" alt="">
+                </div>
+
+            </div>
+            <!-- Fim do Box Laranja 1 -->
+
+            <!-- Bloco 2 -->
+            <div class="conteudo">
+
+                <p style="margin-top: 30px;">O perfil no Facebook <a href="https://www.facebook.com/idaiufprifrj/"
+                        target="_blank">Projeto de Inclusão Digital de Adultos e Idosos</a>, apresenta várias
+                    dicas de como promover a inclusão digital de pessoas idosas. A página faz parte de um Projeto de
+                    Extensão em parceria entre a Universidade Federal do Paraná (UFPR) e o Instituto Federal do Rio de
+                    Janeiro (IFRJ).</p>
+
+                <div class="row" id="cartaz">
+                    <div class="col-md-5 text-right centro">
+                        <p style="text-transform: uppercase;">Página do Projeto de <br>Inclusão Digital de Adultos <br>
+                            e Idosos (UFPR e IFRJ)</p>
+                    </div>
+
+                    <div class="col-md-5 text-left">
+                        <div class="cardImg">
+                            <a href="https://www.facebook.com/idaiufprifrj/" target="_blank"><img class="img-fluid"
+                                    src="assets/images/aula3/img2.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Manutenção da rede de suporte</h2>
+
+                <p>Para manter uma rede de suporte social ativa, engajada e muito preocupada com seus entes queridos e,
+                    pensando no bem-estar das pessoas idosas, a ILPI deve informar todos os seus meios de comunicação,
+                    telefones, mídias sociais, entre outras. Incentivando o contato virtual dos residentes com seus
+                    familiares e amigos e o fluxo de informações necessárias.
+                </p>
+
+                <p>Além disso, as instituições deverão: </p>
+
+                <ul>
+                    <li class="icon" id="checkmark">
+                        <p>Manter os moradores sempre informados sobre as medidas adotadas acerca da Covid-19,
+                            esclarecendo sobre medidas para que se evite a propagação do vírus;
+                        </p>
+                    </li>
+
+                    <li class="icon" id="checkmark">
+                        <p>Promover contatos com familiares e amigos dos moradores, utilizando os meios de comunicação;
+                        </p>
+                    </li>
+
+                    <li class="icon" id="checkmark">
+                        <p>Fomentar medidas para minimizar questões emocionais deletérias decorrentes do isolamento
+                            social, atenuando a saudade dos familiares e amigos.</p>
+                    </li>
+                </ul>
+
+                <p>O vídeo, elaborado pelo Grupo de Pesquisa Laboratório de Tecnologias de Informação e Comunicação em
+                    Saúde da Universidade Federal de Campina Grande (UFCG/CFPLATICS), indica algumas atividades que
+                    podem ajudar nesse momento de distanciamento e colaborar com a saúde mental da pessoa idosa.</p>
+
+                <!-- Video Embed 1 -->
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/4pjU6RGnQBU"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Fim do Vídeo Embed 1-->
+
+                <h3>Proposta de atividades para o tempo livre das pessoas idosas</h3>
+
+                <p>Diferentes tipos de atividades estimulam habilidades intelectuais e criativas, promovendo saúde e
+                    bem-estar. Mais que intensidade, o importante é a variedade de atividades, que podem mobilizar
+                    diferentes funções e demandas cognitivas, promovendo maior flexibilidade mental.</p>
+
+                <!--Accordion-->
+                <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                    <!-- Accordion card 1 -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne1">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                                aria-expanded="false" aria-controls="collapseOne1">
+                                <p class="pinfo">
+                                    Passatempo<i class="fas fa-caret-down" id="caretDown"></i>
+                                </p>
+
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1">
+                            <div class="card-body">
+                                <ul>
+                                    <li class="icon" id="checkmark">
+                                        <p>Atividades manuais: cuidar de plantas ou animais, pequenos reparos em
+                                            objetos, costura, bordado, tricô, crochê e etc.</p>
+                                    </li>
+
+                                    <li class="icon" id="checkmark">
+                                        <p>Atividades intelectuais: caça-palavras, palavras cruzadas, jogos de sete
+                                            erros, leitura e sudoku.
+                                        </p>
+                                    </li>
+
+                                    <li class="icon" id="checkmark">
+                                        <p>Atividades criativas: livros de colorir, escrita, diário, biografia e etc.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim do Card 1-->
+
+                    <!-- Accordion card 2 -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingTwo2">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                                aria-expanded="false" aria-controls="collapseTwo2">
+                                <p class="pinfo">
+                                    Cultura<i class="fas fa-caret-down" id="caretDown"></i>
+                                </p>
+
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2">
+                            <div class="card-body">
+                                <ul>
+                                    <li class="icon" id="checkmark">
+                                        <p>Artes: museus, turismo, documentários (TV ou internet).
+                                        </p>
+                                    </li>
+
+                                    <li class="icon" id="checkmark">
+                                        <p>Línguas: Exercitar alguma língua que já conhece e/ou aprender palavras novas.
+                                        </p>
+                                    </li>
+
+                                    <li class="icon" id="checkmark">
+                                        <p>Tocar instrumento musical/canto: aprender/exercitar um instrumento,
+                                            aprender/exercitar canto.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim do Card 2-->
+
+                    <!-- Accordion card 3 -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingThree3">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                                href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                                <p class="pinfo">
+                                    Atividades recreacionais<i class="fas fa-caret-down" id="caretDown"></i>
+                                </p>
+
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3">
+                            <div class="card-body">
+                                <ul>
+                                    <li class="icon" id="checkmark">
+                                        <p>Jogos: baralho, jogos de tabuleiro (dama, xadrez…), cilada, baralho de letras
+                                            (pingo no i).</p>
+                                    </li>
+
+                                    <li class="icon" id="checkmark">
+                                        <p>Esportes: assistir partidas/campeonatos pela TV.
+                                        </p>
+                                    </li>
+
+                                    <li class="icon" id="checkmark">
+                                        <p>Música/cinema: shows, concertos, filmes, series (TV ou internet).</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim do Card 3-->
+
+                    <!-- Accordion card 4 -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingFour4">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4"
+                                aria-expanded="false" aria-controls="collapseFour4">
+                                <p class="pinfo">
+                                    Atividades ideológicas<i class="fas fa-caret-down" id="caretDown"></i>
+                                </p>
+
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4">
+                            <div class="card-body">
+                                <ul>
+                                    <li class="icon" id="checkmark">
+                                        <p>Religião/espiritualidade: celebrações religiosas e espirituais (TV), práticas
+                                            religiosas/espirituais pessoais, leitura de livros
+                                            religiosos/espirituais/filosóficos.</p>
+                                    </li>
+
+                                    <li class="icon" id="checkmark">
+                                        <p>Voluntariado: Atividades beneficentes e filantrópicas.
+                                        </p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim do Card 4-->
+
+                </div>
+                <!-- Fim do Accordion -->
+
+                <small class="text-muted">Fonte: Adaptado da apresentação do Dr. Ivan Okamoto, no webnário Atenção no
+                    cuidado ao idoso em tempos de pandemia (Canal Eretz.bio, no YouTube)</small>
+
+                <p style="margin-top: 30px;">Além das proposições de atividades de integração, a escuta ativa - ouvir os
+                    residentes, seus anseios,
+                    medos e demandas e buscar soluções para as questões apontadas por eles - pode fazer a diferença para
+                    a manutenção da rede de apoio.</p>
+
+            </div>
+            <!-- Fim do Bloco 2-->
+
+            <!-- Box Laranja 2 -->
+            <div class="row estilo">
+
+                <div class="col-md-10 blocoTexto" id="bloco1">
+                    <p class="pinfo" style="text-transform:uppercase;">Rede de suporte social ativa e engajada: proposta
+                        de atividades</p>
+
+                    <ul>
+                        <li class="icon" id="arrow">
+                            <p>Conversar: Um bate-papo, uma conversa interessada é uma ação simples que pode ser feita
+                                mesmo durante os cuidados diários.
+                            </p>
+                        </li>
+
+                        <li class="icon" id="arrow">
+                            <p>Comunicação com os visitants: Oferecer as informações necessárias sobre os motivos da
+                                suspensão das visitas e sobre o dia-a-dia do residente dá segurança aos familiares e
+                                amigos. Criar canais de comunicação online, como envio de emails e grupos de WhatsApp é
+                                uma forma de manter todos atualizados.
+                            </p>
+                        </li>
+
+                        <li class="icon" id="arrow">
+                            <p>Encontros dentro da ILPI: A interação social dentro da ILPI é importante. Promover
+                                reuniões com pequenos grupos, sobre temas de interesses dos residentes ou mesmo com
+                                explicações sobre a Covid-19 é uma alternativa. Lembrando sempre, é claro de manter as
+                                distâncias mínimas exigidas.
+                            </p>
+                        </li>
+
+                        <li class="icon" id="arrow">
+                            <p>Jogos para interação: Jogos que exercitam a mente também podem ser uma forma de interação
+                                social para as pessoas idosas. A Sociedade Brasileira de Gerontologia indica jogos que
+                                exercitam a memória: dominó, dama, cartas, quebra-cabeças, caça palavras e palavras
+                                cruzadas.
+                            </p>
+                        </li>
+
+                        <li class="icon" id="arrow">
+                            <p>Apoio dos voluntários: Os voluntários são atores importantes na manutenção da rede de
+                                suporte. Sem poder estar presentes na ILPI, eles podem ser incentivados a enviar vídeos
+                                cantando, contando histórias e passando mensagens de incentivo para os residentes.
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <!-- Fim do Box Laranja 2 -->
+
+            <!-- Check de Progresso 2 -->
+            <div class="form-check text-center" id="check17">
+                <input type="checkbox" class="form-check-input" id="progressCheck16" onclick="saveProgress()">
+                <label class="form-check-label" for="progressCheck16">CHECK! CONCLUÍ ESSE TÓPICO COM
+                    SUCESSO.</label>
+            </div>
+            <!-- Fim do Check 2 -->
+
+            <!-- Bloco 3 -->
+            <div class="conteudo">
+
+                <h1>Estratégias para restabelecimento da visitação</h1>
+
+                <p>De acordo com a suspensão gradual das medidas de distanciamento, alguns municípios já autorizaram o
+                    restabelecimento das visitas. Se esse é o caso do seu município, atenção. Para que as visitas sejam
+                    possíveis, garantindo a saúde dos residentes, é preciso que o retorno seja gradual e controlado e
+                    também siga algumas recomendações.
+                </p>
+
+                <p>A quantidade de visitantes e a frequência das visitas é um fator de risco de exposição para as
+                    pessoas idosas. Por isso, orienta-se que os horários e/ou dias de visita sejam reduzidos. Deve-se
+                    reduzir, também, o número de visitantes e o tempo que ele passa com o residente, ou seja, a duração
+                    da visita.
+                </p>
+
+                <p>Os visitantes também devem estar conscientes sobre as recomendações para prevenção e controle do
+                    coronavírus, como uso de máscara e a higiene das mãos. E a instituição deve fazer a conferência se
+                    nenhum deles teve sinais ou sintomas indicativos para Covid-19 nas últimas duas semanas.
+                </p>
+
+                <h1>Checklist para restabelecer as visitas na ILPI:</h1>
+
+                <ul>
+
+                    <p class="pinfo" style="text-transform: uppercase;">ANTES DA VISITA
+                    </p>
+
+                    <li class="icon" id="checkmark">
+                        <p>Estabelecer um cronograma de visitas que evite muitas pessoas ao mesmo tempo, no mesmo
+                            ambiente.
+                        </p>
+                    </li>
+
+                    <li class="icon" id="checkmark">
+                        <p>Preparar questionário sobre sinais e sintomas da Covid-19 e incluir a informação sobre
+                            contato prévio com pessoas com suspeita ou diagnóstico de Covid-19.
+                        </p>
+                    </li>
+
+                    <li class="icon" id="checkmark">
+                        <p>Organizar o espaço de visita - dê preferência aos espaços abertos ou bem ventilados e fique
+                            atento à distância de 2 metros entre os visitantes e residentes.
+                        </p>
+                    </li>
+
+                    <p class="pinfo" style="text-transform: uppercase;">NOS DIAS DE VISITA
+                    </p>
+
+                    <li class="icon" id="checkmark">
+                        <p>Aplicar questionário de sinais e sintomas aos visitantes, na chegada à instituição.<br>
+                            <strong>Não permitir a entrada de pessoas que apresentarem qualquer sinal ou sintoma
+                                indicativo para Covid-19 ou que tenham tido contato prévio com pessoas com suspeita ou
+                                diagnóstico de Covid-19.
+                            </strong>
+                        </p>
+                    </li>
+
+                    <li class="icon" id="checkmark">
+                        <p>Posicionar os dispensadores com solução de álcool gel 70% na entrada das ILPI, nas salas
+                            de espera, recepção e dormitórios para higienização das mãos de todos que circularem
+                            pelos ambientes;
+                        </p>
+                    </li>
+
+                    <li class="icon" id="checkmark">
+                        <p>Orientar os visitantes na higiene das mãos com água e sabonete líquido OU álcool gel a 70%,
+                            antes da entrada na área dos residentes. <br>
+                            <strong>Não permitir a entrada de pessoas que não tenham realizado a higiene das mãos.
+                            </strong>
+                        </p>
+                    </li>
+
+                    <li class="icon" id="checkmark">
+                        <p>Orientar os visitantes sobre a necessidade do uso da máscara. <br>
+                            <strong>Não permitir a entrada de pessoas sem máscara ou usando de forma indevida.
+                            </strong>
+                        </p>
+                    </li>
+
+                </ul>
+
+                <p>E, para não errar, confira no vídeo a higiene das mãos, com água e sabão:</p>
+
+                <!-- Video Embed 2 -->
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/S44nIXtdpVg"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Fim do Vídeo Embed 2-->
+
+                <p style="margin-top: 30px;">Se a sua instituição ainda está com as visitas suspensas, estimule as ações
+                    de interação entre os
+                    residentes. Se as suas visitas estão sendo retomadas, garanta a saúde das pessoas idosas residentes
+                    na ILPI seguindo as recomendações. Afinal, você também é um agente no combate, prevenção e controle
+                    da Covid-19!</p>
+
+                <!-- Check de Progresso 3 -->
+                <div class="form-check text-center" id="check18">
+                    <input type="checkbox" class="form-check-input" id="progressCheck17" onclick="saveProgress()">
+                    <label class="form-check-label" for="progressCheck17">CHECK! CONCLUÍ ESSE TÓPICO COM
+                        SUCESSO.</label>
+                </div>
+                <!-- Fim do Check 3 -->
+
+                <h1>Chegamos ao fim da aula</h1>
+
+                <p>Nessa aula, você viu algumas estratégias de comunicação e interação para garantir os contatos sociais
+                    da pessoa idosa, em situação de distanciamento social e as recomendações para a retomada das visitas
+                    na ILPI.
+                </p>
+
+                <p>Vamos ver o que você aprendeu sobre isso?</p>
+
+                <!-- Questionário -->
+                <div row id="questionario">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+                                <!-- Flip Card 1 -->
+                                <div class="card" id="quiz">
+
+                                    <div class="front" id="front1">
+
+                                        <div class="card-body">
+                                            <p class="text-center" style="background-color: white;">Pergunta</p>
+
+                                            <div class="resposta" onclick="flip()">Alternativa 1</div>
+                                            <div class="resposta" onclick="flip()">Alternativa 2</div>
+                                            <div class="resposta" onclick="flip()">Alternativa 3</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="back" id="back1">
+                                        <p class="text-center">Texto do feedback</p>
+                                        <button onclick="unflip()">Voltar</button></p>
+                                    </div>
+                                </div>
+                                <!-- Fim do Flip Card 1 -->
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+
+                                    <!-- Flip Card 2 -->
+                                    <div class="card" id="quiz2">
+
+                                        <div class="front" id="front2">
+
+                                            <div class="card-body">
+                                                <p class="text-center" style="background-color: white;">Pergunta</p>
+
+                                                <div class="resposta" onclick="flip2()">Alternativa 1</div>
+                                                <div class="resposta" onclick="flip2()">Alternativa 2</div>
+                                                <div class="resposta" onclick="flip2()">Alternativa 3</div>
+
+                                            </div>
+                                        </div>
+                                        <div class="back" id="back2">
+                                            <p class="text-center">Texto do feedback</p>
+                                            <button onclick="unflip2()">Voltar</button></p>
+                                        </div>
+                                    </div>
+                                    <!-- Fim do Flip Card 2 -->
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+
+                                    <!-- Flip Card 3 -->
+                                    <div class="card" id="quiz3">
+
+                                        <div class="front" id="front3">
+
+                                            <div class="card-body">
+                                                <p class="text-center" style="background-color: white;">Pergunta</p>
+
+                                                <div class="resposta" onclick="flip3()">Alternativa 1</div>
+                                                <div class="resposta" onclick="flip3()">Alternativa 2</div>
+                                                <div class="resposta" onclick="flip3()">Alternativa 3</div>
+
+                                            </div>
+                                        </div>
+                                        <div class="back" id="back3">
+                                            <p class="text-center">Texto do feedback</p>
+                                            <button onclick="unflip3()">Voltar</button></p>
+                                        </div>
+                                    </div>
+                                    <!-- Fim do Flip Card 3 -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Questionário-->
+
+                <!-- Check de Progresso 4 -->
+                <div class="form-check text-center" id="check19">
+                    <input type="checkbox" class="form-check-input" id="progressCheck18" onclick="saveProgress()">
+                    <label class="form-check-label" for="progressCheck18">CHECK! Agora, você já pode organizar
+                        atividades que possibilitem a manutenção dos contatos sociais dos residentes e também organizar
+                        a retomada da visitação às ILPIs.</label>
+                </div>
+                <!-- Fim do Check 4 -->
+            </div>
+            <!-- Fim do Bloco 3-->
+
+            <!-- Barra de Navegação -->
             <div class="row navegacao">
                 <div class="col-md-6 border-right text-left" id="anterior">
                     <a href="aula2.html">
-                        <i class="fas fa-chevron-left"
-                            style="margin-right: 15px; margin-top: 5px;"></i><strong>Aula Anterior</strong>
+                        <i class="fas fa-chevron-left" style="margin-right: 15px; margin-top: 5px;"></i><strong>Aula
+                            Anterior</strong>
 
                     </a>
                     <p class="pinfo">Comunicação e contato com a família e a comunidade
@@ -229,36 +934,38 @@
                 </div>
             </div>
             <!--Fim Barra de navegação-->
+
+            <!-- Rodapé -->
+            <footer>
+                <div class="d-flex">
+                    <div class="p-2 realizacao">
+                        <p>Realização:</p>
+                        <img class="img-fluid" src="assets/images/rodape/rodape1.png" alt="">
+                    </div>
+                    <div class="p-2 flex-grow-1 apoio">
+                        <p>Apoio:</p>
+                        <img class="img-fluid" src="assets/images/rodape/rodape2.png" alt="">
+                        <img class="img-fluid" src="assets/images/rodape/rodape3.png" alt="">
+                        <img class="img-fluid" src="assets/images/rodape/rodape4.png" alt="">
+                        <img class="img-fluid" src="assets/images/rodape/rodape5.png" alt="">
+                        <img class="img-fluid" src="assets/images/rodape/rodape6.png" alt="">
+                    </div>
+                </div>
+            </footer>
+            <!-- Fim do Rodapé -->
+
         </div>
         <!--Fim Coluna Conteúdo-->
-    </div><!-- Row Container-->
 
-    
+    </div><!-- Fim da Row-main -->
 
-
-
+    <!-- Arquivos JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="./assets/js/carousel-swipe.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
 
-<footer>
-    <div class="d-flex">
-        <div class="p-2 realizacao">
-            <p>Realização:</p>
-            <img class="img-fluid" src="assets/images/rodape1.png" alt="">
-        </div>
-        <div class="p-2 flex-grow-1 apoio">
-            <p>Apoio:</p>
-            <img class="img-fluid" src="assets/images/rodape2.png" alt="">
-            <img class="img-fluid" src="assets/images/rodape3.png" alt="">
-            <img class="img-fluid" src="assets/images/rodape4.png" alt="">
-            <img class="img-fluid" src="assets/images/rodape5.png" alt="">
-            <img class="img-fluid" src="assets/images/rodape6.png" alt="">
-        </div>
-    </div>
-</footer>
+</body>
 
 </html>
