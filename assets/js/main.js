@@ -44,12 +44,14 @@ $(window).scroll(function () {
     console.log("zero");
     $(".navbar").removeClass("fixed-top");
     $("#sidebar").css("padding-top", "0%");
+    //$("#content").css("padding-top", "0%");
     
 
   } else {
     console.log("nao zero");
     $(".navbar").addClass("fixed-top");
     $("#sidebar").css("padding-top", "7.7%");
+    //$("#content").css("padding-top", "7.7%");
 
   }
 
@@ -169,9 +171,9 @@ $("#progressCheck15").change(function () {
 
 $("#progressCheck16").change(function () {
   if (this.checked) {
-    $("#topico14").addClass("visited");
+    $("#topico17").addClass("visited");
   } else {
-    $("#topico14").removeClass("visited");
+    $("#topico17").removeClass("visited");
   }
 });
 
@@ -188,6 +190,14 @@ $("#progressCheck18").change(function () {
     $("#topico16").addClass("visited");
   } else {
     $("#topico16").removeClass("visited");
+  }
+});
+
+$("#progressCheck19").change(function () {
+  if (this.checked) {
+    $("#topico14").addClass("visited");
+  } else {
+    $("#topico14").removeClass("visited");
   }
 });
 
@@ -339,3 +349,15 @@ $('.carousel .carousel-inner').on('dragstart', 'a', function () {
   return false;
 
 });
+
+// Adiciona suavidade na rolagem da ancoragem 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
