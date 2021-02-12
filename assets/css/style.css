@@ -45,16 +45,16 @@ body, header, footer{
     justify-content: center;
     position: relative;
 }
-#capaAula3{
-    background-image: url(../images/aula3/img1.png);
+#capaAula4{
+    background-image: url(../images/aula4/img1.png);
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-#capaAula4{
-    background-image: url(../images/aula4/img5.png);
+#capaAula5{
+    background-image: url(../images/aula5/img5.png);
     background-size: cover;
     display: flex;
     align-items: center;

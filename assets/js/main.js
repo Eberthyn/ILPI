@@ -111,7 +111,7 @@ $("#progressCheck4").change(function () {
 });
 
 /*Progress Check AULA2*/
-$("#progressCheck6").change(function () {
+$("#progressCheck5").change(function () {
   if (this.checked) {
     $("#topico4").addClass("visited");
   } else {
@@ -119,7 +119,7 @@ $("#progressCheck6").change(function () {
   }
 });
 
-$("#progressCheck7").change(function () {
+$("#progressCheck6").change(function () {
   if (this.checked) {
     $("#topico5").addClass("visited");
   } else {
@@ -127,7 +127,7 @@ $("#progressCheck7").change(function () {
   }
 });
 
-$("#progressCheck8").change(function () {
+$("#progressCheck7").change(function () {
   if (this.checked) {
     $("#topico6").addClass("visited");
   } else {
@@ -135,7 +135,7 @@ $("#progressCheck8").change(function () {
   }
 });
 
-$("#progressCheck9").change(function () {
+$("#progressCheck8").change(function () {
   if (this.checked) {
     $("#topico7").addClass("visited");
   } else {
@@ -143,7 +143,7 @@ $("#progressCheck9").change(function () {
   }
 });
 
-$("#progressCheck10").change(function () {
+$("#progressCheck9").change(function () {
   if (this.checked) {
     $("#topico8").addClass("visited");
   } else {
@@ -152,57 +152,41 @@ $("#progressCheck10").change(function () {
 });
 
 /*Progresso Conclusão Aula2*/
-$("#progressCheck10").change(function () {
+$("#progressCheck9").change(function () {
   if (this.checked) {
-    $("#aula3").addClass("completed");
+    $("#aula2").addClass("completed");
   } else {
-    $("#aula3").removeClass("completed");
+    $("#aula2").removeClass("completed");
   }
 });
 
 /*Progress Check AULA3*/
-$("#progressCheck15").change(function () {
+$("#progressCheck10").change(function () {
   if (this.checked) {
-    $("#topico13").addClass("visited");
+    $("#topico9").addClass("visited");
   } else {
-    $("#topico13").removeClass("visited");
+    $("#topico9").removeClass("visited");
   }
 });
 
-$("#progressCheck16").change(function () {
+$("#progressCheck11").change(function () {
   if (this.checked) {
-    $("#topico17").addClass("visited");
+    $("#topico10").addClass("visited");
   } else {
-    $("#topico17").removeClass("visited");
+    $("#topico10").removeClass("visited");
   }
 });
 
-$("#progressCheck17").change(function () {
+$("#progressCheck12").change(function () {
   if (this.checked) {
-    $("#topico15").addClass("visited");
+    $("#topico11").addClass("visited");
   } else {
-    $("#topico15").removeClass("visited");
-  }
-});
-
-$("#progressCheck18").change(function () {
-  if (this.checked) {
-    $("#topico16").addClass("visited");
-  } else {
-    $("#topico16").removeClass("visited");
-  }
-});
-
-$("#progressCheck19").change(function () {
-  if (this.checked) {
-    $("#topico14").addClass("visited");
-  } else {
-    $("#topico14").removeClass("visited");
+    $("#topico11").removeClass("visited");
   }
 });
 
 /*Progresso Conclusão Aula3*/
-$("#progressCheck18").change(function () {
+$("#progressCheck12").change(function () {
   if (this.checked) {
     $("#aula3").addClass("completed");
   } else {
@@ -211,31 +195,7 @@ $("#progressCheck18").change(function () {
 });
 
 /*Progress Check AULA4*/
-$("#progressCheck11").change(function () {
-  if (this.checked) {
-    $("#topico9").addClass("visited");
-  } else {
-    $("#topico9").removeClass("visited");
-  }
-});
-
-$("#progressCheck12").change(function () {
-  if (this.checked) {
-    $("#topico10").addClass("visited");
-  } else {
-    $("#topico10").removeClass("visited");
-  }
-});
-
 $("#progressCheck13").change(function () {
-  if (this.checked) {
-    $("#topico11").addClass("visited");
-  } else {
-    $("#topico11").removeClass("visited");
-  }
-});
-
-$("#progressCheck14").change(function () {
   if (this.checked) {
     $("#topico12").addClass("visited");
   } else {
@@ -243,12 +203,86 @@ $("#progressCheck14").change(function () {
   }
 });
 
-/*Progresso Conclusão Aula4*/
 $("#progressCheck14").change(function () {
+  if (this.checked) {
+    $("#topico13").addClass("visited");
+  } else {
+    $("#topico13").removeClass("visited");
+  }
+});
+
+$("#progressCheck15").change(function () {
+  if (this.checked) {
+    $("#topico14").addClass("visited");
+  } else {
+    $("#topico14").removeClass("visited");
+  }
+});
+
+$("#progressCheck16").change(function () {
+  if (this.checked) {
+    $("#topico15").addClass("visited");
+  } else {
+    $("#topico15").removeClass("visited");
+  }
+});
+
+$("#progressCheck17").change(function () {
+  if (this.checked) {
+    $("#topico16").addClass("visited");
+  } else {
+    $("#topico16").removeClass("visited");
+  }
+});
+
+/*Progresso Conclusão Aula4*/
+$("#progressCheck17").change(function () {
   if (this.checked) {
     $("#aula4").addClass("completed");
   } else {
     $("#aula4").removeClass("completed");
+  }
+});
+
+/*Progress Check AULA5*/
+$("#progressCheck18").change(function () {
+  if (this.checked) {
+    $("#topico17").addClass("visited");
+  } else {
+    $("#topico17").removeClass("visited");
+  }
+});
+
+$("#progressCheck19").change(function () {
+  if (this.checked) {
+    $("#topico18").addClass("visited");
+  } else {
+    $("#topico18").removeClass("visited");
+  }
+});
+
+$("#progressCheck20").change(function () {
+  if (this.checked) {
+    $("#topico19").addClass("visited");
+  } else {
+    $("#topico19").removeClass("visited");
+  }
+});
+
+$("#progressCheck21").change(function () {
+  if (this.checked) {
+    $("#topico20").addClass("visited");
+  } else {
+    $("#topico20").removeClass("visited");
+  }
+});
+
+/*Progresso Conclusão Aula5*/
+$("#progressCheck21").change(function () {
+  if (this.checked) {
+    $("#aula5").addClass("completed");
+  } else {
+    $("#aula5").removeClass("completed");
   }
 });
 
