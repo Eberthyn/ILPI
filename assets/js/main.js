@@ -44,14 +44,14 @@ $(window).scroll(function () {
     console.log("zero");
     $(".navbar").removeClass("fixed-top");
     $("#sidebar").css("padding-top", "0%");
-    //$("#content").css("padding-top", "0%");
+    $("#content").css("padding-top", "0%");
     
 
   } else {
     console.log("nao zero");
     $(".navbar").addClass("fixed-top");
     $("#sidebar").css("padding-top", "7.7%");
-    //$("#content").css("padding-top", "7.7%");
+    $("#content").css("padding-top", "7.7%");
 
   }
 
@@ -297,6 +297,40 @@ function saveProgress() {
 }
 
 /*Flip Card*/
+function flipFase1(){
+  $('#fase1').addClass('flipped');
+};
+
+function unflipFase1() {
+  $('#fase1').removeClass('flipped');
+};
+
+function flipFase2(){
+  $('#fase2').addClass('flipped');
+};
+
+function unflipFase2() {
+  $('#fase2').removeClass('flipped');
+};
+
+function flipFase3(){
+  $('#fase3').addClass('flipped');
+};
+
+function unflipFase3() {
+  $('#fase3').removeClass('flipped');
+};
+
+function flipFase4(){
+  $('#fase4').addClass('flipped');
+};
+
+function unflipFase4() {
+  $('#fase4').removeClass('flipped');
+};
+
+/**/
+
 function flip() {
   $('#quiz').addClass('flipped');
 };
