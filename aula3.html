@@ -21,7 +21,7 @@
     <!-- Menu Superior-->
     <header>
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="menuSuperior">
 
             <!-- Logos -->
             <img src="assets/images/logoAula.png" class="img-fluid logo" alt="Logo" />
@@ -58,6 +58,10 @@
 
                 <!-- Botão p/ Recolher Sidebar-->
                 <span class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
+
+                <!-- Botão Secundário p/ Recolher Sidebar -->
+                <span class="toggle-sidebar" id="sidebarButton2"><img style="max-width: 50%;"
+                        src="assets/images/icones/icone.png" alt=""></span>
 
                 <!-- Step 1-->
                 <div class="step" id="aula1">
@@ -362,10 +366,6 @@
         <!-- Início Coluna de Conteúdo -->
         <div class="col-md-10" id="content">
 
-            <!-- Botão Secundário p/ Recolher Sidebar -->
-            <span class="toggle-sidebar" id="sidebarButton2"><img style="max-width: 50%;"
-                    src="assets/images/icones/icone.png" alt=""></span>
-
             <!-- Bloco 1 -->
             <div class="conteudo">
 
@@ -375,15 +375,16 @@
 
                 <p>Diante do cenário da pandemia da Covid-19, a vacinação das pessoas idosas e dos profissionais
                     atuantes
-                    nas ILPI deve ser considerada prioritária. Ao final desta aula, você vai ser capaz de:</p>
+                    nas ILPIs deve ser considerada prioritária. Ao final desta aula, você vai ser capaz de:</p>
 
                 <ul>
                     <li class="icon" id="checkmark">
-                        <p>Entender porque é importante priorizar a vacinação das pessoas idosas e dos profissionais
+                        <p>Entender porque é importante priorizar a vacinação das pessoas idosas e dos <br>
+                            profissionais
                             atuantes nas ILPIs.</p>
                     </li>
                     <li class="icon" id="checkmark">
-                        <p> Compreender as recomendações e os cuidados integrais à pessoa idosa nas ILPIs;</p>
+                        <p>Compreender as recomendações e os cuidados integrais à pessoa idosa nas ILPIs.</p>
                     </li>
                     <li class="icon" id="checkmark">
                         <p>Relembrar os procedimentos básicos para o banho e higiene oral da pessoa idosa.</p>
@@ -473,11 +474,8 @@
 
                     <div class="col-sm-6 centro">
 
-                        <p>O detalhamento da produção e estudos em desenvolvimento encontra-se descrito no <a
-                                href="https://www.gov.br/saude/pt-br/media/pdf/2020/novembro/13/20201030_cgpclin_decit_sctie_ms_relatorio_tecnico_monitoramento_vacinas_sars-cov-2_final.pdf">
-                                Relatório
-                                Técnico de Monitoramento de Vacinas em Desenvolvimento contra SARS-CoV-2</a>, da
-                            Secretaria de
+                        <p>O detalhamento da produção e estudos em desenvolvimento encontra-se descrito no Relatório
+                            Técnico de Monitoramento de Vacinas em Desenvolvimento contra SARS-CoV-2, da Secretaria de
                             Ciência, Tecnologia, Inovação e Insumos Estratégicos em Saúde. </p>
 
                     </div>
@@ -498,7 +496,7 @@
 
                         <!-- Card header -->
                         <div class="card-header" role="tab" id="headingOne1">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
+                            <a class="collapsed" data-toggle="collapse" href="#collapseOne1"
                                 aria-expanded="false" aria-controls="collapseOne1">
                                 <p class="pinfo">
                                     Vacinas de vírus inativados<i class="fas fa-caret-down" id="caretDown"></i>
@@ -544,7 +542,7 @@
 
                         <!-- Card header -->
                         <div class="card-header" role="tab" id="headingTwo2">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo2"
                                 aria-expanded="false" aria-controls="collapseTwo2">
                                 <p class="pinfo">
                                     Vacinas de vetores virais<i class="fas fa-caret-down" id="caretDown"></i>
@@ -584,7 +582,7 @@
 
                         <!-- Card header -->
                         <div class="card-header" role="tab" id="headingThree3">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
+                            <a class="collapsed" data-toggle="collapse"
                                 href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
                                 <p class="pinfo">
                                     Vacina de RNA mensageiro<i class="fas fa-caret-down" id="caretDown"></i>
@@ -621,8 +619,8 @@
 
                                     <li class="icon" id="checkmark">
                                         <p>Do ponto de vista de transporte e armazenamento, estas vacinas requerem
-                                            temperaturas muito baixas para conservação (-70º C no caso da vacina
-                                            candidata da Pfizer e -20º C no caso da vacina candidata da Moderna), o que
+                                            temperaturas muito baixas para conservação (-70 ºC no caso da vacina
+                                            candidata da Pfizer e -20 ºC no caso da vacina candidata da Moderna), o que
                                             pode ser um obstáculo operacional para a vacinação em massa, especialmente
                                             em países de baixa e média renda.</p>
                                     </li>
@@ -637,7 +635,7 @@
 
                         <!-- Card header -->
                         <div class="card-header" role="tab" id="headingFour4">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4"
+                            <a class="collapsed" data-toggle="collapse" href="#collapseFour4"
                                 aria-expanded="false" aria-controls="collapseFour4">
                                 <p class="pinfo">
                                     Unidades proteicas<i class="fas fa-caret-down" id="caretDown"></i>
@@ -686,9 +684,9 @@
 
                 <h2>Vacinas aprovadas</h2>
 
-                <p>Em janeiro de 2021, diante da emergência em saúde pública vivenciada e a necessidade da
-                    disponibilização de vacinas para a prevenção da Covid-19, a ANVISA aprovou no Brasil duas vacinas
-                    para uso emergencial, são elas:</p>
+                <p style="max-width: 92ch;">Em janeiro de 2021, diante da emergência em saúde pública vivenciada e a
+                    necessidade da disponibilização de vacinas para a prevenção da Covid-19, a ANVISA aprovou no Brasil
+                    duas vacinas para uso emergencial, são elas:</p>
 
                 <ul>
                     <li class="icon" id="checkmark">
@@ -729,7 +727,7 @@
 
                 <h1>Orientações para a vacinação contra a Covid-19 nas ILPIs</h1>
 
-                <p>A vacinação para Covid-19 nas ILPI deverá seguir as regulamentações do Programa Nacional de
+                <p>A vacinação para Covid-19 nas ILPIs deverá seguir as regulamentações do Programa Nacional de
                     Imunização (PNI) e do Plano Nacional de Operacionalização da Vacinação contra Covid-19 (2021).
                 </p>
 
@@ -781,23 +779,29 @@
 
                 <!-- INSERIR CARDS -->
 
+                <!-- Cards lado a lado -->
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-6">
+                    <div class="col-xl-6">
                         <!-- Flip Card 1 -->
                         <div class="card" id="fase1" onclick="flipFase1()">
 
                             <div class="front">
                                 <div class="card-body">
+
                                     <h2 class="text-center" style="color: white;">Fase 1</h2>
+
                                 </div>
                             </div>
 
                             <div class="back" onclick="unflipFase1()">
-                                <p class="text-center">Na primeira fase serão vacinados os trabalhadores da saúde,
-                                    população idosa a partir dos 75 anos de idade, pessoas com 60 anos ou mais que vivem
-                                    em instituições de longa permanência (como asilos e instituições psiquiátricas) e
-                                    população indígena.</p>
-                           
+                                <div class="card-body backFase">
+                                    <p>Na primeira fase serão vacinados os trabalhadores da saúde,
+                                        população idosa a partir dos 75 anos de idade, pessoas com 60 anos ou mais que
+                                        vivem
+                                        em instituições de longa permanência (como asilos e instituições psiquiátricas)
+                                        e
+                                        população indígena.</p>
+                                </div>
                             </div>
 
                         </div>
@@ -805,7 +809,7 @@
 
                     </div>
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-xl-6">
                         <!-- Flip Card 2 -->
                         <div class="card" id="fase2">
 
@@ -816,9 +820,11 @@
                                 </div>
 
                             </div>
-                            <div class="back" id="">
-                                <p class="text-center">A segunda fase será dedicada a imunizar as pessoas que possuem
-                                    entre 60 a 74 anos.</p>
+                            <div class="back">
+                                <div class="card-body backFase">
+                                    <p>A segunda fase será dedicada a imunizar as pessoas que possuem
+                                        entre 60 a 74 anos.</p>
+                                </div>
                             </div>
                         </div>
                         <!-- Fim do Flip Card 2 -->
@@ -826,7 +832,7 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-6">
+                    <div class="col-xl-6">
                         <!-- Flip Card 1 -->
                         <div class="card" id="fase3" onclick="flipFase3()">
 
@@ -837,10 +843,12 @@
                             </div>
 
                             <div class="back" onclick="unflipFase3()">
-                                <p class="text-center">A terceira fase prevê a imunização de pessoas com comorbidades
-                                    que apresentam maior chance para agravamento da doença (como portadores de doenças
-                                    renais crônicas, cardiovasculares, entre outras).</p>
-                            
+                                <div class="card-body backFase">
+                                    <p>A terceira fase prevê a imunização de pessoas com comorbidades
+                                        que apresentam maior chance para agravamento da doença (como portadores de
+                                        doenças
+                                        renais crônicas, cardiovasculares, entre outras).</p>
+                                </div>
                             </div>
 
                         </div>
@@ -848,7 +856,7 @@
 
                     </div>
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-xl-6">
                         <!-- Flip Card 2 -->
                         <div class="card" id="fase4" onclick="flipFase4()">
 
@@ -860,8 +868,10 @@
 
                             </div>
                             <div class="back">
-                                <p class="text-center">A quarta e última fase deve abranger professores, forças de
-                                    segurança e salvamento e funcionários do sistema prisional.</p>
+                                <div class="card-body backFase">
+                                    <p>A quarta e última fase deve abranger professores, forças de
+                                        segurança e salvamento e funcionários do sistema prisional.</p>
+                                </div>
                             </div>
                         </div>
                         <!-- Fim do Flip Card 2 -->
@@ -888,7 +898,7 @@
                     <p class="pinfo">ATENÇÃO</p>
                     <p>A exposição acumulada da vacina às temperaturas mais quentes ou mais frias, ou ainda à luz, em
                         qualquer etapa da cadeia, gera uma perda de potência que não poderá ser restaurada. As vacinas
-                        que contêm adjuvante de alumínio, quando expostas à temperatura 0°C, ou inferiores, podem ter
+                        que contêm adjuvante de alumínio, quando expostas à temperatura 0 °C, ou inferiores, podem ter
                         perda de potência em caráter permanente. </p>
                 </div>
                 <!-- Fim Box Atenção 1-->
@@ -898,7 +908,7 @@
                     término do expediente. Os sensores aplicados à medição devem ser periodicamente calibrados e
                     certificados por Laboratórios de Calibração da Rede Brasileira de Calibração do Instituto Nacional
                     de Metrologia, Qualidade e Tecnologia – Inmetro, de forma a garantir a precisão dos registros de
-                    temperatura (+2° a +8°C).</p>
+                    temperatura (+2 °C a +8 °C).</p>
 
                 <!-- Box Informativo 1-->
                 <div class="informativo">
@@ -984,43 +994,43 @@
 
                 <ul>
                     <li class="icon" id="checkmark">
-                        <p>Lavar as mãos;
+                        <p>Lavar as mãos.
                         </p>
                     </li>
 
                     <li class="icon" id="checkmark">
-                        <p>Fazer a limpeza da pele, caso necessário (com álcool a 70% ou água e sabão);
+                        <p>Fazer a limpeza da pele, caso necessário (com álcool a 70% ou água e sabão).
                         </p>
                     </li>
 
                     <li class="icon" id="checkmark">
-                        <p>Esticar a pele com os dedos indicador e polegar, mantendo o músculo firme;
+                        <p>Esticar a pele com os dedos indicador e polegar, mantendo o músculo firme.
                         </p>
                     </li>
 
                     <li class="icon" id="checkmark">
                         <p>Introduzir a agulha no músculo deltóide direito (braço) ou na região lateral da coxa, com
-                            angulação levemente oblíqua ao eixo longitudinal da perna em direção podálica;
+                            angulação levemente oblíqua ao eixo longitudinal da perna em direção podálica.
                         </p>
                     </li>
 
                     <li class="icon" id="checkmark">
-                        <p>Aspirar, observando se não atingiu algum vaso sangüíneo; caso isso aconteça, retirar a agulha
-                            e preparar outra dose de vacina;
+                        <p>Aspirar, observando se não atingiu algum vaso sanguíneo; caso isso aconteça, retirar a agulha
+                            e preparar outra dose de vacina.
                         </p>
                     </li>
 
                     <li class="icon" id="checkmark">
-                        <p>Injetar o líquido lentamente;</p>
+                        <p>Injetar o líquido lentamente.</p>
                     </li>
 
                     <li class="icon" id="checkmark">
-                        <p>Retirar a seringa com a agulha, com movimento único e firme;
+                        <p>Retirar a seringa com a agulha, com movimento único e firme.
                         </p>
                     </li>
 
                     <li class="icon" id="checkmark">
-                        <p>Fazer leve compressão no local com algodão seco;
+                        <p>Fazer leve compressão no local com algodão seco.
                         </p>
                     </li>
 
@@ -1104,7 +1114,8 @@
 
                 <div class="text-center">
                     <hr>
-                    <p class="textoLaranja">Além disso, as notificações de eventos adversos também deverão seguir o
+                    <p class="textoLaranja" style="padding-left: 50px; padding-right: 50px;">Além disso, as notificações
+                        de eventos adversos também deverão seguir o
                         fluxo estabelecido pelas
                         secretarias municipais e estaduais de saúde.</p>
                     <hr>
@@ -1225,15 +1236,17 @@
 
                 <p>No caso das salas de vacina sem conectividade com a internet que funcionam no âmbito da APS, os
                     registros das doses aplicadas poderão ser feitos no e-SUS AB, por meio da Coleta de Dados
-                    Simplificada - modalidade CDS. Essas salas farão registros offline e depois submeterão seus
+                    Simplificada - modalidade CDS. Essas salas farão registros <i>offline</i> e depois submeterão seus
                     registros para o servidor assim que a conexão com a internet estiver disponível, no prazo máximo de
                     48 horas.
                 </p>
 
                 <p>Da mesma forma, as salas de vacina que ainda não estão informatizadas e/ou não possuem uma rede de
-                    internet adequada disponível, ou mesmo as unidades em atividades de vacinação extramuros durante a
+                    <i>internet</i> adequada disponível, ou mesmo as unidades em atividades de vacinação extramuros
+                    durante a
                     campanha, deverão realizar os registros de dados nominais e individualizados em formulários, para
-                    posterior registro no sistema de informação em até 48 horas.</p>
+                    posterior registro no sistema de informação em até 48 horas.
+                </p>
 
             </div>
             <!-- Fim do Bloco 4 -->
@@ -1287,7 +1300,7 @@
                 <p>Nessa aula, você viu a importância de priorizar a vacina de prevenção a Covid-19 em todos os
                     envolvidos nas Instituições de Longa Permanência de Idosos, conheceu os tipos de vacinas que estão
                     sendo desenvolvidas para o enfrentamento da pandemia pela Covid-19 e quais delas já foram aprovadas
-                    pela ANVISA.Também conheceu as orientações e principais cuidados para vacinação contra Covid-19 nas
+                    pela ANVISA. Também conheceu as orientações e principais cuidados para vacinação contra Covid-19 nas
                     ILPIs.
                 </p>
 
@@ -1302,7 +1315,6 @@
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -1312,18 +1324,22 @@
 
                                 <div class="front" id="front1">
 
-                                    <div class="card-body">
-                                        <p class="text-center" style="background-color: white;">Pergunta</p>
+                                    <div class="card-body" style="font-size: 12px;">
+                                        <p>1. Considerando a administração da vacina para
+                                            Covid-19 nas ILPIs, assinale a alternativa CORRETA:</p>
 
-                                        <div class="resposta" onclick="flip()">Alternativa 1</div>
-                                        <div class="resposta" onclick="flip()">Alternativa 2</div>
-                                        <div class="resposta" onclick="flip()">Alternativa 3</div>
+                                        <div class="resposta" onclick="flip()">a) A vacina deverá ser
+                                            administrada por via subcutânea, com esquema de duas doses.</div>
+                                        <div class="resposta" onclick="flip()">b) A vacina deverá ser
+                                            administrada por via intramuscular, com esquema de duas doses.</div>
+                                        <div class="resposta" onclick="flip()">c) A vacina deverá ser
+                                            administrada por via intradérmica, com esquema de uma dose.</div>
 
                                     </div>
                                 </div>
                                 <div class="back" id="back1">
-                                    <p class="text-center">Texto do feedback</p>
-                                    <button onclick="unflip()">Voltar</button></p>
+                                    <p class="text-center">RESPOSTA: B</p>
+                                    <button onclick="unflip()"><i class="fas fa-undo"></i></button></p>
                                 </div>
                             </div>
                             <!-- Fim do Flip Card 1 -->
@@ -1337,47 +1353,27 @@
 
                                     <div class="front" id="front2">
 
-                                        <div class="card-body">
-                                            <p class="text-center" style="background-color: white;">Pergunta</p>
+                                        <div class="card-body" style="font-size: 12px;">
+                                            <p>2. A vacina para Covid-19 deverá ser contraindicada nos seguintes casos:
+                                            </p>
 
-                                            <div class="resposta" onclick="flip2()">Alternativa 1</div>
-                                            <div class="resposta" onclick="flip2()">Alternativa 2</div>
-                                            <div class="resposta" onclick="flip2()">Alternativa 3</div>
+                                            <div class="resposta" onclick="flip2()">a) Pessoas que possuem qualquer tipo
+                                                de alergia.</div>
+                                            <div class="resposta" onclick="flip2()">b) Pessoas acima de 60 anos,
+                                                considerando as fragilidades do sistema imunológico.
+                                            </div>
+                                            <div class="resposta" onclick="flip2()">c) Pessoas que possuem
+                                                hipersensibilidade ou alergia ao princípio ativo ou a qualquer um dos
+                                                componentes da vacina.</div>
 
                                         </div>
                                     </div>
                                     <div class="back" id="back2">
-                                        <p class="text-center">Texto do feedback</p>
-                                        <button onclick="unflip2()">Voltar</button></p>
+                                        <p class="text-center">RESPOSTA: C</p>
+                                        <button onclick="unflip2()"><i class="fas fa-undo"></i></button></p>
                                     </div>
                                 </div>
                                 <!-- Fim do Flip Card 2 -->
-
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container">
-
-                                <!-- Flip Card 3 -->
-                                <div class="card" id="quiz3">
-
-                                    <div class="front" id="front3">
-
-                                        <div class="card-body">
-                                            <p class="text-center" style="background-color: white;">Pergunta</p>
-
-                                            <div class="resposta" onclick="flip3()">Alternativa 1</div>
-                                            <div class="resposta" onclick="flip3()">Alternativa 2</div>
-                                            <div class="resposta" onclick="flip3()">Alternativa 3</div>
-
-                                        </div>
-                                    </div>
-                                    <div class="back" id="back3">
-                                        <p class="text-center">Texto do feedback</p>
-                                        <button onclick="unflip3()">Voltar</button></p>
-                                    </div>
-                                </div>
-                                <!-- Fim do Flip Card 3 -->
 
                             </div>
                         </div>
@@ -1408,15 +1404,14 @@
                             Anterior</strong>
 
                     </a>
-                    <p class="pinfo">Aula 2
-                    </p>
+                    <p class="pinfo">Cuidados integrais</p>
                 </div>
                 <div class="col-md-6 border-left text-right" id="proxima">
                     <a href="aula4.html">
                         <strong>Próxima Aula</strong><i class="fas fa-chevron-right"
                             style="margin-left: 15px; margin-top: 5px;"></i>
                     </a>
-                    <p class="pinfo">Aula 4</p>
+                    <p class="pinfo">Contatos sociais em tempos de isolamento</p>
                 </div>
             </div>
             <!--Fim Barra de navegação-->

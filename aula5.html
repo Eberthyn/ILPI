@@ -20,9 +20,9 @@
 
     <!-- Menu Superior-->
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="menuSuperior">
 
-
+            <!-- Logos -->
             <img src="assets/images/logoAula.png" class="img-fluid logo" alt="Logo" />
             <img src="assets/images/logoAula2.png" class="img-fluid logo" alt="120 Anos" />
 
@@ -55,6 +55,10 @@
 
                 <!-- Botão p/ Recolher Sidebar-->
                 <span class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
+
+                                <!-- Botão Secundário p/ Recolher Sidebar -->
+                                <span class="toggle-sidebar" id="sidebarButton2"><img style="max-width: 50%;"
+                                    src="assets/images/icones/icone.png" alt=""></span>
 
                 <!-- Step 1-->
                 <div class="step" id="aula1">
@@ -182,21 +186,23 @@
                                 <div class="containerItem">
                                     <div class="item" id="topico9"></div>
                                 </div>
-                               <p>3.1</p>
+                                <p><a href="aula3.html#inicioAula3">Vacinação para proteção da Covid-19 nas ILPIs</a>
+                                </p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item" id="topico10"></div>
                                 </div>
-                                <p>3.2</p>
+                                <p><a href="aula3.html#check10">Orientações para a vacinação contra a Covid-19 nas
+                                        ILPIs</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item" id="topico11"></div>
                                 </div>
-                                <p>3.3</p>
+                                <p><a href="aula3.html#check11">Conclusão da aula</a></p>
                             </div>
 
                         </div>
@@ -360,10 +366,6 @@
 
         <!-- Início Coluna de Conteúdo -->
         <div class="col-md-10" id="content">
-
-            <!-- Botão Secundário p/ Recolher Sidebar -->
-            <span class="toggle-sidebar" id="sidebarButton2"><img style="max-width: 50%;"
-                    src="assets/images/icones/icone.png" alt=""></span>
 
             <!-- Bloco 1 -->
             <div class="conteudo">
@@ -1033,7 +1035,6 @@
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -1043,18 +1044,18 @@
 
                                 <div class="front" id="front1">
 
-                                    <div class="card-body">
-                                        <p class="text-center" style="background-color: white;">Pergunta</p>
+                                    <div class="card-body" style="font-size: 12px;">
+                                        <p>1. Assinale os Equipamentos de Proteção Individual utilizados na precaução padrão.</p>
 
-                                        <div class="resposta" onclick="flip()">Alternativa 1</div>
-                                        <div class="resposta" onclick="flip()">Alternativa 2</div>
-                                        <div class="resposta" onclick="flip()">Alternativa 3</div>
+                                        <div class="resposta" onclick="flip()">a) Máscara cirúrgica, óculos e luvas.</div>
+                                        <div class="resposta" onclick="flip()">b) Máscara PFF2, luvas e avental.</div>
+                                        <div class="resposta" onclick="flip()">c) Máscara cirúrgica, luvas, avental e óculos.</div>
 
                                     </div>
                                 </div>
                                 <div class="back" id="back1">
-                                    <p class="text-center">Texto do feedback</p>
-                                    <button onclick="unflip()">Voltar</button></p>
+                                    <p class="text-center">RESPOSTA: C</p>
+                                    <button onclick="unflip()"><i class="fas fa-undo"></i></button></p>
                                 </div>
                             </div>
                             <!-- Fim do Flip Card 1 -->
@@ -1068,50 +1069,25 @@
 
                                     <div class="front" id="front2">
 
-                                        <div class="card-body">
-                                            <p class="text-center" style="background-color: white;">Pergunta</p>
+                                        <div class="card-body" style="font-size: 12px;">
+                                            <p> 2. Assinale a alternativa correspondente aos sinais e sintomas de agravamento da Covid-19 em pessoas idosas.</p>
 
-                                            <div class="resposta" onclick="flip2()">Alternativa 1</div>
-                                            <div class="resposta" onclick="flip2()">Alternativa 2</div>
-                                            <div class="resposta" onclick="flip2()">Alternativa 3</div>
+                                            <div class="resposta" onclick="flip2()">a) Sinal de desconforto respiratório ou aumento da frequência respiratória basal.</div>
+                                            <div class="resposta" onclick="flip2()">b) Temperatura maior que 36,6 °C.</div>
+                                            <div class="resposta" onclick="flip2()">c) Saturação de O2 maior que 95%.</div>
 
                                         </div>
                                     </div>
                                     <div class="back" id="back2">
-                                        <p class="text-center">Texto do feedback</p>
-                                        <button onclick="unflip2()">Voltar</button></p>
+                                        <p class="text-center">RESPOSTA: A</p>
+                                        <button onclick="unflip2()"><i class="fas fa-undo"></i></button></p>
                                     </div>
                                 </div>
                                 <!-- Fim do Flip Card 2 -->
 
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="container">
-
-                                <!-- Flip Card 3 -->
-                                <div class="card" id="quiz3">
-
-                                    <div class="front" id="front3">
-
-                                        <div class="card-body">
-                                            <p class="text-center" style="background-color: white;">Pergunta</p>
-
-                                            <div class="resposta" onclick="flip3()">Alternativa 1</div>
-                                            <div class="resposta" onclick="flip3()">Alternativa 2</div>
-                                            <div class="resposta" onclick="flip3()">Alternativa 3</div>
-
-                                        </div>
-                                    </div>
-                                    <div class="back" id="back3">
-                                        <p class="text-center">Texto do feedback</p>
-                                        <button onclick="unflip3()">Voltar</button></p>
-                                    </div>
-                                </div>
-                                <!-- Fim do Flip Card 3 -->
-
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -1123,8 +1099,7 @@
                 <!-- Check de Progresso 4 -->
                 <div class="form-check text-center" id="check21">
                     <input type="checkbox" class="form-check-input" id="progressCheck21">
-                    <label class="form-check-label" for="progressCheck21">CHECK! Você está pronto para a próxima aula,
-                        sobre ????</label>
+                    <label class="form-check-label" for="progressCheck21">CHECK! Você está pronto para a próxima aula!</label>
                 </div>
                 <!-- Fim do Check de Progresso 4 -->
 
@@ -1140,15 +1115,14 @@
                             Anterior</strong>
 
                     </a>
-                    <p class="pinfo">Aula 4
-                    </p>
+                    <p class="pinfo">Contatos sociais em tempos de isolamento</p>
                 </div>
                 <div class="col-md-6 border-left text-right" id="proxima">
                     <a href="./aula6.html">
                         <strong>Próxima Aula</strong><i class="fas fa-chevron-right"
                             style="margin-left: 15px; margin-top: 5px;"></i>
                     </a>
-                    <p class="pinfo">Aula 6</p>
+                    <p class="pinfo">O processo de morte, o óbito e os cuidados com o corpo na ILPI</p>
                 </div>
             </div>
             <!--Fim Barra de navegação-->

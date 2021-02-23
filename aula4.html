@@ -20,7 +20,7 @@
 
     <!-- Menu Superior -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="menuSuperior">
 
             <!-- Logos -->
             <img src="assets/images/logoAula.png" class="img-fluid logo" alt="Logo" />
@@ -44,6 +44,7 @@
     </header>
     <!-- Fim do Menu Superior -->
 
+    <!-- Início Row-main -->
     <div class="row" id="row-main">
 
         <!-- Início Coluna do Menu Lateral-->
@@ -54,6 +55,10 @@
 
                 <!-- Botão p/ Recolher Sidebar-->
                 <span class="toggle-sidebar" id="sidebarButton"><i class="fas fa-chevron-left"></i></span>
+
+                <!-- Botão Secundário p/ Recolher Sidebar -->
+                <span class="toggle-sidebar" id="sidebarButton2"><img style="max-width: 50%;"
+                        src="assets/images/icones/icone.png" alt=""></span>
 
                 <!-- Step 1-->
                 <div class="step" id="aula1">
@@ -182,21 +187,23 @@
                                 <div class="containerItem">
                                     <div class="item" id="topico9"></div>
                                 </div>
-                                <p>3.1</p>
+                                <p><a href="aula3.html#inicioAula3">Vacinação para proteção da Covid-19 nas ILPIs</a>
+                                </p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item" id="topico10"></div>
                                 </div>
-                                <p>3.2</p>
+                                <p><a href="aula3.html#check10">Orientações para a vacinação contra a Covid-19 nas
+                                        ILPIs</a></p>
                             </div>
 
                             <div class="subItem">
                                 <div class="containerItem">
                                     <div class="item" id="topico11"></div>
                                 </div>
-                                <p>3.3</p>
+                                <p><a href="aula3.html#check11">Conclusão da aula</a></p>
                             </div>
 
                         </div>
@@ -424,8 +431,9 @@
 
                 <p>Por isso, durante a pandemia, a Sociedade Brasileira de Geriatria e Gerontologia recomenda a
                     suspensão de visitas externas às ILPI, incluindo familiares e amigos (<a
-                    href="https://drive.google.com/file/d/1vhqj7-AlIYAuQJ-iDxXd6JdfcRng_bCH/view"
-                    target="_blank">acesse a cartilha Orientações para Manejo de Visitas ILPI da Frente Nacional de Fortalecimento à ILPI</a>). Entretanto, é fundamental que
+                        href="https://drive.google.com/file/d/1vhqj7-AlIYAuQJ-iDxXd6JdfcRng_bCH/view"
+                        target="_blank">acesse a cartilha Orientações para Manejo de Visitas ILPI da Frente Nacional de
+                        Fortalecimento à ILPI</a>). Entretanto, é fundamental que
                     cada situação seja analisada de forma sensível. Caberá a ILPI manter uma escuta cuidadosa e singular
                     à rede sociofamiliar da pessoa idosa, considerando as diversidades de arranjos familiares e a
                     história de vida construída. Também devem ser consideradas as variantes relacionadas a pandemia em
@@ -929,7 +937,6 @@
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -939,18 +946,23 @@
 
                                     <div class="front" id="front1">
 
-                                        <div class="card-body">
-                                            <p class="text-center" style="background-color: white;">Pergunta</p>
+                                        <div class="card-body" style="font-size: 12px;">
+                                            <p>1. Considerando a necessidade de manter os contatos sociais em tempos de
+                                                isolamento, assinale a alternativa INCORRETA.</p>
 
-                                            <div class="resposta" onclick="flip()">Alternativa 1</div>
-                                            <div class="resposta" onclick="flip()">Alternativa 2</div>
-                                            <div class="resposta" onclick="flip()">Alternativa 3</div>
+                                            <div class="resposta" onclick="flip()">a) Promover contatos com familiares e
+                                                amigos dos moradores, utilizando os meios de comunicação.</div>
+                                            <div class="resposta" onclick="flip()">b) Minimizar questões emocionais
+                                                deletérias decorrentes do isolamento social, atenuando a saudade dos
+                                                familiares e amigos.</div>
+                                            <div class="resposta" onclick="flip()">c) Minimizar questões relacionadas a
+                                                Covid-19 e ao isolamento social, atenuando a realidade vivida.</div>
 
                                         </div>
                                     </div>
                                     <div class="back" id="back1">
-                                        <p class="text-center">Texto do feedback</p>
-                                        <button onclick="unflip()">Voltar</button></p>
+                                        <p class="text-center">RESPOSTA: C</p>
+                                        <button onclick="unflip()"><i class="fas fa-undo"></i></button></p>
                                     </div>
                                 </div>
                                 <!-- Fim do Flip Card 1 -->
@@ -964,47 +976,25 @@
 
                                         <div class="front" id="front2">
 
-                                            <div class="card-body">
-                                                <p class="text-center" style="background-color: white;">Pergunta</p>
+                                            <div class="card-body" style="font-size: 12px;">
+                                                <p>2. Assinale as estratégias que poderão ser adotadas na ILPI para
+                                                    promover o bem-estar dos moradores.</p>
 
-                                                <div class="resposta" onclick="flip2()">Alternativa 1</div>
-                                                <div class="resposta" onclick="flip2()">Alternativa 2</div>
-                                                <div class="resposta" onclick="flip2()">Alternativa 3</div>
+                                                <div class="resposta" onclick="flip2()">a) Criar um grupo no WhatsApp
+                                                    que inclua os familiares dos residentes.</div>
+                                                <div class="resposta" onclick="flip2()">b) Afastar os idosos das
+                                                    realidades mostradas pela mídia.</div>
+                                                <div class="resposta" onclick="flip2()">c) Incentivar visitas de
+                                                    familiares e a aproximação com a comunidade.</div>
 
                                             </div>
                                         </div>
                                         <div class="back" id="back2">
-                                            <p class="text-center">Texto do feedback</p>
-                                            <button onclick="unflip2()">Voltar</button></p>
+                                            <p class="text-center">RESPOSTAS: A</p>
+                                            <button onclick="unflip2()"><i class="fas fa-undo"></i></button></p>
                                         </div>
                                     </div>
                                     <!-- Fim do Flip Card 2 -->
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="container">
-
-                                    <!-- Flip Card 3 -->
-                                    <div class="card" id="quiz3">
-
-                                        <div class="front" id="front3">
-
-                                            <div class="card-body">
-                                                <p class="text-center" style="background-color: white;">Pergunta</p>
-
-                                                <div class="resposta" onclick="flip3()">Alternativa 1</div>
-                                                <div class="resposta" onclick="flip3()">Alternativa 2</div>
-                                                <div class="resposta" onclick="flip3()">Alternativa 3</div>
-
-                                            </div>
-                                        </div>
-                                        <div class="back" id="back3">
-                                            <p class="text-center">Texto do feedback</p>
-                                            <button onclick="unflip3()">Voltar</button></p>
-                                        </div>
-                                    </div>
-                                    <!-- Fim do Flip Card 3 -->
 
                                 </div>
                             </div>
@@ -1033,15 +1023,14 @@
                             Anterior</strong>
 
                     </a>
-                    <p class="pinfo">Aula 3
-                    </p>
+                    <p class="pinfo">Vacinação para Covid-19 na ILPI</p>
                 </div>
                 <div class="col-md-6 border-left text-right" id="proxima">
                     <a href="./aula5.html">
                         <strong>Próxima Aula</strong><i class="fas fa-chevron-right"
                             style="margin-left: 15px; margin-top: 5px;"></i>
                     </a>
-                    <p class="pinfo">Aula 5</p>
+                    <p class="pinfo">Atenção em casos suspeitos e confirmados de Covid-19</p>
                 </div>
             </div>
             <!--Fim Barra de navegação-->
