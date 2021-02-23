@@ -31,8 +31,8 @@ body, header, footer{
     padding: 0% 14% 0% 9.5% !important;
     margin: 0% !important;
 }
-#inicioAula1, #inicioAula2, #inicioAula3, #inicioAula4, #inicioAula5{
-    margin-top: -1.3px;
+#inicioAula1, #inicioAula2, #inicioAula3, #inicioAula4, #inicioAula5, #inicioAula6{
+    margin-top: -1.4px;
 }
 .row{
     margin: 0px !important;
@@ -301,7 +301,7 @@ ul li{
     border-radius: 25px;
     background-color: #ff6f61;   
 }
-#fase1, #fase2, #fase3, #fase4{
+#fase1, #fase2, #fase3, #fase4, #fase5{
     height: 220px;
     width: 400px;
     max-width: 100%;
@@ -327,6 +327,7 @@ ul li{
     height: 220px;
     max-width: 100%;
     max-height: 100%;
+    font-size: 13px;
 }
 .front, .back{
     width: 100%;
@@ -565,7 +566,7 @@ footer{
 .step:last-child .line {
   top: 25px;
   left: 11.5px;
- height: 86%;
+  height: 83.5%;
 }
 
 .contentMenu {
@@ -649,4 +650,23 @@ footer{
 }
 ::-webkit-scrollbar-thumb {
     background: darkgrey;
+}
+
+/*Botão p/ Campus Virtual */
+#botao{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#botaoComecar{
+    background-color: #443F57;
+    border-radius: 25px;
+    color: white;
+    width: 330px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 65px;
 }

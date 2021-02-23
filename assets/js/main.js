@@ -289,6 +289,48 @@ $("#progressCheck21").change(function () {
   }
 });
 
+/*Progress Check AULA6*/
+$("#progressCheck22").change(function () {
+  if (this.checked) {
+    $("#topico21").addClass("visited");
+  } else {
+    $("#topico21").removeClass("visited");
+  }
+});
+
+$("#progressCheck23").change(function () {
+  if (this.checked) {
+    $("#topico22").addClass("visited");
+  } else {
+    $("#topico22").removeClass("visited");
+  }
+});
+
+$("#progressCheck24").change(function () {
+  if (this.checked) {
+    $("#topico23").addClass("visited");
+  } else {
+    $("#topico23").removeClass("visited");
+  }
+});
+
+$("#progressCheck25").change(function () {
+  if (this.checked) {
+    $("#topico24").addClass("visited");
+  } else {
+    $("#topico24").removeClass("visited");
+  }
+});
+
+/*Progresso Conclusão Aula6*/
+$("#progressCheck25").change(function () {
+  if (this.checked) {
+    $("#aula6").addClass("completed");
+  } else {
+    $("#aula6").removeClass("completed");
+  }
+});
+
 /*Salva progresso no local storage*/
 function saveProgress() {
   var progresso = $("#progressCheck1");
@@ -301,36 +343,25 @@ function saveProgress() {
 
 /*Flip Card*/
 function flipFase1() {
-  $('#fase1').addClass('flipped');
-};
-
-function unflipFase1() {
-  $('#fase1').removeClass('flipped');
+  $('#fase1').toggleClass('flipped');
 };
 
 function flipFase2() {
-  $('#fase2').addClass('flipped');
-};
-
-function unflipFase2() {
-  $('#fase2').removeClass('flipped');
+  $('#fase2').toggleClass('flipped');
 };
 
 function flipFase3() {
-  $('#fase3').addClass('flipped');
-};
-
-function unflipFase3() {
-  $('#fase3').removeClass('flipped');
+  $('#fase3').toggleClass('flipped');
 };
 
 function flipFase4() {
-  $('#fase4').addClass('flipped');
+  $('#fase4').toggleClass('flipped');
 };
 
-function unflipFase4() {
-  $('#fase4').removeClass('flipped');
+function flipFase5() {
+  $('#fase5').toggleClass('flipped');
 };
+
 
 /**/
 
