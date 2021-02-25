@@ -69,6 +69,14 @@ body, header, footer{
     justify-content: center;
     position: relative;
 }
+#capaAula6{
+    background-image: url(../images/aula6/img1.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 #capaEstilo{
     background-image: url(../images/img5aula4.png);
     background-size: cover;
