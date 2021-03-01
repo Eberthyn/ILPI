@@ -103,3 +103,11 @@ footer{
 .apoio img{
     margin-right: 20px;
 }
+
+
+@media (max-width: 980px){
+   
+    .logo{
+        max-width: 35%;
+}
+}
