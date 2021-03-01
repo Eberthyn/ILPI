@@ -643,6 +643,9 @@ footer{
         display: block;
         margin-left: -50%;
     }
+    .logo{
+        max-width: 35%;
+    }
    
 
 
