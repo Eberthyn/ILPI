@@ -114,11 +114,19 @@ $("#progressCheck4").change(function () {
 });
 
 /*Progress Check AULA2*/
-$("#progressCheck5").change(function () {
+$("#progressCheck26").change(function () {
   if (this.checked) {
     $("#topico4").addClass("visited");
   } else {
     $("#topico4").removeClass("visited");
+  }
+});
+
+$("#progressCheck5").change(function () {
+  if (this.checked) {
+    $("#topico25").addClass("visited");
+  } else {
+    $("#topico25").removeClass("visited");
   }
 });
 
