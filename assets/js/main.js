@@ -471,4 +471,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+var vid = document.getElementById("videoEmbed");
+function disableAutoplay() { 
+  vid.autoplay = false;
+  vid.load();
+} 
 
