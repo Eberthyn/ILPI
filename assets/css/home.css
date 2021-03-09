@@ -80,7 +80,7 @@ li{
     display: flex;
     vertical-align: text-top;
 }
-.icon#checkmark::before{
+.icon.checkmark::before{
     font-family: "Font Awesome 5 Free";
     content: '\f00c';
     font-weight: 900;

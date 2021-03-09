@@ -19,16 +19,15 @@
 
 <body>
 
-    <!-- Menu Superior-->
+    <!-- Menu Superior -->
     <header>
-
         <nav class="navbar navbar-expand-lg navbar-light" id="menuSuperior">
 
             <!-- Logos -->
             <img src="assets/images/logoAula.png" class="img-fluid logo" alt="Logo" />
             <img src="assets/images/logoAula2.png" class="img-fluid logo" alt="120 Anos" />
 
-            <!-- Botão Collapse-->
+            <!-- Botão Collapse -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
@@ -44,14 +43,13 @@
             </div>
 
         </nav>
-
     </header>
-    <!-- Fim Menu Superior-->
+    <!-- Fim do Menu Superior -->
 
-    <!-- Início Row-main-->
+    <!-- Início da Row-main-->
     <div class="row" id="row-main">
 
-        <!-- Início Coluna do Menu Lateral-->
+        <!-- Início da Coluna do Menu Lateral-->
         <div class="col-md-2" id="sidebar">
 
             <!-- Step Menu -->
@@ -372,15 +370,15 @@
                 <!-- Fim Step 6 -->
 
             </div>
-            <!-- Fim Step Menu -->
+            <!-- Fim do Step Menu -->
 
-        </div> <!-- Fim Coluna Menu Lateral -->
+        </div> <!-- Fim da Coluna Menu Lateral -->
 
 
-        <!-- Início Coluna de Conteúdo -->
+        <!-- Início da Coluna de Conteúdo -->
         <div class="col-md-10" id="content">
 
-            <!-- Bloco 1-->
+            <!-- Bloco 1 -->
             <div class="conteudo">
                 <img id="inicioAula1" src="assets/images/aula1/tarjaAula1.png" alt="Tarja Aula 1">
 
@@ -410,15 +408,26 @@
                 <p>No contexto da pandemia da Covid-19 e do atendimento nas Instituições de Longa Permanência
                     para
                     Idosos (ILPIs), ao final dessa aula você vai ser capaz de:</p>
-                <p class="icon" id="checkmark">Compreender a definição de pessoa idosa e as normativas legais
-                    relacionadas ao tema;</p>
-                <p class="icon" id="checkmark">Explicar o que são as Instituições de Longa Permanência para Idosos
-                    (ILPI)
-                    e a
-                    vulnerabilidade
-                    da pessoa idosa frente a pandemia da Covid-19;</p>
-                <p class="icon" id="checkmark">Aplicar as medidas de prevenção e controle da Covid-19 nas ILPI.</p>
 
+                <ul>
+                    <li class="icon checkmark">
+                        <p>Compreender a definição de pessoa idosa e as normativas legais
+                            relacionadas ao tema;</p>
+                    </li>
+
+                    <li>
+                        <p class="icon checkmark">Explicar o que são as Instituições de Longa Permanência para Idosos
+                            (ILPI)
+                            e a
+                            vulnerabilidade
+                            da pessoa idosa frente a pandemia da Covid-19;</p>
+                    </li>
+
+                    <li class="icon checkmark">
+                        <p>Aplicar as medidas de prevenção e controle da Covid-19 nas ILPI.</p>
+                    </li>
+
+                </ul>
 
                 <h2>Recomendações internacionais</h2>
                 <p>Em maio de 2020, mediante a pandemia da Covid-19, novamente a ONU emitiu um documento no qual
@@ -430,21 +439,21 @@
                     contribuindo no
                     combate à pandemia como os profissionais de saúde e cuidadores de idosos.</p>
             </div>
-            <!-- Fim Bloco 1-->
+            <!-- Fim Bloco 1 -->
 
-            <!-- Box Laranja 1-->
+            <!-- Box Laranja 1 -->
             <div class="row estilo">
-                <div class="col-md-10 blocoTexto" id="bloco1">
+                <div class="col-md-10 blocoTexto blocoStyle1">
                     <p class="pinfo">RECOMENDAÇÕES DA ONU PARA RESPOSTAS PRIORITÁRIAS</p>
                     <ul>
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
                                 Compromisso
                                 com a
                                 dignidade e o direito à vida.
                             </p>
                         </li>
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
                                 Inclusão
                                 social e
@@ -454,7 +463,7 @@
                             </p>
                         </li>
 
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
                                 Foco nas
                                 respostas
@@ -464,14 +473,14 @@
                             </p>
 
                         </li>
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
 
                                 Enfrentamento frontal do estigma contra as pessoas idosas, estimulando sua
                                 participação e aproveitando o seu conhecimento na sociedade.
                             </p>
                         </li>
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
                                 Incentivo a uma
                                 sociedade mais equitativa e inclusiva da pessoa idosa, atendendo ao
@@ -485,17 +494,18 @@
                     </ul>
                 </div>
             </div>
-            <!-- Fim Box Laranja 1-->
+            <!-- Fim Box Laranja 1 -->
 
-            <!-- Bloco 2-->
+            <!-- Bloco 2 -->
             <div class="conteudo">
 
                 <!-- Check de Progresso 1 -->
-                <div class="form-check text-center" id="check1">
+                <div class="form-check text-center destaque destaque" id="check1">
                     <input type="checkbox" class="form-check-input" id="progressCheck1" onclick="saveProgress()">
                     <label class="form-check-label" for="progressCheck1">CHECK! CONCLUÍ ESSE TÓPICO COM
                         SUCESSO.</label>
                 </div>
+                <!-- Fim do Check 1 -->
 
                 <h1>Instituições de Longa Permanência para Idosos no contexto da Covid-19 </h1>
 
@@ -513,13 +523,13 @@
                         <div class="embed-responsive embed-responsive-16by9">
                             <video width="560" height="315" controls="true" class="embed-responsive-item">
                                 <source src="https://educare.fiocruz.br/file-storage/FOkQ5wqu" type="video/mp4"
-                                    frameborder="0" allow="encrypted-media" allowfullscreen="allowfullscreen"/>
+                                    frameborder="0" allow="encrypted-media" allowfullscreen="allowfullscreen" />
                             </video>
                         </div>
                         <small></small>
                     </div>
                 </div>
-                <!-- Fim do Vídeo 1-->
+                <!-- Fim do Vídeo 1 -->
 
                 <p style="margin-top: 30px;">Os residentes das ILPIs são populações vulneráveis com alto risco de
                     desfechos
@@ -549,10 +559,10 @@
 
                 <p>Veja algumas notícias sobre o que vem ocorrendo em ILPIs no Brasil e no mundo.</p>
 
-                <!-- Card Deck (Links Externos)-->
+                <!-- Card Deck (Links Externos) -->
                 <div class="card-deck">
 
-                    <!-- Card 1-->
+                    <!-- Card 1 -->
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Idosos abandonados são encontrados mortos em asilos na Espanha:
@@ -567,9 +577,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Fim Card 1-->
+                    <!-- Fim Card 1 -->
 
-                    <!-- Card 2-->
+                    <!-- Card 2 -->
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Surto de coronavírus atinge 87% de residentes de
@@ -587,9 +597,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Fim Card 2-->
+                    <!-- Fim Card 2 -->
 
-                    <!-- Card 3-->
+                    <!-- Card 3 -->
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Minas tem 87 surtos de Covid-19 em asilos de 53
@@ -605,12 +615,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Fim card 3-->
+                    <!-- Fim card 3 -->
 
                 </div>
-                <!-- Fim Card Deck-->
+                <!-- Fim Card Deck -->
 
-                <!-- Box Informativo 1-->
+                <!-- Box Informativo 1 -->
                 <div class="informativo">
                     <img class="imginfo" src="assets/images/icones/info.png" alt="">
                     <p class="pinfo">SOBRE A COVID-19</p>
@@ -631,7 +641,7 @@
                         2020, já
                         havíamos ultrapassado 50 milhões de casos confirmados da doença.</p>
                 </div>
-                <!-- Fim Box Informativo 1-->
+                <!-- Fim Box Informativo 1 -->
 
                 <p>No Brasil, há grande diversidade quanto ao tipo de instituição e seus recursos
                     disponíveis,
@@ -645,7 +655,7 @@
                     Covid-19.
                 </p>
 
-                <div class="text-center">
+                <div class="text-center destaque">
                     <hr>
                     <p class="textoLaranja">Devemos estar atentos às medidas de prevenção e controle do Covid-19 nas
                         ILPIs, assim
@@ -680,7 +690,7 @@
                     um
                     profissional de saúde, se disponível na instituição.</p>
 
-                <div class="text-center">
+                <div class="text-center destaque">
                     <hr>
                     <p class="textoLaranja">O gestor da ILPI deve apoiar o profissional/equipe na elaboração,
                         implementação e
@@ -697,13 +707,13 @@
                         <div class="embed-responsive embed-responsive-16by9">
                             <video width="560" height="315" controls="true" class="embed-responsive-item">
                                 <source src="https://educare.fiocruz.br/file-storage/cUhXCf-4" type="video/mp4"
-                                    frameborder="0" allow="encrypted-media" allowfullscreen="allowfullscreen"/>
+                                    frameborder="0" allow="encrypted-media" allowfullscreen="allowfullscreen" />
                             </video>
                         </div>
                         <small></small>
                     </div>
                 </div>
-                <!-- Fim do Vídeo 2-->
+                <!-- Fim do Vídeo 2 -->
 
                 <h3>SOBRE AS MEDIDAS</h3>
                 <p>A implementação das medidas deve ter o envolvimento de todos os
@@ -718,14 +728,15 @@
                     orientados sobre as medidas.</p>
 
                 <!-- Check de Progresso 2 -->
-                <div class="form-check text-center" id="check2">
+                <div class="form-check text-center destaque" id="check2">
                     <input type="checkbox" class="form-check-input" id="progressCheck2">
                     <label class="form-check-label" for="progressCheck2">CHECK! CONCLUÍ ESSE TÓPICO
                         COM
                         SUCESSO.</label>
                 </div>
+                <!-- Fim do Check 2 -->
 
-                <!-- Texto com imagem à direita-->
+                <!-- Texto com imagem à direita -->
                 <div class="row">
 
                     <h1 style="margin-left: 15px;">Medidas de prevenção e controle da disseminação</h1>
@@ -787,7 +798,7 @@
                 </div>
                 <!-- Fim texto com imagem à direita-->
 
-                <div class="text-center">
+                <div class="text-center destaque">
                     <hr>
                     <p class="textoLaranja">Fique atento aos sinais e sintomas da Covid-19!</p>
                     <hr>
@@ -795,7 +806,7 @@
 
                 <h2>Sinais e sintomas típicos da Covid-19</h2>
 
-                <div class="text-center">
+                <div class="text-center destaque">
                     <div class="cardImg">
                         <img class="img-fluid" src="./assets/images/aula1/img2.jpg" alt="Sintomas">
                     </div>
@@ -807,7 +818,7 @@
                     olfato); mialgia (dores musculares, dores no corpo) e cansaço ou fadiga.</p>
 
 
-                <!-- Box Atenção 1-->
+                <!-- Box Atenção 1 -->
                 <div class="informativo" style="margin-bottom: 0px;">
                     <img class="imginfo" src="assets/images/icones/warning.png" alt="">
                     <p class="pinfo">ATENÇÃO</p>
@@ -820,7 +831,7 @@
                         Covid-19.
                     </p>
                 </div>
-                <!-- Fim Box Atenção 1-->
+                <!-- Fim Box Atenção 1 -->
 
                 <p><small>Fonte: <a
                             href="https://www20.anvisa.gov.br/segurancadopaciente/index.php/alertas/item/nota-tecnica-n-05-2020-gvims-ggtes-anvisa-orientacoes-para-a-prevencao-e-o-controle-de-infeccoes-pelo-novo-coronavirus-sars-cov-2-ilpi"
@@ -835,26 +846,26 @@
                     medidas:
                 </p>
             </div>
-            <!-- Fim Bloco 2-->
+            <!-- Fim Bloco 2 -->
 
-            <!-- Box 2-->
+            <!-- Box Laranja 2 -->
             <div class="row estilo">
                 <div class="col-md-5 blocoTexto">
                     <ul>
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
                                 Monitoramento dos
                                 pacientes
                             </p>
                         </li>
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
 
                                 Higienização das
                                 mãos
                             </p>
                         </li>
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
 
                                 Etiqueta
@@ -867,7 +878,7 @@
                 </div>
                 <div class="col-md-5 blocoTexto">
                     <ul>
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
 
                                 Uso de
@@ -876,7 +887,7 @@
                                 ILPIs
                             </p>
                         </li>
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
 
                                 Limpeza e
@@ -884,7 +895,7 @@
                                 superfícies
                             </p>
                         </li>
-                        <li class="icon" id="arrow">
+                        <li class="icon arrow">
                             <p>
 
                                 Vacinação
@@ -895,9 +906,9 @@
                     </ul>
                 </div>
             </div>
-            <!-- Fim Box 2-->
+            <!-- Fim Box Laranja 2 -->
 
-            <!-- Bloco 3-->
+            <!-- Bloco 3 -->
             <div class="conteudo">
 
                 <h3>MONITORAMENTO DOS PACIENTES</h3>
@@ -907,7 +918,7 @@
                     transmissão. Para isso, duas ações são essenciais:</p>
 
                 <ul>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Realizar o
                             monitoramento
@@ -916,7 +927,7 @@
                             sintomas da
                             Covid-19;</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Avaliar os
                             sintomas de
@@ -943,7 +954,7 @@
                     é fundamental para evitar essa forma de transmissão e contágio. </p>
 
                 <ul>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Orientar e
                             estimular os
@@ -953,7 +964,7 @@
                             gel
                             70%;</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Disponibilizar
                             álcool gel
@@ -963,7 +974,7 @@
                             áreas
                             coletivas;</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Prover condições
                             para
@@ -977,7 +988,7 @@
                     </li>
                 </ul>
 
-                <!-- Box Informativo 2-->
+                <!-- Box Informativo 2 -->
                 <div class="informativo" id="acordeao">
                     <img class="imginfo" src="assets/images/icones/info.png" alt="">
                     <p class="pinfo">COMO LAVAR AS MÃOS CORRETAMENTE
@@ -996,7 +1007,7 @@
                     <p>Veja as técnicas de fricção e higienização adequada das mãos:</p>
 
 
-                    <!--Accordion-->
+                    <!-- Accordion 1 -->
                     <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
                         <!-- Accordion card 1-->
@@ -1022,7 +1033,7 @@
                             </div>
                         </div>
 
-                        <!-- Accordion card 2-->
+                        <!-- Accordion card 2 -->
                         <div class="card">
 
                             <!-- Card header -->
@@ -1046,10 +1057,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Fim Accordion-->
+                    <!-- Fim Accordion 1 -->
 
                 </div>
-                <!-- Fim Box Informativo 2-->
+                <!-- Fim Box Informativo 2 -->
 
                 <h3>ETIQUETA DA TOSSE E HIGIENE RESPIRATÓRIA</h3>
                 <p>A tosse produz aerossóis e aumenta o risco de transmissão e contágio. É preciso
@@ -1062,7 +1073,7 @@
                     recomendações a todos, profissionais da ILPI, residentes e visitantes são:</p>
 
                 <ul>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Ao tossir ou
                             espirrar,
@@ -1070,7 +1081,7 @@
                             nariz e
                             boca com cotovelo flexionado ou lenço de papel.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Utilizar lenço
                             descartável
@@ -1078,7 +1089,7 @@
                             higiene nasal (descartar imediatamente após o uso e realizar a higiene das
                             mãos).</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Realizar a
                             higiene das
@@ -1094,7 +1105,7 @@
                 </p>
 
                 <ul>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Prover lenço
                             descartável
@@ -1103,21 +1114,21 @@
                             nasal dos residentes.</p>
 
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Prover lixeira
                             com
                             acionamento
                             por pedal para o descarte de lenços.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Orientar os
                             funcionários a
                             ajudarem os idosos com dificuldade a aplicarem as orientações.
                         </p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Afixar cartazes
                             com
@@ -1138,15 +1149,15 @@
 
 
 
-                <!-- Box Informativo 3-->
+                <!-- Box Informativo 3 -->
                 <div class="informativo" id="acordeao">
 
                     <img class="imginfo" src="assets/images/icones/info.png" alt="">
 
-                    <!--Accordion 2-->
+                    <!--Accordion 2 -->
                     <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
-                        <!-- Accordion card 1-->
+                        <!-- Accordion card 1 -->
                         <div class="card">
 
                             <!-- Card header -->
@@ -1165,7 +1176,7 @@
                                 data-parent="#accordionEx">
                                 <div class="card-body">
                                     <ul>
-                                        <li class="icon" id="arrow">
+                                        <li class="icon arrow">
                                             <p>
 
                                                 <b> Sem sintomas respiratórios </b><br>
@@ -1178,7 +1189,7 @@
                                                 com outros residentes.
                                             </p>
                                         </li>
-                                        <li class="icon" id="arrow">
+                                        <li class="icon arrow">
                                             <p>
 
                                                 <b> Com sintomas respiratórios ou com Covid-19
@@ -1200,7 +1211,7 @@
                                                 respiratórios.
                                             </p>
                                         </li>
-                                        <li class="icon" id="arrow">
+                                        <li class="icon arrow">
                                             <p>
 
                                                 <b> Em quartos individuais</b><br> Não
@@ -1215,7 +1226,7 @@
 
                         </div>
 
-                        <!-- Accordion card 2-->
+                        <!-- Accordion card 2 -->
                         <div class="card">
 
                             <!-- Card header -->
@@ -1234,14 +1245,14 @@
                                 data-parent="#accordionEx">
                                 <div class="card-body">
                                     <ul>
-                                        <li class="icon" id="arrow">
+                                        <li class="icon arrow">
                                             <p>
 
                                                 <b>Em assistência direta aos residentes</b><br>
                                                 Usar máscara cirúrgica.
                                             </p>
                                         </li>
-                                        <li class="icon" id="arrow">
+                                        <li class="icon arrow">
                                             <p>
 
                                                 <b>Que realizem procedimentos geradores de aerossóis </b><br>
@@ -1249,7 +1260,7 @@
                                                 procedimento.
                                             </p>
                                         </li>
-                                        <li class="icon" id="arrow">
+                                        <li class="icon arrow">
                                             <p>
 
                                                 <b>Que realizam tarefas administrativas e que não envolvam
@@ -1264,7 +1275,7 @@
                         </div>
 
 
-                        <!-- Accordion card 3-->
+                        <!-- Accordion card 3 -->
                         <div class="card">
 
                             <!-- Card header -->
@@ -1282,7 +1293,7 @@
                                 data-parent="#accordionEx">
                                 <div class="card-body">
                                     <ul>
-                                        <li class="icon" id="arrow">
+                                        <li class="icon arrow">
                                             <p>
 
                                                 <b>Todos os visitantes</b><br>
@@ -1295,7 +1306,7 @@
                         </div>
 
                     </div>
-                    <!-- Fim Accordion 2-->
+                    <!-- Fim Accordion 2 -->
 
                 </div>
                 <!-- Fim Box Informativo 3-->
@@ -1320,7 +1331,7 @@
                     residentes, enquanto durarem os sintomas.</p>
 
 
-                <!-- Box Glossário 1-->
+                <!-- Box Glossário 1 -->
                 <div class="informativo">
                     <img class="imginfo" src="assets/images/icones/glossario.png" alt="">
                     <p class="pinfo">GLOSSÁRIO</p>
@@ -1335,7 +1346,7 @@
                         ventilação manual antes da intubação, coletas de secreções nasotraqueais.
                     </p>
                 </div>
-                <!-- Fim Box GLossário 1-->
+                <!-- Fim Box GLossário 1 -->
 
                 <h3>LIMPEZA E DESINFECÇÃO DAS SUPERFÍCIES</h3>
                 <p>A tosse produz aerossóis e aumenta o risco de transmissão e contágio. É preciso
@@ -1352,13 +1363,13 @@
                         coronavírus</b></p>
 
                 <ul>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Limpar com água e
                             sabão/detergente
                             neutro.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Desinfetar as
                             áreas com
@@ -1369,7 +1380,7 @@
                             primeira
                             limpeza.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Limpar e
                             desinfetar as
@@ -1384,7 +1395,7 @@
                             mesas,
                             interruptores de luz, corrimãos e barras de apoio).</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             No caso de a
                             superfície
@@ -1394,7 +1405,7 @@
                             tecido
                             absorvente e depois realizar a limpeza e desinfecção desta área.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Limpar e
                             desinfetar
@@ -1411,9 +1422,9 @@
 
 
             </div>
-            <!-- Fim Bloco 3-->
+            <!-- Fim Bloco 3 -->
 
-            <!-- Box 3-->
+            <!-- Box 3 -->
             <div class="row estilo">
                 <div class="blocoTexto col-sm-7">
                     <p class="pinfo" style="margin-left: 4.5%;">MANUAL DA ANVISA: TENHA SEMPRE DISPONÍVEL</p>
@@ -1425,7 +1436,7 @@
                         ANVISA e
                         tenha sempre disponível para consulta.</p>
                 </div>
-                <div class="blocoTexto col-sm-3 centro" id="bloco3">
+                <div class="blocoTexto col-sm-3 centro blocoStyle2">
                     <div class="cardImg">
                         <a href="https://www20.anvisa.gov.br/segurancadopaciente/index.php/publicacoes/item/seguranca-do-paciente-em-servicos-de-saude-limpeza-e-desinfeccao-de-superficies"
                             target="_blank"><img class="img-fluid" style="max-width: 80%;"
@@ -1436,9 +1447,9 @@
 
                 </div>
             </div>
-            <!-- Fim Box 3-->
+            <!-- Fim Box 3 -->
 
-            <!-- Bloco 4-->
+            <!-- Bloco 4 -->
             <div class="conteudo">
                 <h3>VACINAÇÃO DA PESSOA IDOSA</h3>
                 <p>Vacinar é proteger, não só no contexto da pandemia de Covid-19. Algumas ações
@@ -1447,7 +1458,7 @@
                     extra.</p>
 
                 <ul>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Conferir e se
                             certificar
@@ -1465,7 +1476,7 @@
                             o
                             Cartão de Vacinação para pessoa idosa completo.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             No caso da
                             necessidade de
@@ -1475,7 +1486,7 @@
                             Saúde a
                             possibilidade de realizar a vacinação dentro da ILPI.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Certificar-se de
                             que os
@@ -1496,7 +1507,7 @@
                 </h3>
 
                 <ul>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Usar máscara,
                             manter o
@@ -1510,7 +1521,7 @@
                             unidade de
                             acolhimento.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Se possível, usar
                             transporte
@@ -1523,7 +1534,7 @@
                             outras
                             pessoas.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Adotar práticas
                             mais
@@ -1539,21 +1550,21 @@
                 <p><b>Ao chegar na ILPI:</b></p>
 
                 <ul>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Trocar a roupa e
                             o
                             calçado usados
                             no trajeto.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Guardar as roupas
                             e
                             sapatos
                             utilizados em saco plástico e em lugar específico para este fim na entrada.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Fazer
                             higienização
@@ -1561,7 +1572,7 @@
                             mãos,
                             braços e rosto.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Se possível, caso
                             tenha
@@ -1570,7 +1581,7 @@
                             pessoas
                             acolhidas.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Limpar o celular
                             e
@@ -1586,16 +1597,16 @@
                 <p><b>Durante suas atividades:</b></p>
 
                 <ul>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Usar máscara.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Usar cabelo
                             preso.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Vestir roupas e
                             calçados
@@ -1607,7 +1618,7 @@
                             guarde-as em
                             local específico.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Evitar
                             aglomerações
@@ -1618,7 +1629,7 @@
                             de
                             trabalho.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Ao sair da ILPI,
                             trocar
@@ -1634,14 +1645,14 @@
                 <p><b>Ao chegar em casa:</b></p>
 
                 <ul>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Tomar banho
                             lavando
                             os
                             cabelos.</p>
                     </li>
-                    <li class="icon" id="checkmark">
+                    <li class="icon checkmark">
                         <p>
                             Descartar a
                             máscara,
@@ -1654,7 +1665,7 @@
                     </li>
                 </ul>
 
-                <div class="text-center">
+                <div class="text-center destaque">
                     <hr>
                     <p class="textoLaranja">Todos os profissionais que apresentem qualquer um dos sintomas relacionados
                         à
@@ -1674,12 +1685,13 @@
                         Saúde</a>)</p>
 
                 <!-- Check de Progresso 3 -->
-                <div class="form-check text-center" id="check3">
+                <div class="form-check text-center destaque" id="check3">
                     <input type="checkbox" class="form-check-input" id="progressCheck3">
                     <label class="form-check-label" for="progressCheck3">CHECK! CONCLUÍ ESSE TÓPICO
                         COM
                         SUCESSO.</label>
                 </div>
+                <!-- Fim do Check 3 -->
 
                 <h1>Chegamos ao final da aula!</h1>
                 <p>Nessa aula você conheceu o contexto das pessoas idosas residentes em Instituições
@@ -1692,7 +1704,7 @@
                 <p>Vamos relembrar os pontos principais?</p>
 
             </div>
-            <!-- Fim Bloco 4-->
+            <!-- Fim Bloco 4 -->
 
             <!-- Questionário -->
             <div row id="questionario">
@@ -1719,7 +1731,7 @@
                                     </div>
                                 </div>
                                 <div class="back" id="back1">
-                                    <p class="text-center">RESPOSTA: A</p>
+                                    <p class="text-center destaque">RESPOSTA: A</p>
                                     <button onclick="unflip()"><i class="fas fa-undo"></i></button></p>
                                 </div>
                             </div>
@@ -1752,7 +1764,7 @@
                                         </div>
                                     </div>
                                     <div class="back" id="back2">
-                                        <p class="text-center">RESPOSTA: C</p>
+                                        <p class="text-center destaque">RESPOSTA: C</p>
                                         <button onclick="unflip2()"><i class="fas fa-undo"></i></button></p>
                                     </div>
                                 </div>
@@ -1764,22 +1776,22 @@
                     </div>
                 </div>
             </div>
-            <!-- Fim Questionário-->
+            <!-- Fim Questionário -->
 
-            <!-- Bloco 5-->
+            <!-- Bloco 5 -->
             <div class="conteudo">
 
-                <!-- Check de Progresso 4-->
-                <div class="form-check text-center" id="check4">
+                <!-- Check de Progresso 4 -->
+                <div class="form-check text-center destaque" id="check4">
                     <input type="checkbox" class="form-check-input" id="progressCheck4">
                     <label class="form-check-label" for="progressCheck4">CHECK! Você está pronto para a próxima aula,
                         sobre as recomendações para comunicação e contato da pessoa idosa com a família e a
                         comunidade.</label>
                 </div>
-                <!-- Fim Check 4-->
+                <!-- Fim do Check 4 -->
 
             </div>
-            <!-- Fim Bloco 5-->
+            <!-- Fim Bloco 5 -->
 
             <!-- Barra de Navegação -->
             <div class="row navegacao">
@@ -1801,7 +1813,7 @@
                     <p class="pinfo">Cuidados integrais</p>
                 </div>
             </div>
-            <!--Fim Barra de navegação-->
+            <!--Fim Barra de Navegação -->
 
             <!-- Rodapé -->
             <footer>
@@ -1832,8 +1844,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="assets/js/carousel-swipe.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/carousel-swipe.js"></script>
+    <script src="assets/js/flipCard.js"></script>
+    <script src="assets/js/progresscheck.js"></script>
+    <script src="assets/js/sidebar.js"></script>
 
 </body>
 
