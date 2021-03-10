@@ -520,6 +520,7 @@ ul li{
     justify-content: center;
     position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*Safari*/
 }
 .front{
     z-index: 2;
@@ -659,6 +660,9 @@ footer{
     }
     #quiz, #quiz2, #quiz3{
         width: 270px;
+    }
+    .backFase{
+        font-size: 11px !important;
     }
 }
 
