@@ -519,15 +519,16 @@ ul li{
     align-items: center;
     justify-content: center;
     position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*Safari*/
 }
 .front{
     z-index: 2;
-    -webkit-backface-visibility: hidden; /*Safari*/
-    backface-visibility: hidden; 
 }
 .back{  
     z-index: 1;
     transform: rotateY(180deg);
+    visibility: visible;
 }
 .resposta {
     flex: 1;
