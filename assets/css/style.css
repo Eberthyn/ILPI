@@ -523,6 +523,7 @@ ul li{
 .front{
     z-index: 2;
     -webkit-backface-visibility: hidden; /*Safari*/
+    backface-visibility: hidden; 
 }
 .back{  
     z-index: 1;
