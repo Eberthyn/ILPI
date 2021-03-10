@@ -566,6 +566,7 @@ ul li{
 }
 .card.flipped.back{
     visibility: visible !important;
+    -webkit-visibility: visible !important;
 }
 
 
