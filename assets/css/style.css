@@ -534,11 +534,7 @@ ul li{
     -moz-backface-visibility: hidden;
     transform: rotateX(0deg);
 }
-.front{
-    z-index: 2;
-}
 .back{  
-    z-index: 1;
     -moz-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -563,10 +559,6 @@ ul li{
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
-}
-.card.flipped.back{
-    visibility: visible !important;
-    -webkit-visibility: visible !important;
 }
 
 
