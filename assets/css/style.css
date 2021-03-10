@@ -519,11 +519,10 @@ ul li{
     align-items: center;
     justify-content: center;
     position: absolute;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /*Safari*/
 }
 .front{
     z-index: 2;
+    -webkit-backface-visibility: hidden; /*Safari*/
 }
 .back{  
     z-index: 1;
