@@ -14,6 +14,7 @@ $(window).on('resize', function () {
       $("#content").removeClass("col-md-12");
       $("#content").addClass("col-md-10");
     }
+    
   });
   
   /*Collapse Sidebar*/

@@ -2,22 +2,16 @@
 $(window).scroll(function () {
 
   if ($(window).scrollTop() + $(window).height() === $(document).height()) {
-    console.log("esconde!");
 
   } else {
-    console.log("normal");
     $(".navbar").addClass("fixed-top");
   }
 
-
   if ($(window).scrollTop() === 0) {
-    console.log("zero");
     $(".navbar").removeClass("fixed-top");
     $("#row-main").css("padding-top", "0%");
 
-
   } else {
-    console.log("nao zero");
     $(".navbar").addClass("fixed-top");
     $("#row-main").css("padding-top", ($('#menuSuperior').css("height")));
     $(".stepContainer").css("padding-bottom", ($('#menuSuperior').css("height")));
@@ -25,7 +19,7 @@ $(window).scroll(function () {
 
 });
 
-/*Altera Icone do Acordeão*/
+/*Controla funções no Menu Lateral*/
 $(function () {
   console.log('2');
   var Accordion = function (el, multiple) {
@@ -82,9 +76,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-var vid = document.getElementById("videoEmbed");
-function disableAutoplay() { 
-  vid.autoplay = false;
-  vid.load();
-} 
-
+/* Altera rodapé entre Desktop e Tablet/Smartphone */
+  var tam = $(window).width();
+  if (tam <= 980){
+    $("#rodape1").attr("src","assets/images/rodape/logos1.jpg");
+    $("#rodape2").attr("src","assets/images/rodape/logos2.jpg");
+    $("#colunaRodape").removeClass("col-md-10");
+    $("#colunaRodape").addClass("col-md-8");
+  }else{
+    $("#rodape2").attr("src","assets/images/rodape/logos3.jpg");
+  }
+  
+  
+  

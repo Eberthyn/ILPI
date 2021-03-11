@@ -236,6 +236,9 @@ body, header, footer{
 .row{
     margin: 0px !important;
 }
+.cardImg{
+    position: relative;
+}
 #capaAula2{
     background-image: url(../images/aula2/img1.png);
     background-size: cover;
@@ -606,23 +609,8 @@ ul li{
 /*Rodapé*/
 footer{
     padding: 1% 0% 1% 0%;
-    height: 110px;
 }
-.realizacao{
-    margin-left: 5%;
-}
-.realizacao img{
-    margin-right: 47px;
-}
-.apoio{
-    margin-left: 10%;
-}
-.apoio img{
-    margin-right: 20px;
-}
-.cardImg{
-    position: relative;
-}
+
 
 /* Recolhe Sidebar */ 
 @media (min-width: 980px) {
@@ -663,7 +651,7 @@ footer{
 }
 
 /* Smartphone */
-@media (max-width: 635px){
+@media (max-width: 480px){
     .step:last-child .line{
         height: 86%;
     }

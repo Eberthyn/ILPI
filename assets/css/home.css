@@ -90,18 +90,7 @@ li{
 /*Rodapé*/
 footer{
     padding: 1% 0% 1% 0%;
-}
-.realizacao{
-    margin-left: 5%;
-}
-.realizacao img{
-    margin-right: 47px;
-}
-.apoio{
-    margin-left: 10%;
-}
-.apoio img{
-    margin-right: 20px;
+    margin: auto;
 }
 
 
@@ -109,5 +98,5 @@ footer{
    
     .logo{
         max-width: 35%;
-}
+    }  
 }

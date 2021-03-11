@@ -1,5 +1,4 @@
-
-/*Progress Check AULA1*/
+/*Progress Check Aula 1*/
 $("#progressCheck1").change(function () {
     if (this.checked) {
       $("#topico0").addClass("visited");
@@ -32,7 +31,7 @@ $("#progressCheck1").change(function () {
     }
   });
   
-  /*Progresso Conclusão Aula1*/
+  /*Progresso Conclusão Aula 1*/
   $("#progressCheck4").change(function () {
     if (this.checked) {
       $("#aula1").addClass("completed");
@@ -41,7 +40,7 @@ $("#progressCheck1").change(function () {
     }
   });
   
-  /*Progress Check AULA2*/
+  /*Progress Check Aula 2*/
   $("#progressCheck26").change(function () {
     if (this.checked) {
       $("#topico4").addClass("visited");
@@ -99,7 +98,7 @@ $("#progressCheck1").change(function () {
     }
   });
   
-  /*Progress Check AULA3*/
+  /*Progress Check Aula 3*/
   $("#progressCheck10").change(function () {
     if (this.checked) {
       $("#topico9").addClass("visited");
@@ -124,7 +123,7 @@ $("#progressCheck1").change(function () {
     }
   });
   
-  /*Progresso Conclusão Aula3*/
+  /*Progresso Conclusão Aula 3*/
   $("#progressCheck12").change(function () {
     if (this.checked) {
       $("#aula3").addClass("completed");
@@ -133,7 +132,7 @@ $("#progressCheck1").change(function () {
     }
   });
   
-  /*Progress Check AULA4*/
+  /*Progress Check Aula 4*/
   $("#progressCheck13").change(function () {
     if (this.checked) {
       $("#topico12").addClass("visited");
@@ -174,7 +173,7 @@ $("#progressCheck1").change(function () {
     }
   });
   
-  /*Progresso Conclusão Aula4*/
+  /*Progresso Conclusão Aula 4*/
   $("#progressCheck17").change(function () {
     if (this.checked) {
       $("#aula4").addClass("completed");
@@ -183,7 +182,7 @@ $("#progressCheck1").change(function () {
     }
   });
   
-  /*Progress Check AULA5*/
+  /*Progress Check Aula 5*/
   $("#progressCheck18").change(function () {
     if (this.checked) {
       $("#topico17").addClass("visited");
@@ -216,7 +215,7 @@ $("#progressCheck1").change(function () {
     }
   });
   
-  /*Progresso Conclusão Aula5*/
+  /*Progresso Conclusão Aula 5*/
   $("#progressCheck21").change(function () {
     if (this.checked) {
       $("#aula5").addClass("completed");
@@ -225,7 +224,7 @@ $("#progressCheck1").change(function () {
     }
   });
   
-  /*Progress Check AULA6*/
+  /*Progress Check Aula 6*/
   $("#progressCheck22").change(function () {
     if (this.checked) {
       $("#topico21").addClass("visited");
@@ -258,7 +257,7 @@ $("#progressCheck1").change(function () {
     }
   });
   
-  /*Progresso Conclusão Aula6*/
+  /*Progresso Conclusão Aula 6*/
   $("#progressCheck25").change(function () {
     if (this.checked) {
       $("#aula6").addClass("completed");
@@ -266,27 +265,4 @@ $("#progressCheck1").change(function () {
       $("#aula6").removeClass("completed");
     }
   });
-
-  var checagem = localStorage.getItem("progresso");
-
-  $(document).ready(function () {
-    console.log('1', checagem);
   
-  
-    if (checagem == "true") {
-      $("#progressCheck1").prop("checked", true);
-      console.log("checado");
-    } else {
-      $("#progressCheck1").prop("checked", false);
-    }
-  });
-
-  /*Salva progresso no local storage*/
-function saveProgress() {
-    var progresso = $("#progressCheck1");
-    if (progresso.prop("checked") == true) {
-      localStorage.setItem("progresso", "true");
-    } else {
-      localStorage.setItem("progresso", "false");
-    }
-  }
