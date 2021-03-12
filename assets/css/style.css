@@ -539,12 +539,14 @@ ul li{
     align-items: center;
     justify-content: center;
     position: absolute;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden; /*Safari*/
     -moz-backface-visibility: hidden;
     transform: rotateX(0deg);
 }
 .back{ 
     z-index: 1;
+    visibility: visible !important;
     -moz-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
