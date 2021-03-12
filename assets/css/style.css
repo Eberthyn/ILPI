@@ -539,7 +539,6 @@ ul li{
     align-items: center;
     justify-content: center;
     position: absolute;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden; /*Safari*/
     -moz-backface-visibility: hidden;
     transform: rotateX(0deg);
