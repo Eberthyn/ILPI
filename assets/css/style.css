@@ -540,12 +540,12 @@ ul li{
     justify-content: center;
     position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*Safari*/
     -moz-backface-visibility: hidden;
     transform: rotateX(0deg);
 }
-.back{  
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /*Safari*/
+.back{ 
+    z-index: 1;
     -moz-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -569,6 +569,8 @@ ul li{
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*Safari*/
 }
 
 
