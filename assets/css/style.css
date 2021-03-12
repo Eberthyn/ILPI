@@ -536,6 +536,7 @@ ul li{
     display: flex;
     flex-direction: column;
     flex: 1;
+    z-index: 2;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -545,10 +546,14 @@ ul li{
     transform: rotateX(0deg);
 }
 .back{ 
-    z-index: 1;
-    visibility: visible !important;
     -moz-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.card.flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 .resposta {
@@ -565,12 +570,7 @@ ul li{
     align-items: center;
     background-color: #FFF;
 }
-.card.flipped {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
+
 
 
 /*Carousel*/
