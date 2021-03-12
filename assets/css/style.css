@@ -441,7 +441,7 @@ ul li{
     font-weight: 900;
     margin-right: 15px;
 }
-#caretDown{
+.caretDown{
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     float: right;
@@ -466,6 +466,9 @@ ul li{
     border-width: 1px;
     border-color: #3D3D3D;
 }
+.card-header a{
+    cursor: pointer;
+}
 .card-header p{
     color: #3D3D3D;
     margin: auto;
@@ -473,6 +476,10 @@ ul li{
 .card-body ul li{
     list-style: none;
 }
+
+.accordion .collapsed i:before{
+    content: "\f0d7";
+    }
 
 
 /* Flip Card */
@@ -533,11 +540,12 @@ ul li{
     justify-content: center;
     position: absolute;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden; /*Safari*/
     -moz-backface-visibility: hidden;
     transform: rotateX(0deg);
 }
 .back{  
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /*Safari*/
     -moz-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -553,7 +561,6 @@ ul li{
     width: 258px;
     padding: 5px;
     cursor: pointer;
-    justify-content: center;
     align-items: center;
     background-color: #FFF;
 }
