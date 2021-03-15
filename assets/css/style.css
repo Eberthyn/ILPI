@@ -239,6 +239,53 @@ body, header, footer{
 .cardImg{
     position: relative;
 }
+#questionario{
+    margin-left: 9.5% !important;
+    margin-right: 9.5% !important;
+}
+#cartaz{
+    margin-top: 50px !important;
+    color: #ff6f61;
+    font-weight: bold;
+}
+.estilo{
+   margin-left: 9.5% !important;
+   background-color: #443F57;
+}
+.col-md-2{
+    transition: all 0s;
+    padding-left: 0px !important;
+    background-color: #F5F5F5;
+    position: relative;
+}
+.col-md-10{
+    padding: 0px !important;
+    max-width: 100%;
+}
+.col-md-12{
+    padding: 0% !important;
+    margin-left: auto;
+}
+.blocoTexto{
+    background-color: #ff6f61;
+    color: white;
+    padding-top: 30px;
+}
+.blocoStyle1{
+    padding: 25px 100px 10px 0px !important;
+}
+.blocoStyle2{
+    padding: 50px 50px 50px 0px !important;
+}
+.blocoTexto li{
+    list-style: none;
+}
+.blocoTexto .pinfo{
+    margin-top: 10px !important;
+    margin-left: 40px;  
+}
+
+/* Imagem do Box Laranja */
 #capaAula2{
     background-image: url(../images/aula2/img1.png);
     background-size: cover;
@@ -287,51 +334,7 @@ body, header, footer{
     justify-content: center;
     position: relative;
 }
-#questionario{
-    margin-left: 9.5% !important;
-    margin-right: 9.5% !important;
-}
-#cartaz{
-    margin-top: 50px !important;
-    color: #ff6f61;
-    font-weight: bold;
-}
-.estilo{
-   margin-left: 9.5% !important;
-   background-color: #443F57;
-}
-.col-md-2{
-    transition: all 0s;
-    padding-left: 0px !important;
-    background-color: #F5F5F5;
-    position: relative;
-}
-.col-md-10{
-    padding: 0px !important;
-    max-width: 100%;
-}
-.col-md-12{
-    padding: 0% !important;
-    margin-left: auto;
-}
-.blocoTexto{
-    background-color: #ff6f61;
-    color: white;
-    padding-top: 30px;
-}
-.blocoStyle1{
-    padding: 25px 100px 10px 0px !important;
-}
-.blocoStyle2{
-    padding: 50px 50px 50px 0px !important;
-}
-.blocoTexto li{
-    list-style: none;
-}
-.blocoTexto .pinfo{
-    margin-top: 10px !important;
-    margin-left: 40px;  
-}
+
 .informativo{
     background-color: #F5F5F5;
     color: black;
@@ -339,15 +342,6 @@ body, header, footer{
     margin-bottom: 50px;
     padding: 40px 40px 10px 50px;
     position: relative;
-}
-#acordeao{
-    padding-bottom: 45px;
-}
-#acordeao ul{
-    padding: 0px; 
-}
-#acordeao .card-body{
-    background-color:  #F5F5F5;
 }
 .imginfo{
     position: absolute;
@@ -421,7 +415,7 @@ p.textoLaranja{
 }
 
 
-/*Listas e Ícone*/
+/* Listas e Ícones */
 ul li{
     list-style: none;
 }
@@ -458,6 +452,17 @@ ul li{
     justify-content: center;
     align-items: center;
 }
+
+/* Accordions */
+#acordeao{
+    padding-bottom: 45px;
+}
+#acordeao ul{
+    padding: 0px; 
+}
+#acordeao .card-body{
+    background-color:  #F5F5F5;
+}
 .card{
     border: 0px;
     position: relative;
@@ -479,8 +484,7 @@ ul li{
 
 .accordion .collapsed i:before{
     content: "\f0d7";
-    }
-
+}
 
 /* Flip Card */
 #quiz, #quiz2, #quiz3{
@@ -530,6 +534,9 @@ ul li{
     max-width: 100%;
     max-height: 100%;
     font-size: 13px;
+}
+.backFase p{
+    margin: 0px;
 }
 .front, .back{
     width: 100%;
@@ -666,7 +673,7 @@ footer{
 /* Smartphone */
 @media (max-width: 480px){
     .step:last-child .line{
-        height: 86%;
+        height: 88%;
     }
     #quiz, #quiz2, #quiz3{
         width: 270px;
@@ -674,7 +681,14 @@ footer{
     .backFase{
         font-size: 11px !important;
     }
+    .informativo ul{
+    padding-inline-start: 0px;
+    }
+    .accordion ul{
+    padding-inline-start: 0px;
+    }
 }
+
 
 /* Estilização da barra de rolagem */
 ::-webkit-scrollbar-track {
